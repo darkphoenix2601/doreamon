@@ -22,23 +22,9 @@ DEFAULT_WELCOME_MESSAGES = [
 ]
 DEFAULT_GOODBYE_MESSAGES = [
     "{first} will be missed.",
-    "{first} just went out.",
-    "{first} has left the lobby.",
-    "{first} has left the clan.",
     "{first} has left the group.",
     "{first} has fled the area.",
-    "{first} is out of the running.",
-    "Nice knowing ya, {first}!",
-    "It was a fun time {first}.",
-    "We hope to see you again soon, {first}.",
-    "I do not want to say! Goodbye, {first}.",
-    "Goodbye {first}! Guess who's gonna miss you :')",
-    "Goodbye {first}! It's gonna be lonely without ya.",
-    "Please don't leave me alone in this place, {first}!",
-    "You know we're gonna miss you {first}. Right? Right? Right?",
-    "Congratulations, {first}! You're officially free of this group.",
-    "{first}. You were an opponent worth fighting.",
-    "You're leaving, {first}? Yare Yare Daze.",
+    "A wild pokemon named {first} fled! {first} also stumbled upon 2 master ball"
 ]
 
 
