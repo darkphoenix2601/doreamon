@@ -27,7 +27,12 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 **Hello {}, My Name is {}!** 
-I am an **SUPERB**  group management bot.
+People's sometime find hard to manage their groups, So i am here to help you.
+
+I have been made by my [Master💥](t.me/alain_champion)
+
+My [master](t.me/alain_champion) Was Assisted by [Pro Mate](t.me/phantomredxd)
+
 You can find the list of available commands with /help.
 
 """
@@ -49,7 +54,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/b50a167f05bbfe4ff7b18.jpg"
+TECHNO_IMG = "https://telegra.ph/file/f01ea768845d3697c9ab0.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -141,12 +146,14 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤝HELP🤝",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="🧑‍💻My Creator🧑‍💻",
-                                                                       url="t.me/D3VIL_D3V")],
-                                                                                   [InlineKeyboardButton(text="ADD D3VIL BOT TO YOUR GROUP",
+                                                                                   InlineKeyboardButton(text="🎆⚡My Creator⚡🎆",
+                                                                       url="t.me/alain_champion")),
+                                                                                   InlineKeyboardButton(text="🤠Pro Helper🤠",
+                                                                       url="t.me/phantomredxd")),
+                                                                                   [InlineKeyboardButton(text="ADD BLACK LEGEND BOT TO YOUR GROUP",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
                                                                                    InlineKeyboardButton(text="Source Code",
-                                                                       url="https://github.com/legendx22/GRANDROBOT")
+                                                                       url="https://github.com/infotechbro/BLACK_LEGEND")
                                                                                  ]]))
 
     else:
