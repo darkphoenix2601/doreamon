@@ -154,7 +154,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
                                                                                    InlineKeyboardButton(text="Source Code",
                                                                        url="https://github.com/infotechbro/BLACK_LEGEND")
-                                                                                 ]]))
+                                                                                 ]])
 
     else:
         update.effective_message.reply_text("Heya, Pro Man I am already online  🤠🤠⚡")
