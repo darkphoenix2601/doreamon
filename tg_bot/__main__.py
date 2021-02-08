@@ -29,9 +29,9 @@ PM_START_TEXT = """
 **Hello {}, My Name is {}!** 
 People's sometime find hard to manage their groups, So i am here to help you.
 
-I have been made by my [Master💥](t.me/alain_champion)
+I have been made by my [Mⱥຮteℝ💥](t.me/alain_champion)
 
-My [master](t.me/alain_champion) Was Assisted by [Pro Mate](t.me/phantomredxd)
+My [master](t.me/alain_champion) Was Assisted by [⩻ᖘrømate⩼](t.me/phantomredxd)
 
 You can find the list of available commands with /help.
 
@@ -39,7 +39,7 @@ You can find the list of available commands with /help.
 
 HELP_STRINGS = """
 
-Hello! my name *{}*.
+Hello! my name *{}*. [Our ★Uรeℝb𐍉t★](t.me/blacklegend_bot)
 
 *Main* commands available:
  - /start: start the bot
@@ -144,12 +144,14 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤝HELP🤝",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="heℓק✨",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="🎆⚡My Creator⚡🎆",
+                                                                                   InlineKeyboardButton(text="⚡💙My CreAτØR💙⚡",
                                                                        url="t.me/alain_champion")],
                                                                                    [InlineKeyboardButton(text="ADD BLACK LEGEND BOT TO YOUR GROUP",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
+                                                                                   [InlineKeyboardButton(text="Userbot",
+                                                                       url="https://telegra.ph/𝗠𝗟𝗢--Alain--The-champion-02-08)),
                                                                                    InlineKeyboardButton(text="Source Code",
                                                                        url="https://github.com/infotechbro/Black_Legend")
                                                                                  ]]))
