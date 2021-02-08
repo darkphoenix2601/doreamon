@@ -143,18 +143,18 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤝HELP🤝",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="💖𝙷𝙴𝙻𝙿💖",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="🎆⚡My Creator⚡🎆",
+                                                                                   InlineKeyboardButton(text="🎆⚡𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁⚡🎆",
                                                                        url="t.me/alain_champion")],
-                                                                                   [InlineKeyboardButton(text="ADD BLACK LEGEND TO YOUR GROUP",
+                                                                                   [InlineKeyboardButton(text="𝙰𝙳𝙳 𝙱𝙰𝙻𝙲𝙺 𝙻𝙴𝙶𝙴𝙽𝙳 🤖 𝚃𝙾 𝚈𝙾𝚄𝚁 𝚂𝙲𝙷𝙾𝙾𝙻",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Source Code",
+                                                                                   InlineKeyboardButton(text="✨𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴✨",
                                                                        url="https://github.com/infotechbro/black_legend")
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text("Heya, Pro Man I am already online  🤠🤠⚡")
+        update.effective_message.reply_text("Heya, 𝙿𝚁𝙾 𝙼𝙰𝙽 I am already online 🤠🤠⚡")
 
 
 def send_start(bot, update):
