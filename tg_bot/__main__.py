@@ -26,12 +26,14 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-**Hello {}, My Name is {}!** 
-People's sometime find hard to manage their groups, So i am here to help you.
+**🅷🅴🅻🅻🅾️ {first}, 𝐌𝐲 𝐍𝐚𝐦𝐞 𝐈𝐬 {}!** 
 
-I have been made by my [Mⱥຮteℝ💥](t.me/alain_champion)
+People's sometime find 𝐇𝐚𝐫𝐝 to manage their groups, 𝐒𝐨 𝐈 𝐀𝐦 𝐇𝐞𝐫𝐞 𝐓𝐨 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮.
 
-My [master](t.me/alain_champion) Was Assisted by [⩻ᖘrømate⩼](t.me/phantomredxd)
+I ʜᴀᴠᴇ ʙᴇᴇɴ ᴍᴀᴅᴇ ʙʏ ᴍʏ [Mⱥຮteℝ💥](t.me/alain_champion)
+
+𝐌𝐲 [master](t.me/alain_champion) 𝐖𝐚𝐬 𝐀𝐬𝐬𝐢𝐬𝐭𝐞𝐝 𝐁𝐲 [⩻ᖘrømate⩼](t.me/phantomredxd)
+ 
 
 You can find the list of available commands with /help.
 
@@ -39,7 +41,7 @@ You can find the list of available commands with /help.
 
 HELP_STRINGS = """
 
-Hello! my name *{}*. [Our ★Uรeℝb𐍉t★](t.me/blacklegend_bot)
+Hello! my name *{}*. [Our ★Uรeℝb𐍉t★](https://t.me/blacklegend_bot/8)
 
 *Main* commands available:
  - /start: start the bot
