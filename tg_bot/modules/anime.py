@@ -5,8 +5,8 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from SungJinwooRobot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
-from SungJinwooRobot.modules.disable import DisableAbleCommandHandler
+from Black Legend Bot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
+from Black Legend Bot.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
