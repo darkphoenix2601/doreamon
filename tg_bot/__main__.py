@@ -26,22 +26,19 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-**🅷🅴🅻🅻🅾️ {first}, 𝐌𝐲 𝐍𝐚𝐦𝐞 𝐈𝐬 {}!** 
+**🅷🅴🅻🅻🅾️ {}, 𝐌𝐲 𝐍𝐚𝐦𝐞 𝐈𝐬 {}! 
 
 People's sometime find 𝐇𝐚𝐫𝐝 to manage their groups, 𝐒𝐨 𝐈 𝐀𝐦 𝐇𝐞𝐫𝐞 𝐓𝐨 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮.
 
-I ʜᴀᴠᴇ ʙᴇᴇɴ ᴍᴀᴅᴇ ʙʏ ᴍʏ [Mⱥຮteℝ💥](t.me/alain_champion)
+I ʜᴀᴠᴇ ʙᴇᴇɴ ᴍᴀᴅᴇ ʙʏ [ᴍʏ Mⱥຮteℝ💥](t.me/alain_champion).
 
-𝐌𝐲 [master](t.me/alain_champion) 𝐖𝐚𝐬 𝐀𝐬𝐬𝐢𝐬𝐭𝐞𝐝 𝐁𝐲 [⩻ᖘrømate⩼](t.me/phantomredxd)
+𝐌𝐲 master 𝐖𝐚𝐬 𝐀𝐬𝐬𝐢𝐬𝐭𝐞𝐝 𝐁𝐲 [⩻ᖘrømate⩼](t.me/phantomredxd).
  
-
 You can find the list of available commands with /help.
-
 """
 
 HELP_STRINGS = """
-
-Hello! my name *{}*. [Our ★Uรeℝb𐍉t★](https://t.me/blacklegend_bot/8)
+Hello! my name *{}*. Our [★Uรeℝb𐍉t★](t.me/blacklegend_bot)
 
 *Main* commands available:
  - /start: start the bot
@@ -56,7 +53,7 @@ Hello! my name *{}*. [Our ★Uรeℝb𐍉t★](https://t.me/blacklegend_bot/8)
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/f01ea768845d3697c9ab0.jpg"
+TECHNO_IMG = "https://telegra.ph/file/b50a167f05bbfe4ff7b18.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -148,16 +145,16 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤝HELP🤝",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="⚡💙My CreAτØR💙⚡",
-                                                                       url="t.me/alain_champion")],
-                                                                                   [InlineKeyboardButton(text="ADD BLACK LEGEND BOT TO YOUR GROUP",
+                                                                                   InlineKeyboardButton(text="🧑‍💻My Creator🧑‍💻",
+                                                                       url="t.me/D3VIL_D3V")],
+                                                                                   [InlineKeyboardButton(text="ADD D3VIL BOT TO YOUR GROUP",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   [InlineKeyboardButton(text="Source Code",
-                                                                       url="https://github.com/infotechbro/Black_Legend")
+                                                                                   InlineKeyboardButton(text="Source Code",
+                                                                       url="https://github.com/legendx22/GRANDROBOT")
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text("Heya, Pro Man I am already online  🤠🤠⚡")
+        update.effective_message.reply_text("ZINDA HU BHAI 😀😀⚡")
 
 
 def send_start(bot, update):
