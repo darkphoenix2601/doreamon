@@ -53,7 +53,7 @@ Hello! my name *{}*. Our [★Uรeℝb𐍉t★](t.me/blacklegend_bot)
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/b50a167f05bbfe4ff7b18.jpg"
+TECHNO_IMG = "https://telegra.ph/file/9d4d94ad686eb825d6581.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -145,16 +145,16 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤝HELP🤝",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="🧑‍💻My Creator🧑‍💻",
-                                                                       url="t.me/D3VIL_D3V")],
-                                                                                   [InlineKeyboardButton(text="ADD D3VIL BOT TO YOUR GROUP",
+                                                                                   InlineKeyboardButton(text="🎆⚡My Creator⚡🎆",
+                                                                       url="t.me/alain_champion")],
+                                                                                   [InlineKeyboardButton(text="ADD BLACK LEGEND TO YOUR GROUP",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
                                                                                    InlineKeyboardButton(text="Source Code",
-                                                                       url="https://github.com/legendx22/GRANDROBOT")
+                                                                       url="https://github.com/infotechbro/black_legend")
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text("ZINDA HU BHAI 😀😀⚡")
+        update.effective_message.reply_text("Heya, Pro Man I am already online  🤠🤠⚡")
 
 
 def send_start(bot, update):
