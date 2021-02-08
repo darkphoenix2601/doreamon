@@ -152,8 +152,6 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                        url="t.me/alain_champion")],
                                                                                    [InlineKeyboardButton(text="ADD BLACK LEGEND BOT TO YOUR GROUP",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   [InlineKeyboardButton(text="Userbot",
-                                                                       url="https://telegra.ph/𝗠𝗟𝗢--Alain--The-champion-02-08")
                                                                                    [InlineKeyboardButton(text="Source Code",
                                                                        url="https://github.com/infotechbro/Black_Legend")
                                                                                  ]]))
