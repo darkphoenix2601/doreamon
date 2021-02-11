@@ -12,4 +12,4 @@ You can Find Me On [Telegram](t.me/black_legend_bot) By Searching [@black_legend
 
 # SUPPORT GROUP
 
-You Can Join Group By Clicking On This Button [![join](file:///C:/Users/Dipanshu%20Agarwal/Downloads/join_us.svg)(t.me/black_legend_support)
+You Can Join Group By Clicking On This Button [![join](t.me/black_legend_support)
