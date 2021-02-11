@@ -12,4 +12,4 @@ You can Find Me On [Telegram](https://t.me/black_legend_bot) By Searching [@blac
 
 # SUPPORT GROUP
 
-You Can Join Group By Clicking On This Button [join](t.me/black_legend_support)
+Join Our [Support Group](https://t.me/blck_legend_support)
