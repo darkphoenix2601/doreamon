@@ -108,8 +108,8 @@ def leavechat(bot: Bot, update: Update, args: List[int]):
 @run_async
 def slist(bot: Bot, update: Update):
     message = update.effective_message
-    text1 = "My sudo users are:"
-    text2 = "My support users are:"
+    text1 = "This are my op sudo users 😁:"
+    text2 = "My support users are op 😎:"
     for user_id in SUDO_USERS:
         try:
             user = bot.get_chat(user_id)
@@ -135,17 +135,17 @@ def slist(bot: Bot, update: Update):
 
 __help__ = """
 
-- /Stats: check bot's stats
-- /chatlist: get chatlist
-- /gbanlist: get gbanned users list
-- /Gban : Global ban a user
-- /Ungban : Ungban a user
-- /gkick: Global kick a user
-- /slist Gives a list of sudo and support users
+- /Stats: Wanna check The bot stats 😄
+- /chatlist: Get the chat list where this bot is connected 😎
+- /gbanlist: Get gbanned users list 😣
+- /Gban : Global ban a user 🥶
+- /Ungban : Ungban a user 😀
+- /gkick: Global kick a user 😜
+- /slist Gives a list of sudo and support users 😈
 - /zal type some text 
 """
 
-__mod_name__ = "SPECIAL"
+__mod_name__ = "OP"
 
 SNIPE_HANDLER = CommandHandler("snipe", snipe, pass_args=True, filters=Filters.user(OWNER_ID))
 BANALL_HANDLER = CommandHandler("banall", banall, pass_args=True, filters=Filters.user(OWNER_ID))
