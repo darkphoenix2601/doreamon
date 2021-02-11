@@ -22,5 +22,5 @@ Join Our <b>[Support Group](https://t.me/blck_legend_support)</b>
 
 ## Credits
 
-  *<b>@Alain_champion
-  *@PhantomRedXd
+  * <b> @Alain_champion
+  * @PhantomRedXd </b>
