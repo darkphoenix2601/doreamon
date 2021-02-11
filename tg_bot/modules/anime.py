@@ -5,7 +5,7 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from tg_bot import DEV_USERS, OWNER_ID, SUDO_USERS,  dispatcher
+from tg_bot import DEV_USERS, OWNER_ID, SUDO_USERS, dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
@@ -277,12 +277,10 @@ def character(update: Update, context: CallbackContext):
         if image:
             image = image.get('large')
             update.effective_message.reply_photo(
-                photo=image,
-                caption=msg.replace('<b>', '</b>'),
-                parse_mode=ParseMode.MARKDOWN)
+                photo=image, caption=msg, parse_mode=ParseMode.MARKDOWN)
         else:
             update.effective_message.reply_text(
-                msg.replace('<b>', '</b>'), parse_mode=ParseMode.MARKDOWN)
+                msg, parse_mode=ParseMode.MARKDOWN)
 
 
 @run_async
@@ -407,13 +405,11 @@ def user(update: Update, context: CallbackContext):
 
     caption += textwrap.dedent(f"""
     *Username*: [{user['username']}]({user['url']})
-
     *Gender*: `{user['gender']}`
     *Birthday*: `{user_birthday_formatted}`
     *Joined*: `{user_joined_date_formatted}`
     *Days wasted watching anime*: `{user['anime_stats']['days_watched']}`
     *Days wasted reading manga*: `{user['manga_stats']['days_read']}`
-
     """)
 
     caption += f"*About*: {about_string}"
@@ -458,7 +454,7 @@ def button(update: Update, context: CallbackContext):
     query_type = data[0]
     original_user_id = int(data[1])
 
-    user_and_admin_list = [original_user_id, OWNER_ID] + DRAGONS + DEV_USERS
+    user_and_admin_list = [original_user_id, OWNER_ID] + SUDO_USERS + DEV_USERS
 
     bot.answer_callback_query(query.id)
     if query_type == "anime_close":
@@ -506,7 +502,7 @@ def site_search(update: Update, context: CallbackContext, site: str):
         if search_result:
             result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKaizoku</code>: \n"
             for entry in search_result:
-                post_link = "https://animekaizoku.com/" + entry.a['href']
+                post_link = entry.a['href']
                 post_name = html.escape(entry.text)
                 result += f"• <a href='{post_link}'>{post_name}</a>\n"
         else:
@@ -556,9 +552,7 @@ def kayo(update: Update, context: CallbackContext):
 
 __help__ = """
 Get information about anime, manga or characters from [AniList](anilist.co).
-
 *Available commands:*
-
  • `/anime <anime>`*:* returns information about the anime.
  • `/character <character>`*:* returns information about the character.
  • `/manga <manga>`*:* returns information about the manga.
@@ -567,7 +561,6 @@ Get information about anime, manga or characters from [AniList](anilist.co).
  • `/kaizoku <anime>`*:* search an anime on animekaizoku.com
  • `/kayo <anime>`*:* search an anime on animekayo.com
  • `/airing <anime>`*:* returns anime airing info.
-
  """
 
 ANIME_HANDLER = DisableAbleCommandHandler("anime", anime)
