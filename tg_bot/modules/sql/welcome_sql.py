@@ -18,7 +18,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "A wild Mewtwo has Appeared.",
     "A wild Mewtwo has joined the chat.",
     "A very warm welcome to you {first}.",
-    "Someone Just Sumbled in group, oh its {first},
+    "Someone Just Sumbled in group, oh its {first}",
     "A wild weedle has Appeared."
 ]
 DEFAULT_GOODBYE_MESSAGES = [
