@@ -1,10 +1,12 @@
-# BLACK LEGEND
+# What Is Black Legend Bot
+
+Black Legend Bot Is A Telegram Group Management Which is Made By @alain_champion. This Bot Helps You To Manage Your Groups
 
 # Deploy
 
 DEPLOY HERE - [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/infotechbro/black_legend)
 
-# Mde By
+# Made By
 
 This Bot Was Made By My Pero [Master](t.me/alain-champion)
 
