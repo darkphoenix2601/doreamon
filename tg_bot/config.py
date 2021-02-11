@@ -13,7 +13,7 @@ class Config(object):
 
     # REQUIRED
     API_KEY = "--"
-    OWNER_ID = "Ha Ha"  # If you dont know, run the bot and do /id in your private chat with it
+    OWNER_ID = "1377620841"  # If you dont know, run the bot and do /id in your private chat with it
     OWNER_USERNAME = "alain_champion"
 
     # RECOMMENDED
