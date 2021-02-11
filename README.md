@@ -10,12 +10,17 @@ Black Legend Bot Is A Telegram Group Management Which is Made By <b>@alain_champ
 
 ## Made By
 
-This Bot Was Made By My Pero [Master](https://t.me/alain-champion)
+This Bot Was Made By My Pero <b>[Master](https://t.me/alain-champion)</b>
 
 ## Find Me
 
-You can Find Me On [Telegram](https://t.me/black_legend_bot) By Searching <b>[@black_legend_bot](https://t.me/black_legend_bot)</b> On Telegram Search bar
+You can Find Me On <b>[Telegram](https://t.me/black_legend_bot)</b> By Searching <b>[@black_legend_bot](https://t.me/black_legend_bot)</b> On Telegram Search bar
 
 ## Support 
 
-Join Our [Support Group](https://t.me/blck_legend_support)
+Join Our <b>[Support Group](https://t.me/blck_legend_support)</b>
+
+## Credits
+
+  *<b>@Alain_champion
+  *@PhantomRedXd
