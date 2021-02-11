@@ -266,9 +266,9 @@ def can_restrict(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_restrict = f"I can't restrict people here!\nMake sure I'm admin and can restrict users."
+            cant_restrict = f" Uf, 😥 I can't restrict people lol!\nMake sure I'm admin and can restrict users."
         else:
-            cant_restrict = f"I can't restrict people in <b>{update_chat_title}</b>!\nMake sure I'm admin there and can restrict users."
+            cant_restrict = f" Uf, 😥 I can't restrict people in <b>{update_chat_title}</b>!\nMake sure I'm admin there and can restrict users."
 
         if chat.get_member(bot.id).can_restrict_members:
             return func(bot, update, *args, **kwargs)
@@ -289,7 +289,7 @@ def connection_status(func):
             return func(bot, update, *args, **kwargs)
         else:
             if update.effective_message.chat.type == "private":
-                update.effective_message.reply_text("Send /connect in a group that you and I have in common first.")
+                update.effective_message.reply_text("Send /connect in a group that you and I have in common first. Join [this group](t.me/black_legend_support) for any other help")
                 return connected_status
 
             return func(bot, update, *args, **kwargs)
