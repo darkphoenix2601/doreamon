@@ -1,3 +1,5 @@
+[Black_legend](https://telegra.ph/file/c6c0e74543b8605ddd650.jpg)
+
 # What Is Black Legend Bot
 
 Black Legend Bot Is A Telegram Group Management Which is Made By @alain_champion. This Bot Helps You To Manage Your Groups
