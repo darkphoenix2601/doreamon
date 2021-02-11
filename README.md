@@ -8,7 +8,7 @@ This Bot Was Made By My Pero [Master](t.me/alain-champion)
 
 # FIND ME
 
-You can Find Me On [Telegram](t.me/black_legend_bot) By Searching [@black_legend_bot](t.me/black_legend_bot)
+You can Find Me On [Telegram](https://t.me/black_legend_bot) By Searching [@black_legend_bot](https://t.me/black_legend_bot)
 
 # SUPPORT GROUP
 
