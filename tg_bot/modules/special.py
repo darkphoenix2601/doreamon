@@ -106,7 +106,7 @@ def leavechat(bot: Bot, update: Update, args: List[int]):
             return
 
 @run_async
-def olist(bot: Bot, update: Update):
+def slist(bot: Bot, update: Update):
     message = update.effective_message
     text1 = "This are my op sudo users 😁:"
     text2 = "My support users are op 😎:"
