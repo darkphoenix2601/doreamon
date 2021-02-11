@@ -225,9 +225,9 @@ def can_pin(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_pin = f"I can't pin messages here!\nMake sure I'm admin and can pin messages."
+            cant_pin = f"I can't pin messages here!\nBro make sure that I'm admin and can pin messages 😉."
         else:
-            cant_pin = f"I can't pin messages in <b>{update_chat_title}</b>!\nMake sure I'm admin and can pin messages there."
+            cant_pin = f"I can't pin messages in <b>{update_chat_title}</b>!\n Mate make sure that I'm admin and can pin messages there 😉."
 
         if chat.get_member(bot.id).can_pin_messages:
             return func(bot, update, *args, **kwargs)
@@ -245,10 +245,10 @@ def can_promote(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_promote = f"I can't promote/demote people here!\nMake sure I'm admin and can appoint new admins."
+            cant_promote = f"I can't promote/demote people here!\n {mention} Make sure I'm admin and can appoint new admins."
         else:
             cant_promote = (f"I can't promote/demote people in <b>{update_chat_title}</b>!\n"
-                            f"Make sure I'm admin there and can appoint new admins.")
+                            f"{mention} Make sure I'm admin there and can appoint new admins.")
 
         if chat.get_member(bot.id).can_promote_members:
             return func(bot, update, *args, **kwargs)
