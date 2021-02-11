@@ -12,20 +12,23 @@ DEFAULT_GOODBYE = 'A wild pokemon named {first} fled! {first} also stumbled upon
 DEFAULT_WELCOME_MESSAGES = [
     "{first} is here!",  #Discord welcome messages copied
     "Hey, {first} is here.",
-    "Having {first} in our group is really a good choice! ...",
-    "Welcome! We are thrilled to have you at our group.",
     "We would like to welcome you to our group.",
-    "Welcome to our group.",
     "We would like to extend a warm welcome to you.",
-    "We're glad you joined {chatname}.",
-    "A very warm welcome to you {first}."
+    "A wild Necrozma has Appeared.",
+    "A wild Mewtwo has Appeared.",
+    "A wild Mewtwo has joined the chat.",
+    "A very warm welcome to you {first}.",
+    "Someone Just Sumbled in group, oh its {first},
+    "A wild weedle has Appeared."
 ]
 DEFAULT_GOODBYE_MESSAGES = [
-    "{first} will be missed.",
     "{first} has left the group.",
     "{first} has fled the area.",
-    "A wild pokemon named {first} fled! {first} also stumbled upon 2 master ball"
-]
+    "A wild pokemon named {first} fled! {first} also stumbled upon 2 master ball",
+    "A wild pokemon named {first} fled! {first} also stumbled upon 2 ulta balls",
+    "A wild {first} fled! {first} also stumbled upon 2 net ball",
+    "A wild {first} fled! {first} also stumbled upon 20 master ball 🥶"
+    ]
 
 
 class Welcome(BASE):
