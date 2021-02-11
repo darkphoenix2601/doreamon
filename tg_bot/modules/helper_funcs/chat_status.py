@@ -77,7 +77,7 @@ def dev_plus(func):
         elif DEL_CMDS and " " not in update.effective_message.text:
             update.effective_message.delete()
         else:
-            update.effective_message.reply_text("This is a developer restricted command."
+            update.effective_message.reply_text(" What do you think! This is a developer restricted command lol."
                                                 " You do not have permissions to run this.")
 
     return is_dev_plus_func
@@ -96,7 +96,7 @@ def sudo_plus(func):
         elif DEL_CMDS and " " not in update.effective_message.text:
             update.effective_message.delete()
         else:
-            update.effective_message.reply_text("Who dis non-admin telling me what to do? You want a punch?")
+            update.effective_message.reply_text("Yo, LOL Sorry But You cant use this command.")
 
     return is_sudo_plus_func
 
@@ -124,7 +124,7 @@ def whitelist_plus(func):
         if user and is_whitelist_plus(chat, user.id):
             return func(bot, update, *args, **kwargs)
         else:
-            update.effective_message.reply_text("You don't have access to use this.\nVisit @AnonymousD3061")
+            update.effective_message.reply_text("Hey pro boy {first} you cant use it.\nVisit @black_legend_support")
 
     return is_whitelist_plus_func
 
@@ -142,7 +142,7 @@ def user_admin(func):
         elif DEL_CMDS and " " not in update.effective_message.text:
             update.effective_message.delete()
         else:
-            update.effective_message.reply_text("Who dis non-admin telling me what to do? You want a punch?")
+            update.effective_message.reply_text("Yo, {first} Sorry But You cant use this command 😞 ")
 
     return is_admin
 
@@ -185,9 +185,9 @@ def bot_admin(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            not_admin = "I'm not admin! - REEEEEE"
+            not_admin = "😕I'm not admin 😶! - make me admin and try again 🙃 "
         else:
-            not_admin = f"I'm not admin in <b>{update_chat_title}</b>! - REEEEEE"
+            not_admin = f"😶I'm not admin in <b>{update_chat_title}</b>! - make me admin and try again 😋"
 
         if is_bot_admin(chat, bot.id):
             return func(bot, update, *args, **kwargs)
@@ -205,9 +205,9 @@ def bot_can_delete(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_delete = f"I can't delete messages here!\nMake sure I'm admin and can delete other user's messages."
+            cant_delete = f"I can't delete messages here!\n Hmm make sure I'm admin and can delete other user's messages 🤗."
         else:
-            cant_delete = f"I can't delete messages in <b>{update_chat_title}</b>!\nMake sure I'm admin and can delete other user's messages there."
+            cant_delete = f"I can't delete messages in <b>{update_chat_title}</b>!\n{first} Make sure I'm admin and can delete other user's messages there 😊."
 
         if can_delete(chat, bot.id):
             return func(bot, update, *args, **kwargs)
