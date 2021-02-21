@@ -147,14 +147,14 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                        callback_data="help_back".format(bot.username)),
                                                                                    InlineKeyboardButton(text="🎆⚡𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁⚡🎆",
                                                                        url="t.me/alain_champion")],
-                                                                                   [InlineKeyboardButton(text="𝙰𝙳𝙳 𝙱𝙰𝙻𝙲𝙺 𝙻𝙴𝙶𝙴𝙽𝙳 🤖 𝚃𝙾 𝚈𝙾𝚄𝚁 𝚂𝙲𝙷𝙾𝙾𝙻",
+                                                                                   [InlineKeyboardButton(text="𝙰𝙳𝙳 𝙱𝙻𝙰𝙲𝙺 𝙻𝙴𝙶𝙴𝙽𝙳 🤖 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
                                                                                     InlineKeyboardButton(text="✨USERBOT✨",
                                                                        url="t.me/teamishere")
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text("Heya, 𝙿𝚁𝙾 𝙼𝙰𝙽 I am already online 🤠🤠⚡")
+        update.effective_message.reply_text("★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ Is Alive!")
 
 
 def send_start(bot, update):
@@ -253,9 +253,9 @@ def get_help(bot: Bot, update: Update):
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
 
-        update.effective_message.reply_text("Contact me in Direct Message to get the help.",
+        update.effective_message.reply_text("🔰 SIR PM ME PERSONALLY TO GET HELP 🔰.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="HELP",
+                                                [[InlineKeyboardButton(text="💠 CLICK AND GET HELP 💠",
                                                                        url="t.me/{}?start=help".format(
                                                                            bot.username))]]))
         return
@@ -437,10 +437,10 @@ def get_settings(bot: Bot, update: Update):
     # ONLY send settings in PM
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
-            text = "Click here to get this chat's settings, as well as yours."
+            text = "💠 BRO PM ME AND GET SETTINGS FOR THIS CHAT 💠."
             msg.reply_text(text,
                            reply_markup=InlineKeyboardMarkup(
-                               [[InlineKeyboardButton(text="Settings",
+                               [[InlineKeyboardButton(text="🔰 CLICK HERE AND GET SETTINGS 🔰",
                                                       url="t.me/{}?start=stngs_{}".format(
                                                           bot.username, chat.id))]]))
         else:
