@@ -31,26 +31,21 @@ PM_START_TEXT = """
 People's sometime find 𝐇𝐚𝐫𝐝 to manage their groups, 𝐒𝐨 𝐈 𝐀𝐦 𝐇𝐞𝐫𝐞 𝐓𝐨 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮.
 
 I ʜᴀᴠᴇ ʙᴇᴇɴ ᴍᴀᴅᴇ ʙʏ [ᴍʏ Mⱥຮteℝ💥](t.me/alain_champion).
-
-𝐌𝐲 master 𝐖𝐚𝐬 𝐀𝐬𝐬𝐢𝐬𝐭𝐞𝐝 𝐁𝐲 [⩻ᖘrømate⩼](t.me/phantomredxd).
  
 You can find the list of available commands with /help.
 """
 
 HELP_STRINGS = """
-Hello! my name *{}*. Our [★Uรeℝb𐍉t★](t.me/blacklegend_bot)
+Hello! my name *{}*. 
 
 *Main* commands available:
  - /start: start the bot
- - /help: PM's you this message.
+ - /alive to check bot alive or not
  - /help <module name>: PM's you info about that module.
  - /settings:
    - in PM: will send you your settings for all supported modules.
    - in a group: will redirect you to pm, with all that chat's settings.
-
-
 {}
-And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 TECHNO_IMG = "https://telegra.ph/file/9d4d94ad686eb825d6581.jpg"
