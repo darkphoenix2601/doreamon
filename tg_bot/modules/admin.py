@@ -323,7 +323,7 @@ def rmchatpic(bot: Bot, update: Update):
 def adminlist(bot: Bot, update: Update):
     administrators = update.effective_chat.get_administrators()
     msg = update.effective_message
-    text = "𝙻𝙴𝚃𝚂 𝚂𝙴𝙴 𝙰𝙳𝙼𝙸𝙽 𝙸𝙽 *{}*:\n".format(update.effective_chat.title or "this chat")
+    text = "Wooh Lets See Admins In *{}*:\n".format(update.effective_chat.title or "this chat")
     for admin in administrators:
         user = admin.user
         status = admin.status
@@ -331,8 +331,8 @@ def adminlist(bot: Bot, update: Update):
         if user.username:
             name = name = escape_markdown("@" + user.username)
         if status == "creator":
-            text += "\n 🔥 𝚆𝙾𝙾𝙷 𝚃𝙷𝙸𝚂 𝙶𝚁𝙾𝚄𝙿 𝙾𝚆𝙽𝙴𝚁 𝙸𝚂:"
-            text += "\n`😁`{}🔥\n\n*Administrators*:".format(name)
+            text += "\n **✪ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 ✪**"
+            text += "\n`✔️`{}\n\n*✪ 𝙰𝙳𝙼𝙸𝙽𝙸𝚂𝚃𝚁𝙰𝚃𝙾𝚁𝚂 ✪*".format(name)
     for admin in administrators:
         user = admin.user
         status = admin.status
@@ -344,7 +344,7 @@ def adminlist(bot: Bot, update: Update):
             
         if status == "administrator":
             text += "\n`🔰 `{}".format(name)
-            members = "\n\n*Total Members:*\n`𝚃𝙷𝙴𝚁𝙴 𝙰𝚁𝙴 ` *{}* 𝙶𝙷𝙾𝚂𝚃 👻 𝙸𝙽 𝚃𝙷𝙸𝚂 𝙶𝚁𝙾𝚄𝙿 ".format(count)
+            members = "\n\n*✪ 𝚃𝙾𝚃𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁𝚂 ✪*\n♓️There Are *{}* Ghost In This Group".format(count)
             
     msg.reply_text(text + members, parse_mode=ParseMode.MARKDOWN)
 
