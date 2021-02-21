@@ -5,7 +5,7 @@ import tg_bot.modules.sql.blacklistusers_sql as sql
 from tg_bot import ALLOW_EXCL
 
 if ALLOW_EXCL:
-    CMD_STARTERS = ('/', '!')
+    CMD_STARTERS = ('/', '!', '?')
 else:
     CMD_STARTERS = ('/',)
 
