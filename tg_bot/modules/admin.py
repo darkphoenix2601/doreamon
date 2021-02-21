@@ -35,22 +35,22 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
             exit(1)
 
     if not chatD.get_member(bot.id).can_promote_members:
-        update.effective_message.reply_text("I can't promote/demote people here! "
-                                            "Make sure I'm admin and can appoint new admins.")
+        update.effective_message.reply_text("𝚈𝙾𝚄 𝙳𝙸𝙳𝙽𝚃 𝙶𝙰𝚅𝙴𝙳 𝙼𝙴 𝚁𝙸𝙶𝙷𝚃 𝚃𝙾 𝙿𝚁𝙾𝙼𝙾𝚃𝙴/𝙳𝙴𝙼𝙾𝚃𝙴 𝙼𝙴𝙼𝙱𝙴𝚁 🥺! 𝙼𝙰𝙺𝙴 𝚂𝚄𝚁𝙴 𝙸 𝙰𝙼 𝙰𝙳𝙼𝙸𝙽 𝙰𝙽𝙳 𝙲𝙰𝙽 𝙿𝚁𝙾𝙼𝙾𝚃𝙴 𝙽𝙴𝚆 𝙰𝙳𝙼𝙸𝙽."
+                                          
         exit(1)
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text(tld(chat.id, "You don't seem to be referring to a user."))
+        message.reply_text(tld(chat.id, "★ 𝚆𝙾𝚆, 𝚈𝙾𝚄 𝙳𝙸𝙳𝙽𝚃 𝚂𝙴𝙴𝙼 𝚃𝙾 𝙱𝙴 𝚁𝙴𝙵𝙴𝚁𝚁𝙸𝙽𝙶 𝚃𝙾 𝙰 𝚄𝚂𝙴𝚁. 𝚈𝙾𝚄 𝙶𝙾𝙽𝙽𝙰 𝚂𝙿𝙴𝙲𝙸𝙵𝚈 𝚃𝙷𝙴 𝚄𝚂𝙴𝚁? ★."))
         return ""
 
     user_member = chatD.get_member(user_id)
     if user_member.status == 'administrator' or user_member.status == 'creator':
-        message.reply_text(tld(chat.id, "How am I meant to promote someone that's already an admin?"))
+        message.reply_text(tld(chat.id, "𝙷𝙾𝚆 𝙸 𝙰𝙼 𝙼𝙴𝙰𝙽𝚃 𝚃𝙾 𝙿𝚁𝙾𝙼𝙾𝚃𝙴 𝚄𝚂𝙴𝚁 𝚆𝙷𝙾 𝙸𝚂 𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙰𝙽 𝙰𝙳𝙼𝙸𝙽 ☹︎?"))
         return ""
 
     if user_id == bot.id:
-        message.reply_text(tld(chat.id, "I can't promote myself! Get an admin to do it for me."))
+        message.reply_text(tld(chat.id, "𝙷𝙴𝚈 𝙻𝙾𝙻, 𝙸 𝙲𝙰𝙽𝚃 𝙿𝚁𝙾𝙼𝙾𝚃𝙴 𝙼𝚈𝚂𝙴𝙻𝙵 𝚃𝙴𝙻𝙻 𝙰𝙽 𝙰𝙳𝙼𝙸𝙽 𝚃𝙾 𝙳𝙾 𝙸𝚃."))
         return ""
 
     # set same perms as bot - bot can't assign higher perms than itself!
@@ -61,12 +61,12 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
                           can_post_messages=bot_member.can_post_messages,
                           can_edit_messages=bot_member.can_edit_messages,
                           can_delete_messages=bot_member.can_delete_messages,
-                          #can_invite_users=bot_member.can_invite_users,
+                          can_invite_users=bot_member.can_invite_users,
                           can_restrict_members=bot_member.can_restrict_members,
                           can_pin_messages=bot_member.can_pin_messages,
                           can_promote_members=bot_member.can_promote_members)
 
-    message.reply_text(tld(chat.id, f"Successfully promoted {mention_html(user_member.user.id, user_member.user.first_name)} in {html.escape(chatD.title)}!"), parse_mode=ParseMode.HTML)
+    message.reply_text(tld(chat.id, f"𝙱𝙻𝙰𝙲𝙺 𝙻𝙴𝙶𝙴𝙽𝙳 𝙷𝙰𝚂 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙿𝚁𝙾𝙼𝙾𝚃𝙴𝙳 {mention_html(user_member.user.id, user_member.user.first_name)} in {html.escape(chatD.title)}!"), parse_mode=ParseMode.HTML)
     return f"<b>{html.escape(chatD.title)}:</b>" \
             "\n#PROMOTED" \
            f"\n<b>Admin:</b> {mention_html(user.id, user.first_name)}" \
@@ -90,13 +90,12 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
             exit(1)
 
     if not chatD.get_member(bot.id).can_promote_members:
-        update.effective_message.reply_text("I can't promote/demote people here! "
-                                            "Make sure I'm admin and can appoint new admins.")
+        update.effective_message.reply_text("𝚈𝙾𝚄 𝙳𝙸𝙳𝙽𝚃 𝙶𝙰𝚅𝙴𝙳 𝙼𝙴 𝚁𝙸𝙶𝙷𝚃 𝚃𝙾 𝙿𝚁𝙾𝙼𝙾𝚃𝙴/𝙳𝙴𝙼𝙾𝚃𝙴 𝙼𝙴𝙼𝙱𝙴𝚁 🥺! 𝙼𝙰𝙺𝙴 𝚂𝚄𝚁𝙴 𝙸 𝙰𝙼 𝙰𝙳𝙼𝙸𝙽 𝙰𝙽𝙳 𝙲𝙰𝙽 𝙿𝚁𝙾𝙼𝙾𝚃𝙴 𝙽𝙴𝚆 𝙰𝙳𝙼𝙸𝙽.")
         exit(1)
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text(tld(chat.id, "You don't seem to be referring to a user."))
+        message.reply_text(tld(chat.id, "YOU GONNA SPECIFY THE USER TO WHOM YOU WANT TO DEMOTE?"))
         return ""
 
     user_member = chatD.get_member(user_id)
@@ -122,7 +121,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
                               can_restrict_members=False,
                               can_pin_messages=False,
                               can_promote_members=False)
-        message.reply_text(tld(chat.id, f"Successfully demoted in *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
+        message.reply_text(tld(chat.id, f"BLACK LEGEND HAS SUCCESSFULLY DEMOTED *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
         return f"<b>{html.escape(chatD.title)}:</b>" \
                 "\n#DEMOTED" \
                f"\n<b>Admin:</b> {mention_html(user.id, user.first_name)}" \
