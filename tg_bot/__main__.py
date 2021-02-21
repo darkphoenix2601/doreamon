@@ -253,9 +253,9 @@ def get_help(bot: Bot, update: Update):
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
 
-        update.effective_message.reply_text("🔰 SIR PM ME PERSONALLY TO GET HELP 🔰.",
+        update.effective_message.reply_text("🔰 SIR, CONTACT ME IN PM TO GET HELP 🔰..",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="💠 CLICK AND GET HELP 💠",
+                                                [[InlineKeyboardButton(text="💠 CLICK ME AND GET HELP 💠",
                                                                        url="t.me/{}?start=help".format(
                                                                            bot.username))]]))
         return
@@ -437,10 +437,10 @@ def get_settings(bot: Bot, update: Update):
     # ONLY send settings in PM
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
-            text = "💠 BRO PM ME AND GET SETTINGS FOR THIS CHAT 💠."
+            text = "🔰 Click here to get this chat's settings, as well as yours 🔰.."
             msg.reply_text(text,
                            reply_markup=InlineKeyboardMarkup(
-                               [[InlineKeyboardButton(text="🔰 CLICK HERE AND GET SETTINGS 🔰",
+                               [[InlineKeyboardButton(text="🎛 CLICK HERE AND GET OP SETTINGS 🎛",
                                                       url="t.me/{}?start=stngs_{}".format(
                                                           bot.username, chat.id))]]))
         else:
