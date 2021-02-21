@@ -95,12 +95,12 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text(tld(chat.id, "YOU GONNA SPECIFY THE USER TO WHOM YOU WANT TO DEMOTE?"))
+        message.reply_text(tld(chat.id, "You Gonna Specify The User To Whom Demote?"))
         return ""
 
     user_member = chatD.get_member(user_id)
     if user_member.status == 'creator':
-        message.reply_text(tld(chat.id, "This person CREATED the chat, how would I demote them?"))
+        message.reply_text(tld(chat.id, "This person **CREATED** the chat, how would I demote them?"))
         return ""
 
     if not user_member.status == 'administrator':
@@ -121,7 +121,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
                               can_restrict_members=False,
                               can_pin_messages=False,
                               can_promote_members=False)
-        message.reply_text(tld(chat.id, f"BLACK LEGEND HAS SUCCESSFULLY DEMOTED *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
+        message.reply_text(tld(chat.id, f"Black Legend Has Successfully Demoted This Rude Guy In *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
         return f"<b>{html.escape(chatD.title)}:</b>" \
                 "\n#DEMOTED" \
                f"\n<b>Admin:</b> {mention_html(user.id, user.first_name)}" \
