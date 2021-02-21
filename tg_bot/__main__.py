@@ -149,8 +149,8 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                        url="t.me/alain_champion")],
                                                                                    [InlineKeyboardButton(text="𝙰𝙳𝙳 𝙱𝙰𝙻𝙲𝙺 𝙻𝙴𝙶𝙴𝙽𝙳 🤖 𝚃𝙾 𝚈𝙾𝚄𝚁 𝚂𝙲𝙷𝙾𝙾𝙻",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="✨𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴✨",
-                                                                       url="https://github.com/infotechbro/black_legend")
+                                                                                    InlineKeyboardButton(text="✨USERBOT✨",
+                                                                       url="t.me/teamishere")
                                                                                  ]]))
 
     else:
