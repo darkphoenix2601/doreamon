@@ -20,7 +20,7 @@ def afk(bot: Bot, update: Update):
         reason = args[1]
 
     sql.set_afk(update.effective_user.id, reason)
-    update.effective_message.reply_text("{} is now away!".format(update.effective_user.first_name))
+    update.effective_message.reply_text("*{} Is Now Away* !".format(update.effective_user.first_name))
 
 
 @run_async
@@ -71,9 +71,9 @@ def reply_afk(bot: Bot, update: Update):
                 valid, reason = sql.check_afk_status(user_id)
                 if valid:
                     if not reason:
-                        res = "{} is AFK!".format(fst_name)
+                        res = "`⚡️ {} Is Currently AFK! ⚡️`".format(fst_name)
                     else:
-                        res = "{} is AFK!\nReason:\n{}".format(fst_name, reason)
+                        res = "`⚡️ {} Is Currently AFK! ⚡️`\nReason For Being AFK: 💥 *{}* 💥".format(fst_name, reason)
                     message.reply_text(res)
 
 
