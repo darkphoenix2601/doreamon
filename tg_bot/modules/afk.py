@@ -40,7 +40,7 @@ def no_longer_afk(bot: Bot, update: Update):
             '{} is back online!',
             '{} is finally here!',
             'Welcome back!, {}',
-            'Where is {}?\nIn the chat!'
+            'Where is {}\nIn the chat!'
         ]
         chosen_option = random.choice(options)
         update.effective_message.reply_text(chosen_option.format(update.effective_user.first_name))
@@ -71,9 +71,9 @@ def reply_afk(bot: Bot, update: Update):
                 valid, reason = sql.check_afk_status(user_id)
                 if valid:
                     if not reason:
-                        res = "`⚡️ {} Is Currently AFK! ⚡️`".format(fst_name)
+                        res = "⚡️ {} Is Currently AFK! ⚡️`".format(fst_name)
                     else:
-                        res = "`⚡️ {} Is Currently AFK! ⚡️`\nReason For Being AFK: 💥 **{}** 💥".format(fst_name, reason)
+                        res = "⚡️ {} Is Currently AFK! ⚡️\nReason For Being AFK: 💥 {} 💥".format(fst_name, reason)
                     message.reply_text(res)
 
 
