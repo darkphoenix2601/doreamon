@@ -37,7 +37,7 @@ lol_ani = [
 def lol(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('DEKHNA AAB MAJA AAEGA 😂')
     for x in range(EDIT_TIMES):
-        msg.edit_text(lol_ani[x%19],parse_mode='markdown')
+        msg.edit_text(lol_ani[x%10],parse_mode='markdown')
         time.sleep(2)
     msg.edit_text('*MAJA AAYA KYA 😄*[ㅤ](https://telegra.ph/file/381dd2ea242e0bd292434.png)*AGAR HA THEN MAKE* [𝙻𝙴𝙶𝙴𝙽𝙳 𝚄𝚂𝙴𝚁𝙱𝙾𝚃](t.me/teamishere)',parse_mode='markdown')
 
