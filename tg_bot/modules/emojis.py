@@ -232,7 +232,7 @@ earth_ani = [
 ]
 
 
-@user_admin
+
 @run_async
 def blockanimation(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('⬜') 
@@ -244,7 +244,7 @@ def blockanimation(bot: Bot, update: Update):
 
 
 
-@user_admin
+
 @run_async
 def clockanimation(bot: Bot, update: Update):
     msg = update.effective_message
@@ -256,7 +256,7 @@ def clockanimation(bot: Bot, update: Update):
 
 
 
-@user_admin
+
 @run_async
 def earthanimation(bot: Bot, update: Update):
     msg = update.effective_message
@@ -269,7 +269,7 @@ def earthanimation(bot: Bot, update: Update):
 
 
 
-@user_admin
+
 @run_async
 def moonanimation(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('🌚') 
@@ -286,7 +286,7 @@ def moonanimation(bot: Bot, update: Update):
 
 
 
-@user_admin
+
 @run_async
 def bombs(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('💣') 
@@ -305,7 +305,7 @@ def bombs(bot: Bot, update: Update):
 
 
 
-@user_admin
+
 @run_async
 def hack(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('Target selected') 
@@ -321,7 +321,7 @@ def hack(bot: Bot, update: Update):
 
 
 
-@user_admin
+
 @run_async
 def love(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('❣️') 
@@ -333,7 +333,6 @@ def love(bot: Bot, update: Update):
 
 
 
-@user_admin
 @run_async
 def kill(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('🔫') 
@@ -347,21 +346,21 @@ def kill(bot: Bot, update: Update):
 
 __help__ = """
 
-- /love ❣️
+- /love ❣️ -- GET TRUE LOVE EMOJIS
 
-- /hack 👨‍💻
+- /hack 👨‍💻 -- LET ME FAKE HACK YOU
 
-- /bombs 💣
+- /bombs 💣 -- TRY YOURSELF
 
-- /moonanimation 🌚
+- /moonanimation 🌚 -- TRY USERSELF
 
-- /clockanimation 🕛
+- /clockanimation 🕛 --  TRY USERSELF
 
-- /earthanimation 🌍
+- /earthanimation 🌍 -- TRY USERSELF
 
-- /blockanimation 🟥
+- /blockanimation 🟥 -- TRY USERSELF
 
-- /kill ⚰
+- /kill ⚰ -- KILL ANIMATION
 
 """
 
