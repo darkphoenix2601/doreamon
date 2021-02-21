@@ -16,6 +16,10 @@ from tg_bot.modules.helper_funcs.extraction import extract_user
 @run_async
 def runs(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
+    
+@run_async
+def alive(bot: Bot, update: Update):
+    update.effective_message.reply_text(random.choice(fun_strings.ALIVE))
 
 
 @run_async
@@ -140,6 +144,7 @@ BLUETEXT_HANDLER = DisableAbleCommandHandler("bluetext", bluetext)
 RLG_HANDLER = DisableAbleCommandHandler("rlg", rlg)
 DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide)
 TABLE_HANDLER = DisableAbleCommandHandler("table", table)
+ALIVE_HANDLER = DisableAbleCommandHandler("alive", alive)
 
 dispatcher.add_handler(RUNS_HANDLER)
 dispatcher.add_handler(SLAP_HANDLER)
@@ -150,6 +155,7 @@ dispatcher.add_handler(BLUETEXT_HANDLER)
 dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
+dispatcher.add_handler(ALIVE_HANDLER)
 
 __mod_name__ = "FUN"
 __command_list__ = ["runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide", "table"]
