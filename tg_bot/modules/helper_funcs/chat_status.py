@@ -77,8 +77,8 @@ def dev_plus(func):
         elif DEL_CMDS and " " not in update.effective_message.text:
             update.effective_message.delete()
         else:
-            update.effective_message.reply_text("What do you think! This is a developer restricted command lol."
-                                                "You do not have permissions to run this.")
+            update.effective_message.reply_text("What do you think! This is a developer restricted command mate."
+                                                "You do not have permissions to run this lol.")
 
     return is_dev_plus_func
 
@@ -96,7 +96,7 @@ def sudo_plus(func):
         elif DEL_CMDS and " " not in update.effective_message.text:
             update.effective_message.delete()
         else:
-            update.effective_message.reply_text("Yo, Lol 😂 Sorry But You cant use this command.")
+            update.effective_message.reply_text("Bro, Sorry But You cant use this command.")
 
     return is_sudo_plus_func
 
@@ -142,7 +142,7 @@ def user_admin(func):
         elif DEL_CMDS and " " not in update.effective_message.text:
             update.effective_message.delete()
         else:
-            update.effective_message.reply_text("Yo, {first} Sorry But You cant use this command 😞 ")
+            update.effective_message.reply_text("Mate Sorry But You cant use this command 😞 ")
 
     return is_admin
 
