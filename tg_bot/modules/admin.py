@@ -95,7 +95,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text(tld(chat.id, "You Gonna Specify The User To Whom Demote?"))
+        message.reply_text(tld(chat.id, "You Gonna Specify The User To Whom You Want To Demote?"))
         return ""
 
     user_member = chatD.get_member(user_id)
