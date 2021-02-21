@@ -20,7 +20,7 @@ def afk(bot: Bot, update: Update):
         reason = args[1]
 
     sql.set_afk(update.effective_user.id, reason)
-    bot.send_message("**{} Is Now Away!**".format(update.effective_user.first_name),parse_mode='markdown',reply_to_message_id=update.effective_message.message_id)
+    update.effective_message.reply_text("**{} Is Now Away!**".format(update.effective_user.first_name),parse_mode='markdown',reply_to_message_id=update.effective_message.message_id)
 
 
 @run_async
