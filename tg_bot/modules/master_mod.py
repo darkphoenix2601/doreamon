@@ -115,7 +115,7 @@ def info(bot: Bot, update: Update, args: List[str]):
 
     text = (f"<b>user information:</b>\n"
             f"🆔️ID: <code>{user.id}</code>\n"
-            f"✔️ ғɪʀsᴛ ɴᴀᴍᴇ ☞ {html.escape(user.first_name)}")
+            f"✔️ **ғɪʀsᴛ ɴᴀᴍᴇ** ☞ {html.escape(user.first_name)}")
 
     if user.last_name:
         text += f"\n✔️ ʟᴀsᴛ ɴᴀᴍᴇ ☞ {html.escape(user.last_name)}"
@@ -142,10 +142,10 @@ def info(bot: Bot, update: Update, args: List[str]):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n😎The Disaster level of this person is 'LEGEND'."
+        text += "\n🔰The Disaster level of this person is 'LEGEND'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n🔥This member is one of 'Hero Association'."
+        text += "\n💠This member is one of 'Hero Association'."
         disaster_level_present = True
     elif user.id in SUDO_USERS:
         text += "\n🔥The Disaster level of this person is 'Dragon'."
