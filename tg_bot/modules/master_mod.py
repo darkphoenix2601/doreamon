@@ -123,7 +123,7 @@ def info(bot: Bot, update: Update, args: List[str]):
     if user.username:
         text += f"\n✔️ ᴜsᴇʀɴᴀᴍᴇ ☞ @{html.escape(user.username)}"
 
-    text += f"\n👤✔️ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴜsᴇʀ ʟɪɴᴋ ☞ {mention_html(user.id, 'link')}"
+    text += f"\n✔️ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴜsᴇʀ ʟɪɴᴋ ☞ {mention_html(user.id, 'link')}"
 
     num_chats = sql.get_user_num_chats(user.id)
     text += f"\n✔️ ᴄʜᴀᴛ ᴄᴏᴜɴᴛ ☞ <code>{num_chats}</code>"
@@ -135,7 +135,7 @@ def info(bot: Bot, update: Update, args: List[str]):
             result = result.json()["result"]
             if "custom_title" in result.keys():
                 custom_title = result['custom_title']
-                text += f"\nThis user holds the title <b>{custom_title}</b> here."
+                text += f"\n\nThis user holds the title <b>{custom_title}</b> here."
     except BadRequest:
         pass
 
