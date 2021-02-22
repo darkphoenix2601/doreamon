@@ -161,7 +161,7 @@ def info(bot: Bot, update: Update, args: List[str]):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="http://t.me/{}?start=disasters">?</a>]'.format(bot.username)
+        text += ' [<a href="http://t.me/{}?start=disasters">𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>]'.format(bot.username)
 
     text += "\n"
     for mod in USER_INFO:
