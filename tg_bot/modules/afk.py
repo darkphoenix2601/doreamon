@@ -21,7 +21,7 @@ def afk(bot: Bot, update: Update):
 
     sql.set_afk(update.effective_user.id, reason)
     # update.effective_message.reply_text("**{} Is Now Away!**'.format(update.effective_user.first_name),parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("{} Is Now Away!'.format(update.effective_user.first_name)
+    update.effective_message.reply_text("{} Is Now Away!'.format(update.effective_user.first_name))
 
 @run_async
 def no_longer_afk(bot: Bot, update: Update):
