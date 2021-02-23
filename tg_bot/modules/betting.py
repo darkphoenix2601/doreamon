@@ -17,23 +17,23 @@ from tg_bot.modules.helper_funcs.extraction import extract_user
 def bet1(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(betting_strings.BET))
 
-    @run_async
+@run_async
 def bet2(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(betting_strings.BET))
 
-    @run_async
+@run_async
 def bet3(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(betting_strings.BET))
 
-    @run_async
+@run_async
 def bet4(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(betting_strings.BET))
-
-    @run_async
+    
+@run_async
 def bet5(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(betting_strings.BET))
     
-     @run_async
+@run_async
 def bet(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(betting_strings.BETT))
     
