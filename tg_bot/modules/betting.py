@@ -64,6 +64,6 @@ def bet(bot: Bot, update: Update):
     dispatcher.add_handler(BET_HANDLER)
     
     
-    __mod_name__ = "BETTING"
-    __command_list__ = ["bet1", "bet2", "bet3", "bet4", "bet5", "bet",
-    __handlers__ = ["BET1_HANDLER", "BET2_HANDLER", "BET3_HANDLER", "BET4_HANDLER", "BET5_HANDLER", "BET_HANDLER"]
+   __mod_name__ = "BETTING"
+   __command_list__ = ["bet1", "bet2", "bet3", "bet4", "bet5", "bet",
+   __handlers__ = ["BET1_HANDLER", "BET2_HANDLER", "BET3_HANDLER", "BET4_HANDLER", "BET5_HANDLER", "BET_HANDLER"]
