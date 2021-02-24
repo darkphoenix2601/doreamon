@@ -14,16 +14,13 @@ DEFAULT_WELCOME_MESSAGES = [
     "Hey, {first} is here.",
     "We would like to welcome you to our group.",
     "We would like to extend a warm welcome to you.",
-    "A wild Necrozma has Appeared.",
-    "A wild Mewtwo has Appeared.",
-    "A wild Mewtwo has joined the chat.",
     "A very warm welcome to you {first}.",
-    "Someone Just Sumbled in group, oh its {first}",
-    "A wild weedle has Appeared."
+    "Someone Just Sumbled in group, oh its {first}"
 ]
 DEFAULT_GOODBYE_MESSAGES = [
     "{first} has left the group.",
     "{first} has fled the area.",
+    
     "A wild pokemon named {first} fled! {first} also stumbled upon 2 master ball",
     "A wild pokemon named {first} fled! {first} also stumbled upon 2 ulta balls",
     "A wild {first} fled! {first} also stumbled upon 2 net ball",
