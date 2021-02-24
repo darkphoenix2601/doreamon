@@ -19,12 +19,7 @@ DEFAULT_WELCOME_MESSAGES = [
 ]
 DEFAULT_GOODBYE_MESSAGES = [
     "{first} has left the group.",
-    "{first} has fled the area.",
-    
-    "A wild pokemon named {first} fled! {first} also stumbled upon 2 master ball",
-    "A wild pokemon named {first} fled! {first} also stumbled upon 2 ulta balls",
-    "A wild {first} fled! {first} also stumbled upon 2 net ball",
-    "A wild {first} fled! {first} also stumbled upon 20 master ball 🥶"
+    "{first} has fled the area."
     ]
 
 
