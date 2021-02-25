@@ -14,7 +14,7 @@ Black Legend Bot Is A Telegram Group Management Which is Made By <b>@alain_champ
 
 ## Find Me
 
-<img src="https://img.shields.io/badge/You%20Can%20Find%20Me-On%20Telegram-blueviolet" /> <img src="https://img.shields.io/badge/%CA%99%CA%8F%20%E1%B4%84%CA%9F%C9%AA%E1%B4%84%E1%B4%8B%C9%AA%C9%B4%C9%A2-%E1%B4%8F%C9%B4%20%3A---blue" /> <a href="https://t.me/black_legend_bot"> <img src="https://img.shields.io/badge/Black-Legend%20Bot-blue" /> </a>
+<img src="https://img.shields.io/badge/You%20Can%20Find%20Me-On%20Telegram-blueviolet" /> <img src="https://img.shields.io/badge/----------green" /> <a href="https://t.me/black_legend_bot"> <img src="https://img.shields.io/badge/Black-Legend%20Bot-blue" /> </a>
 
 ## Support 
 
