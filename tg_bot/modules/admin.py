@@ -365,7 +365,6 @@ __help__ = """
  - /invitelink: gets invitelink
  - /promote: promotes the user replied to
  - /demote: demotes the user replied to
- - /settitle: sets a custom title for an admin that the bot promoted.
  - /settitle: Sets a custom title for an admin which is promoted by bot.
  - /setgpic: As a reply to file or photo to set group profile pic!
  - /delgpic: Same as above but to remove group profile pic.
