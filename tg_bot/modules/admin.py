@@ -224,7 +224,7 @@ def set_title(bot: Bot, update: Update, args: List[str]):
         return
 
     if not user_id:
-        message.reply_text("You don't seem to be referring to a user.")
+        message.reply_text("You don't seem to be referring to a user or the ID specified is incorrect..")
         return
 
     if user_member.status == 'creator':
@@ -259,6 +259,7 @@ def set_title(bot: Bot, update: Update, args: List[str]):
         description = result.json()["description"]
         if description == "Bad Request: not enough rights to change custom title of the user":
             message.reply_text("I can't set custom title for admins that I didn't promote!")
+
 
 
 @run_async
