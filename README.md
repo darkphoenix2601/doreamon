@@ -22,5 +22,5 @@ Black Legend Bot Is A Telegram Group Management Which is Made By <b>@alain_champ
 
 ## Cʀᴇᴅɪᴛs
 
-  * <b> @Alain_Champion
-  * @PhantomRedXd </b>
+  * <img src="https://img.shields.io/badge/%40-Alain__Champion-blue" />
+  * <img src="https://img.shields.io/badge/%40-PhantomRedXd-red" />
