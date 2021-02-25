@@ -127,10 +127,10 @@ def send_help(chat_id, text, keyboard=None):
 
 
 @run_async
-def repo(bot: Bot, update: Update):
-    # pprint(eval(str(update)))
-    # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- _[𝙲𝙻𝙸𝙲𝙺 𝙼𝙴](GitHub.com/infotechbro/black_legend)_",parse_mode=ParseMode.MARKDOWN)
+def alain(bot: Bot, update: Update):
+    pprint(eval(str(update)))
+    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [𝙲𝙻𝙸𝙲𝙺 𝙼𝙴](GitHub.com/infotechbro/black_legend)", parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- _[𝙲𝙻𝙸𝙲𝙺 𝙼𝙴](GitHub.com/infotechbro/black_legend)_", parse_mode=ParseMode.MARKDOWN)
     print(update.effective_message)
 
 @run_async
