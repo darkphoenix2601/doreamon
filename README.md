@@ -10,7 +10,7 @@ Black Legend Bot Is A Telegram Group Management Which is Made By <b>@alain_champ
 
 ## Made By
 
-This Bot Was Made By My Pero <b>[Master](https://t.me/alain-champion)</b>
+This Bot Was Made By My <a href="https://t.me/Alaian_Champion"> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
 
 ## Find Me
 
