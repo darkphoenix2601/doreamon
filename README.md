@@ -8,7 +8,7 @@ Black Legend Bot Is A Telegram Group Management Which is Made By <b>@alain_champ
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/infotechbro/black_legend)
 
-## <img src="https://img.shields.io/badge/Made-By-success" />
+## Made By
 
 <a href="https://t.me/Alain_Champion"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
 
