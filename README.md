@@ -18,7 +18,7 @@ This Bot Was Made By My <a href="https://t.me/Alain_Champion"> <img src="https:/
 
 ## Support 
 
-Join Our <b>[Support Group](https://t.me/blck_legend_support)</b>
+<img src="https://img.shields.io/badge/Join-Our-green" /> <a href="https://t.me/black_legend_support"> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
 
 ## Credits
 
