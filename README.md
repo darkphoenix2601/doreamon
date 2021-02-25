@@ -4,23 +4,23 @@
 
 Black Legend Bot Is A Telegram Group Management Which is Made By <b>@alain_champion</b>. This Bot Helps You To Manage Your Groups
 
-## ᴅᴇᴘᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ
+## Dᴇᴘᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/infotechbro/black_legend)
 
-## ᴍᴀᴅᴇ ʙʏ
+## Mᴀᴅᴇ Bʏ
 
 <a href="https://t.me/Alain_Champion"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
 
-## ғɪɴᴅ ᴍᴇ
+## Fɪɴᴅ Mᴇ
 
 <a href="https://t.me/black_legend_bot"> <img src="https://img.shields.io/badge/You%20Can%20Find%20Me-On%20Telegram-blueviolet" /> <img src="https://img.shields.io/badge/:----------green" />  <img src="https://img.shields.io/badge/Black-Legend%20Bot-blue" /> </a>
 
-## sᴜᴘᴘᴏʀᴛ 
+## Sᴜᴘᴘᴏʀᴛ
 
 <a href="https://t.me/black_legend_support"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
 
-## Credits
+## Cʀᴇᴅɪᴛs
 
   * <b> @Alain_Champion
   * @PhantomRedXd </b>
