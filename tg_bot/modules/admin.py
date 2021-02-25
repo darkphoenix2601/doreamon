@@ -195,7 +195,8 @@ def unpin(bot: Bot, update: Update) -> str:
 @bot_admin
 @user_admin
 def invite(bot: Bot, update: Update):
-    chat = update.effective_chat  # type: Optional[Chat]
+    chat = update.effective_chat
+
     if chat.username:
         update.effective_message.reply_text(chat.username)
     elif chat.type == chat.SUPERGROUP or chat.type == chat.CHANNEL:
@@ -207,7 +208,6 @@ def invite(bot: Bot, update: Update):
             update.effective_message.reply_text("I don't have access to the invite link, try changing my permissions!")
     else:
         update.effective_message.reply_text("I can only give you invite links for supergroups and channels, sorry!")
-
 @run_async
 @connection_status
 @bot_admin
