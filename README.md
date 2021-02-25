@@ -6,7 +6,7 @@ Black Legend Bot Is A Telegram Group Management Which is Made By <b>@alain_champ
 
 ## Dᴇᴘᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/infotechbro/black_legend)
+[![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://heroku.com/deploy?template=https://github.com/infotechbro/black_legend)
 
 ## Mᴀᴅᴇ Bʏ
 
