@@ -289,7 +289,7 @@ def connection_status(func):
             return func(bot, update, *args, **kwargs)
         else:
             if update.effective_message.chat.type == "private":
-                update.effective_message.reply_text("Send /connect in a group that you and I have in common first. Join [this group](t.me/black_legend_support) for any other help")
+                update.effective_message.reply_text("Send /connect in a group that you and I have in common first. Join [this group](t.me/black_legend_support) for any other help", parse_mode=ParseMode.MARKDOWN)
                 return connected_status
 
             return func(bot, update, *args, **kwargs)
