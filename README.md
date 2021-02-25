@@ -2,7 +2,7 @@
 
 # What Is Black Legend Bot
 
-<img src="https://img.shields.io/badge/BLACK%20-LEGEND-red" /> Bot Is A Telegram Group Management Which is Made By <img src="https://img.shields.io/badge/@-Alain_champion-blueviolet" />. This Bot Helps You To Manage Your Groups Easily.
+<img src="https://img.shields.io/badge/BLACK%20-LEGEND%20Bot%20Is%20A%20Telegram%20Group%20Management%20Which%20is%20Made%20By-red" /> <img src="https://img.shields.io/badge/@-Alain_champion-blueviolet" />. <img src="https://img.shields.io/badge/This-Bot%20Helps%20You%20To%20Manage%20Your%20Groups%20Easily.-ff69b4" />
 <p align="center">
  “	<b>ᴊᴜsᴛ sᴏᴍᴇ ᴄᴏᴅᴇ ᴡʜᴏ ɪs ᴀ ʙᴏᴛ ғᴏʀ ғᴜɴ</b> ” 
 </p>
