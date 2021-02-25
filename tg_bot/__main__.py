@@ -486,7 +486,7 @@ def migrate_chats(bot: Bot, update: Update):
 
 
 def main():
-    repo_handler = CommandHandler("repo", repo)
+    alain_handler = CommandHandler("alain", alain)
     start_handler = CommandHandler("start", start, pass_args=True)
 
     start_callback_handler = CallbackQueryHandler(send_start, pattern=r"bot_start")
@@ -503,7 +503,7 @@ def main():
    
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
-    dispatcher.add_handler(repo_handler)
+    dispatcher.add_handler(alain_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(settings_handler)
