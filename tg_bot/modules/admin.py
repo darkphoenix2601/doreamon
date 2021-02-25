@@ -253,8 +253,8 @@ def set_title(bot: Bot, update: Update, args: List[str]):
     status = result.json()["ok"]
 
     if status is True:
-        bot.sendMessage(chat.id, f"Sucessfully set title for <code>{user_member.user.first_name or user_id}</code> "
-                                 f"to <code>{title[:16]}</code>!", parse_mode=ParseMode.HTML)
+        bot.sendMessage(chat.id, f"Black Legend has sucessfully set title for <code>{user_member.user.first_name or user_id}</code> "
+                                 f"to <code>{title[:16]}</code>! <a href="https://telegra.ph/file/94a19cac0b89d4378cb37.jpg ">ㅤ </a>", parse_mode=ParseMode.HTML)
     else:
         description = result.json()["description"]
         if description == "Bad Request: not enough rights to change custom title of the user":
