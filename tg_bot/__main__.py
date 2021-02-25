@@ -137,7 +137,7 @@ def repo(bot: Bot, update: Update):
 def start(bot: Bot, update: Update, args: List[str]):
     if update.effective_chat.type == "private":
         if len(args) >= 1:
-            if
+            if args[0].lower() == "help":
                 send_help(update.effective_chat.id, HELP_STRINGS)
             elif args[0].lower() == "disasters":
                 IMPORTED["disasters"].send_disasters(update)
