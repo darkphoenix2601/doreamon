@@ -127,17 +127,17 @@ def send_help(chat_id, text, keyboard=None):
 
 
 @run_async
-def test(bot: Bot, update: Update):
+def repo(bot: Bot, update: Update):
     # pprint(eval(str(update)))
     # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("This person edited a message")
+    update.effective_message.reply_text("*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- _[𝙲𝙻𝙸𝙲𝙺 𝙼𝙴](GitHub.com/infotechbro/black_legend)",parse_mode=ParseMode.MARKDOWN)
     print(update.effective_message)
 
 @run_async
 def start(bot: Bot, update: Update, args: List[str]):
     if update.effective_chat.type == "private":
         if len(args) >= 1:
-            if args[0].lower() == "help":
+            if
                 send_help(update.effective_chat.id, HELP_STRINGS)
             elif args[0].lower() == "disasters":
                 IMPORTED["disasters"].send_disasters(update)
@@ -486,7 +486,7 @@ def migrate_chats(bot: Bot, update: Update):
 
 
 def main():
-    test_handler = CommandHandler("test", test)
+    repo_handler = CommandHandler("repo", repo)
     start_handler = CommandHandler("start", start, pass_args=True)
 
     start_callback_handler = CallbackQueryHandler(send_start, pattern=r"bot_start")
@@ -503,7 +503,7 @@ def main():
    
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
-    dispatcher.add_handler(test_handler)
+    dispatcher.add_handler(repo_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(settings_handler)
