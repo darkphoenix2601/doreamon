@@ -2,7 +2,7 @@
 
 # What Is Black Legend Bot
 
-Black Legend Bot Is A Telegram Group Management Which is Made By <b>@alain_champion</b>. This Bot Helps You To Manage Your Groups
+Black Legend Bot Is A Telegram Group Management Which is Made By <img src="https://img.shields.io/badge/@-Alain_champion-blueviolet" />. This Bot Helps You To Manage Your Groups
 
 ## Dᴇᴘᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
 
