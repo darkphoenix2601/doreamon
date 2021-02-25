@@ -245,7 +245,7 @@ def can_promote(func):
         message_chat_title = update.effective_message.chat.title
 
         if update_chat_title == message_chat_title:
-            cant_promote = f" {first} I can't promote/demote people here!\nMake sure I'm admin and can appoint new admins."
+            cant_promote = f"I can't promote/demote people here!\nMake sure I'm admin and can appoint new admins."
         else:
             cant_promote = (f" I can't promote/demote people in <b>{update_chat_title}</b>!\n"
                             f"Make sure I'm admin there and can appoint new admins.")
