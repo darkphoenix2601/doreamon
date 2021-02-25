@@ -14,7 +14,7 @@ This Bot Was Made By My Pero <b>[Master](https://t.me/alain-champion)</b>
 
 ## Find Me
 
-You can Find Me On Telegram <a href="https://t.me/black_legend_bot"> <img src="https://img.shields.io/badge/Black-Legend%20Bot-blue" /> </a>
+<img src="https://img.shields.io/badge/You%20Can%20Find%20Me-On%20Telegram-blueviolet" /> <a href="https://t.me/black_legend_bot"> <img src="https://img.shields.io/badge/Black-Legend%20Bot-blue" /> </a>
 
 ## Support 
 
