@@ -14,6 +14,7 @@ from tg_bot.modules.log_channel import loggable
 
 @run_async
 @user_admin
+@loggable
 def purge(bot: Bot, update: Update, args: List[str]) -> str:
     msg = update.effective_message
     user = update.effective_user
@@ -78,6 +79,7 @@ def purge(bot: Bot, update: Update, args: List[str]) -> str:
 
 @run_async
 @user_admin
+@loggable
 def del_message(bot: Bot, update: Update) -> str:
     if update.effective_message.reply_to_message:
         user = update.effective_user
