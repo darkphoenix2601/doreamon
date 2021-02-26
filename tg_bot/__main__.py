@@ -158,13 +158,13 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="💖𝙷𝙴𝙻𝙿💖",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="💖 HELP 💖",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="🎆⚡𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁⚡🎆",
+                                                                                   InlineKeyboardButton(text="🎆⚡ MY CREATOR ⚡🎆",
                                                                        url="t.me/alain_champion")],
-                                                                                   [InlineKeyboardButton(text="𝙰𝙳𝙳 𝙱𝙻𝙰𝙲𝙺 𝙻𝙴𝙶𝙴𝙽𝙳 🤖 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿",
+                                                                                   [InlineKeyboardButton(text="ADD BLACK LEGEND 🤖 IN YOUR GROUP",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                    InlineKeyboardButton(text="✨USERBOT✨",
+                                                                                    InlineKeyboardButton(text="✨ USERBOT ✨",
                                                                        url="t.me/teamishere")
                                                                                  ]]))
 
