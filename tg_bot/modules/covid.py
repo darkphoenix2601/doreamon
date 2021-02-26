@@ -8,7 +8,7 @@ from requests import get
 import json
 from urllib.request import urlopen
 
-
+from covid19_data import JHU
 
 
 @run_async
