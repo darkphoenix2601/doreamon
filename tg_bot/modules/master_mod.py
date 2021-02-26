@@ -68,7 +68,7 @@ def get_id(bot: Bot, update: Update, args: List[str]):
         else:
 
             user = bot.get_chat(user_id)
-            msg.reply_text(f"➥ <b>User {html.escape(user.first_name)}'s </b>ㅤid is ☞ <code>{user.id}</code>.\n╚»\n{mention_html(user.id, 'User Link')}"\n➥ <b>Current Chat id</b> ☞ <code>{chat.id}</code>",
+            msg.reply_text(f"➥ <b>User {html.escape(user.first_name)}'s </b>ㅤid is ☞ <code>{user.id}</code>.\n╚»\n{mention_html(user.id, 'User Link')}\n➥ <b>Current Chat id</b> ☞ <code>{chat.id}</code>",
                            parse_mode=ParseMode.HTML)
 
     else:
