@@ -119,7 +119,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
                               can_restrict_members=False,
                               can_pin_messages=False,
                               can_promote_members=False)
-        message.reply_text(tld(chat.id, f"Black Legend Has Successfully Demoted This Rude Guy In *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
+        message.reply_text(tld(chat.id, f"*Black Legend* Has Successfully Demoted This Rude Guy In *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
         return f"<b>{html.escape(chatD.title)}:</b>" \
                 "\n#DEMOTED" \
                f"\n<b>Admin:</b> {mention_html(user.id, user.first_name)}" \
