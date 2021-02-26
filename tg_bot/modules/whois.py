@@ -99,7 +99,7 @@ def whois(bot: Bot, update: Update, args: List[str]):
     result = cas.banchecker(user.id)
     text += str(result)
     for mod in USER_INFO:
-        if mod.__mod_name__ == "WHOIS":
+        if mod.__mod_name__ == "Who Is":
             continue
 
         try:
