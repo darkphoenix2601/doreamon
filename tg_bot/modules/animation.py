@@ -39,8 +39,8 @@ lol_ani = [
 
 repo = [
           
-          " [ʀᴇᴘᴏ](https://github.com/black_legend) "
-          " [ʀᴇᴘᴏ](https://github.com/black_legend) "
+            " [ʀᴇᴘᴏ](https://github.com/black_legend) "
+            " [ʀᴇᴘᴏ](https://github.com/black_legend) "
           
           
 @run_async
