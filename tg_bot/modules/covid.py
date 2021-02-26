@@ -29,7 +29,7 @@ def covid(bot: Bot, update: Update):
         "➥ *Total Confirmed* \nㅤ╚» `" + str(total_confirmed_global) + "`\n"
         "➥ *Total Deaths* \nㅤ╚» `" + str(total_deaths_global) + "`\n"
         "➥ *Total Recovered* \nㅤ╚» `" + str(total_recovered_global) +"`\n"
-        "➥ *Active Cases* \nㅤ╚» `"+ str(active_cases_covid19) + "`")\n\n"
+        "➥ *Active Cases* \nㅤ╚» `"+ str(active_cases_covid19) + "`)\n\n"
         "➥ *Tips*\n☞ 😷 Wear A Mask.\n☞ 🧻 Use Tissue When Sneezing Or Blowing Nose.\n☞ 👋 Wash Your Hands Often."
         message.reply_text(reply_text, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
