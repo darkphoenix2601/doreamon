@@ -121,9 +121,9 @@ def info(bot: Bot, update: Update, args: List[str]):
         text += f"\n✔️ <b>Last Name</b> ☞ <code>{html.escape(user.last_name)}</code>"
 
     if user.username:
-        text += f"\n✔️ <b>Username</b> ☞ <code>@{html.escape(user.username)}</code>"
+        text += f"\n✔️ <b>Username</b> ☞ @{html.escape(user.username)}"
 
-    text += f"\n✔️ <b>User Link</b> ☞ <code>{mention_html(user.id, 'link')}</code>"
+    text += f"\n✔️ <b>User Link</b> ☞ {mention_html(user.id, 'link')}"
 
     num_chats = sql.get_user_num_chats(user.id)
     text += f"\n✔️ <b>Chat Count</b> ☞ <code>{num_chats}</code>"
@@ -161,7 +161,7 @@ def info(bot: Bot, update: Update, args: List[str]):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="http://t.me/{}?start=disasters">𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a>]'.format(bot.username)
+        text += ' [<a href="http://t.me/{}?start=disasters">CLick Here</a>]'.format(bot.username)
 
     text += "\n"
     for mod in USER_INFO:
