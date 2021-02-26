@@ -68,7 +68,7 @@ def get_id(bot: Bot, update: Update, args: List[str]):
         else:
 
             user = bot.get_chat(user_id)
-            msg.reply_text(f"➥ <b>User {html.escape(user.first_name)}'s </b> id is ☞ <code>{user.id}</code>.\nㅤ╚» <b>{mention_html(user.id, 'User Link')}</b>\n➥ <b>Current Chat id</b> ☞ <code>{chat.id}</code>",
+            msg.reply_text(f"➥ <b>User {html.escape(user.first_name)}'s </b> id is ☞ <code>{user.id}</code>.\nㅤ╚» <b>{mention_html(user.id, 'User Link')}</b>\n\n➥ <b>Current Chat id</b> ☞ <code>{chat.id}</code>",
                            parse_mode=ParseMode.HTML)
 
     else:
@@ -113,20 +113,20 @@ def info(bot: Bot, update: Update, args: List[str]):
     else:
         return
 
-    text = (f"<b>user information:</b>\n"
-            f"🆔️ID: <code>{user.id}</code>\n"
-            f"✔️ ғɪʀsᴛ ɴᴀᴍᴇ ☞ {html.escape(user.first_name)}")
+    text = (f"<b>User Info ℹ:</b>\n\n"
+            f"🆔️ ID ☞ <code>{user.id}</code>\n"
+            f"✔️ <b>First Name</b> ☞ <code>{html.escape(user.first_name)}</code>")
 
     if user.last_name:
-        text += f"\n✔️ ʟᴀsᴛ ɴᴀᴍᴇ ☞ {html.escape(user.last_name)}"
+        text += f"\n✔️ <b>Last Name</b> ☞ <code>{html.escape(user.last_name)}</code>"
 
     if user.username:
-        text += f"\n✔️ ᴜsᴇʀɴᴀᴍᴇ ☞ @{html.escape(user.username)}"
+        text += f"\n✔️ <b>Username</b> ☞ <code>@{html.escape(user.username)}</code>"
 
-    text += f"\n✔️ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴜsᴇʀ ʟɪɴᴋ ☞ {mention_html(user.id, 'link')}"
+    text += f"\n✔️ <b>User Link</b> ☞ <code>{mention_html(user.id, 'link')}</code>"
 
     num_chats = sql.get_user_num_chats(user.id)
-    text += f"\n✔️ ᴄʜᴀᴛ ᴄᴏᴜɴᴛ ☞ <code>{num_chats}</code>"
+    text += f"\n✔️ <b>Chat Count</b> ☞ <code>{num_chats}</code>"
 
     try:
         user_member = chat.get_member(user.id)
@@ -135,17 +135,17 @@ def info(bot: Bot, update: Update, args: List[str]):
             result = result.json()["result"]
             if "custom_title" in result.keys():
                 custom_title = result['custom_title']
-                text += f"\n\nThis user holds the title <b>{custom_title}</b> here."
+                text += f"\n\nThis user holds the title <b>{custom_title}</b> here.\n"
     except BadRequest:
         pass
 
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n🔰The Disaster level of this person is 'LEGEND'."
+        text += "\n🔰The Disaster level of this person is 'Hero'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n💠This member is one of 'Hero Association'."
+        text += "\n💠This member is one of 'Legend'."
         disaster_level_present = True
     elif user.id in SUDO_USERS:
         text += "\n♓The Disaster level of this person is 'Dragon'."
@@ -180,6 +180,7 @@ def info(bot: Bot, update: Update, args: List[str]):
 
 @run_async
 @user_admin
+@sudo_plus
 def echo(bot: Bot, update: Update):
     args = update.effective_message.text.split(None, 1)
     message = update.effective_message
