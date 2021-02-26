@@ -78,7 +78,7 @@ def get_id(bot: Bot, update: Update, args: List[str]):
                            parse_mode=ParseMode.HTML)
 
         else:
-            msg.reply_text(f"This group's id is <code>{chat.id}</code>.",
+            msg.reply_text(f"🆔 <b>CuRrenT GrOuP ID:</b> <code>{chat.id}</code>.",
                            parse_mode=ParseMode.HTML)
 
 
