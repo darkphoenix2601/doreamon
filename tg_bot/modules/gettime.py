@@ -39,13 +39,13 @@ def generate_time(to_find: str, findtype: List[str]) -> str:
                 break
 
     try:
-        result = (f"<b>🌍 Country\nㅤㅤ╚» </b> <code>{country_name}</code>\n"
-                  f"<b>⏳ Zone Name\nㅤㅤ╚»</b> <code>{country_zone}</code>\n"
-                  f"<b>🗺 Country Code\nㅤㅤ╚»</b> <code>{country_code}</code>\n"
-                  f"<b>🌞 Daylight saving\nㅤㅤ╚»</b> <code>{daylight_saving}</code>\n"
-                  f"<b>🌅 Day\nㅤㅤ╚»</b> <code>{current_day}</code>\n"
-                  f"<b>⌚ Current Time\nㅤㅤ╚»</b> <code>{current_time}</code>\n"
-                  f"<b>📆 Current Date\nㅤㅤ╚»</b> <code>{current_date}</code>")
+        result = (f"<b>🌍 Country</b>\nㅤㅤ╚» <code>{country_name}</code>\n"
+                  f"<b>⏳ Zone Name</b>\nㅤㅤ╚» <code>{country_zone}</code>\n"
+                  f"<b>🗺 Country Code</b>\nㅤㅤ╚» <code>{country_code}</code>\n"
+                  f"<b>🌞 Daylight saving</b>\nㅤㅤ╚» <code>{daylight_saving}</code>\n"
+                  f"<b>🌅 Day</b>\nㅤㅤ╚» <code>{current_day}</code>\n"
+                  f"<b>⌚ Current Time</b>\nㅤㅤ╚» <code>{current_time}</code>\n"
+                  f"<b>📆 Current Date</b>\nㅤㅤ╚» <code>{current_date}</code>")
     except:
         result = None
 
