@@ -5,7 +5,7 @@ from tg_bot import dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 
 SFW_STRINGS = (
-    "HOW CAN I PROTECT MYSELF FROM CORONAVIRUS?",
+    
     "🧼 WASH YOUR HANDS FREQUENTLY",
     "🚴‍ ♂️EXCERCISE AND PROPER SLEEP🛌 WILL BOLSTER THE IMMUNE SYSTEM",
     "🛀 MAINTAIN GOOD HYGIENE HABHITS AT ALL TIMES",
