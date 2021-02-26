@@ -162,6 +162,7 @@ def gkickreset(bot: Bot, update: Update, args: List[str]):
     sql.gkick_reset(user_id)
     return
 
+__mode_name__ = "Global Kick"
 			
 GKICK_HANDLER = CommandHandler("gkick", gkick, pass_args=True,
                               filters=CustomFilters.sudo_filter | CustomFilters.support_filter)
