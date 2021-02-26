@@ -19,7 +19,6 @@ from tg_bot.modules.connection import connected
 from tg_bot.modules.translations.strings import tld
 
 @run_async
-@bot_admin
 @user_admin
 @loggable
 def promote(bot: Bot, update: Update, args: List[str]) -> str:
@@ -35,22 +34,22 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
             exit(1)
 
     if not chatD.get_member(bot.id).can_promote_members:
-        update.effective_message.reply_text("𝚈𝙾𝚄 𝙳𝙸𝙳𝙽𝚃 𝙶𝙰𝚅𝙴𝙳 𝙼𝙴 𝚁𝙸𝙶𝙷𝚃 𝚃𝙾 𝙿𝚁𝙾𝙼𝙾𝚃𝙴/𝙳𝙴𝙼𝙾𝚃𝙴 𝙼𝙴𝙼𝙱𝙴𝚁 🥺! 𝙼𝙰𝙺𝙴 𝚂𝚄𝚁𝙴 𝙸 𝙰𝙼 𝙰𝙳𝙼𝙸𝙽 𝙰𝙽𝙳 𝙲𝙰𝙽 𝙿𝚁𝙾𝙼𝙾𝚃𝙴 𝙽𝙴𝚆 𝙰𝙳𝙼𝙸𝙽.")
+        update.effective_message.reply_text("You didnt gaved me write to promote or demote members 🥺! Make sure i am admin and can promote new admin.")
                                           
         exit(1)
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text(tld(chat.id, "★ 𝚆𝙾𝚆, 𝚈𝙾𝚄 𝙳𝙸𝙳𝙽𝚃 𝚂𝙴𝙴𝙼 𝚃𝙾 𝙱𝙴 𝚁𝙴𝙵𝙴𝚁𝚁𝙸𝙽𝙶 𝚃𝙾 𝙰 𝚄𝚂𝙴𝚁. 𝚈𝙾𝚄 𝙶𝙾𝙽𝙽𝙰 𝚂𝙿𝙴𝙲𝙸𝙵𝚈 𝚃𝙷𝙴 𝚄𝚂𝙴𝚁? ★."))
+        message.reply_text(tld(chat.id, "★ Wow, You didnt seem to referarring to a user. You gonna specify the user? ★."))
         return ""
 
     user_member = chatD.get_member(user_id)
     if user_member.status == 'administrator' or user_member.status == 'creator':
-        message.reply_text(tld(chat.id, "𝙷𝙾𝚆 𝙸 𝙰𝙼 𝙼𝙴𝙰𝙽𝚃 𝚃𝙾 𝙿𝚁𝙾𝙼𝙾𝚃𝙴 𝚄𝚂𝙴𝚁 𝚆𝙷𝙾 𝙸𝚂 𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙰𝙽 𝙰𝙳𝙼𝙸𝙽 ☹︎?"))
+        message.reply_text(tld(chat.id, "How i meant to promote the user who is already an admin ☹︎?"))
         return ""
 
     if user_id == bot.id:
-        message.reply_text(tld(chat.id, "𝙷𝙴𝚈 𝙻𝙾𝙻, 𝙸 𝙲𝙰𝙽𝚃 𝙿𝚁𝙾𝙼𝙾𝚃𝙴 𝙼𝚈𝚂𝙴𝙻𝙵 𝚃𝙴𝙻𝙻 𝙰𝙽 𝙰𝙳𝙼𝙸𝙽 𝚃𝙾 𝙳𝙾 𝙸𝚃."))
+        message.reply_text(tld(chat.id, "Hey Lol, I cant promote myseld tell an admin to do it for me."))
         return ""
 
     # set same perms as bot - bot can't assign higher perms than itself!
@@ -66,7 +65,7 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
                           can_pin_messages=bot_member.can_pin_messages,
                           can_promote_members=bot_member.can_promote_members)
 
-    message.reply_text(tld(chat.id, f"𝙱𝙻𝙰𝙲𝙺 𝙻𝙴𝙶𝙴𝙽𝙳 𝙷𝙰𝚂 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙿𝚁𝙾𝙼𝙾𝚃𝙴𝙳 {mention_html(user_member.user.id, user_member.user.first_name)} in {html.escape(chatD.title)}!"), parse_mode=ParseMode.HTML)
+    message.reply_text(tld(chat.id, f"<b>Black Legend</b> Has Successfully Promoted {mention_html(user_member.user.id, user_member.user.first_name)} In <b>{html.escape(chatD.title)}!</b>"), parse_mode=ParseMode.HTML)
     return f"<b>{html.escape(chatD.title)}:</b>" \
             "\n#PROMOTED" \
            f"\n<b>Admin:</b> {mention_html(user.id, user.first_name)}" \
@@ -74,7 +73,6 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
 
 
 @run_async
-@bot_admin
 @user_admin
 @loggable
 def demote(bot: Bot, update: Update, args: List[str]) -> str:
@@ -90,7 +88,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
             exit(1)
 
     if not chatD.get_member(bot.id).can_promote_members:
-        update.effective_message.reply_text("𝚈𝙾𝚄 𝙳𝙸𝙳𝙽𝚃 𝙶𝙰𝚅𝙴𝙳 𝙼𝙴 𝚁𝙸𝙶𝙷𝚃 𝚃𝙾 𝙿𝚁𝙾𝙼𝙾𝚃𝙴/𝙳𝙴𝙼𝙾𝚃𝙴 𝙼𝙴𝙼𝙱𝙴𝚁 🥺! 𝙼𝙰𝙺𝙴 𝚂𝚄𝚁𝙴 𝙸 𝙰𝙼 𝙰𝙳𝙼𝙸𝙽 𝙰𝙽𝙳 𝙲𝙰𝙽 𝙿𝚁𝙾𝙼𝙾𝚃𝙴 𝙽𝙴𝚆 𝙰𝙳𝙼𝙸𝙽.")
+        update.effective_message.reply_text("You didnt gaved me right to Promote/Demote Members 🥺! Make sure i am admin and can promote new admin")
         exit(1)
 
     user_id = extract_user(message, args)
@@ -137,7 +135,6 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
 
 
 @run_async
-@bot_admin
 @can_pin
 @user_admin
 @loggable
@@ -169,7 +166,6 @@ def pin(bot: Bot, update: Update, args: List[str]) -> str:
 
 
 @run_async
-@bot_admin
 @can_pin
 @user_admin
 @loggable
@@ -192,7 +188,6 @@ def unpin(bot: Bot, update: Update) -> str:
 
 
 @run_async
-@bot_admin
 @user_admin
 def invite(bot: Bot, update: Update):
     chat = update.effective_chat
@@ -211,7 +206,6 @@ def invite(bot: Bot, update: Update):
         
         
 @run_async
-@bot_admin
 @user_admin
 def set_title(bot: Bot, update: Update, args: List[str]):
     chat = update.effective_chat
@@ -263,7 +257,6 @@ def set_title(bot: Bot, update: Update, args: List[str]):
 
 
 @run_async
-@bot_admin
 @user_admin
 def setchatpic(bot: Bot, update: Update):
     chat = update.effective_chat
@@ -301,7 +294,6 @@ def setchatpic(bot: Bot, update: Update):
 
 
 @run_async
-@bot_admin
 @user_admin
 def rmchatpic(bot: Bot, update: Update):
     chat = update.effective_chat
