@@ -16,10 +16,6 @@ EDIT_SLEEP = 1
 #edit how many times in 'lol' 
 EDIT_TIMES = 10
 
-#sleep how many times after each edit in 'repo' 
-EDIT_SLEEP = 1
-#edit how many times in 'repo' 
-EDIT_TIMES = 2
 
 
 lol_ani = [ 
@@ -37,11 +33,7 @@ lol_ani = [
 ]
 
 
-repo = [
-          
-            " [ʀᴇᴘᴏ](https://github.com/black_legend) "
-            " [ʀᴇᴘᴏ](https://github.com/black_legend) "
-          
+
           
 @run_async
 def lol(bot: Bot, update: Update):
@@ -52,13 +44,7 @@ def lol(bot: Bot, update: Update):
     msg.edit_text('*MAJA AAYA KYA 😄*[ㅤ](https://telegra.ph/file/381dd2ea242e0bd292434.png)*AGAR HA THEN MAKE* [LEGEND USERBOT](t.me/teamishere)',parse_mode='markdown')
           
           
-@run_async
-def repo(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('Showing Repo For @Black_Legend_Bot')
-    for x in range(EDIT_TIMES):
-        msg.edit_text(repo[x%2],parse_mode='markdown')
-        time.sleep(2)
-    msg.edit_text('[ʀᴇᴘᴏ](https://github.com/black_legend)\n\n[ᴏᴡɴᴇʀ](t.me/Alain_Champion)\n\n[ɢʀᴏᴜᴘ](t.me/black_legend_support)\n\n[ᴄʜᴀɴɴᴇʟ](t.me/blacklegend_bot)\n\n[ᴅᴇᴠ](t.me/infotechbro)\n\n[ᴜsᴇʀʙᴏᴛ](t.me/teamishere)',parse_mode='markdown')
+
 
           
           
@@ -69,12 +55,12 @@ __help__ = """
 
 
 LOL_HANDLER =DisableAbleCommandHandler("lol", lol)
-REPO_HANDLER =DisableAbleCommandHandler("repo", repo)
+
 
 dispatcher.add_handler(LOL_HANDLER)
-dispatcher.add_handler(REPO_HANDLER)
+
 
 
 __mod_name__ = "ANIMATION"
-__command_list__ = ["lol", "repo"]
-__handlers__ = [LOL_HANDLER, REPO_HANDLER]
+__command_list__ = ["lol"]
+__handlers__ = [LOL_HANDLER]
