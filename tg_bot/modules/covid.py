@@ -1,4 +1,4 @@
-from telegram import ParseMode, Update, Bot, Chat, MessageEntity, Filters
+from telegram import ParseMode, Update, Bot, Chat, MessageEntity
 from telegram.ext import CommandHandler, MessageHandler, BaseFilter, run_async
 
 from tg_bot import dispatcher
