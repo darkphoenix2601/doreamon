@@ -43,9 +43,10 @@ __help__ = """
 __mod_name__ = 'Covid Tracker'
 
 COVIDI_HANDLER = CommandHandler("cov india", covidi, admin_ok=True)
-COVIDI_HANDLER = CommandHandler("cov china", covidc, admin_ok=True)
+COVIDC_HANDLER = CommandHandler("cov china", covidc, admin_ok=True)
 
 
 dispatcher.add_handler(COVIDI_HANDLER)
+dispatcher.add_handler(COVIDC_HANDLER)
 
 
