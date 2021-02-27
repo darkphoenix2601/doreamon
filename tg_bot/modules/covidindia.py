@@ -57,8 +57,7 @@ def covida(bot: Bot, update: Update):
 
   
 __help__ = """
- 
- 
+
  ➥ /covindia - Get Corona Status Of India
  ➥ /covchina - Get Corona Status Of China
  ➥ /covpakistan - Get Corona Status Of Pakistan
