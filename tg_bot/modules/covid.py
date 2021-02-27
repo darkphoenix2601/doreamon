@@ -54,7 +54,7 @@ __help__ = """
  - /corona - Tips For Preventing You From Corona
 """
 
-__mod_name__ = 'Covid-19'
+__mod_name__ = 'Corona'
 
 COVID_HANDLER = CommandHandler("covid", covid, admin_ok=True)
 CRNA_HANDLER = DisableAbleCommandHandler("corona", corona)
