@@ -32,11 +32,7 @@ def covid(bot: Bot, update: Update):
         "➥ *Total Deaths* \nㅤㅤ╚» `" + str(JHU.Total.deaths) + "`\n"
         "➥ *Total Recovered* \nㅤㅤ╚» `" + str(JHU.Total.recovered) +"`\n"
         "➥ *Active Cases* \nㅤㅤ╚» `"+ str(JHU.India.cases) + "`\n\n"
-        "➥ *Tips*\n☞ 😷 Wear A Mask.\n
-        ☞ 🧻 Use Tissue When Sneezing Or Blowing Nose.\n
-        ☞ 🧼 Wash Your Hands Frequently.\n
-        ☞︎︎︎ 👬 Avoid Contact With Others.\n
-        ☞︎︎︎ 🍎 Wash Foods After buying it.", parse_mode=ParseMode.MARKDOWN)
+        "➥ *Tips*\n☞ 😷 Wear A Mask.\n ☞ 🧻 Use Tissue When Sneezing Or Blowing Nose.\n☞ 🧼 Wash Your Hands Frequently.\n☞︎︎︎ 👬 Avoid Contact With Others.\n☞︎︎︎ 🍎 Wash Foods After buying it.", parse_mode=ParseMode.MARKDOWN)
   
 @run_async
 def corona(bot: Bot, update: Update):
