@@ -69,14 +69,14 @@ __help__ = """
 __mod_name__ = 'Covid Tracker'
 
 
-COVIDCMDS_HANDLER = CommandHandler("covidlist", covidcmds, admin_ok=True)
+
 COVIDI_HANDLER = CommandHandler("covindia", covidi, admin_ok=True)
 COVIDC_HANDLER = CommandHandler("covchina", covidc, admin_ok=True)
 COVIDP_HANDLER = CommandHandler("covpakistan", covidp, admin_ok=True)
 COVIDA_HANDLER = CommandHandler("covaustralia", covida, admin_ok=True)
 
 
-dispatcher.add_handler(COVIDCMDS_HANDLER)
+
 dispatcher.add_handler(COVIDI_HANDLER)
 dispatcher.add_handler(COVIDC_HANDLER)
 dispatcher.add_handler(COVIDP_HANDLER)
