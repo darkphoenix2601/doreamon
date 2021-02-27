@@ -32,4 +32,4 @@
 
 ## Sᴏᴜʀᴄᴇ
 
-☞︎︎︎ <img src="https://img.shields.io/badge/Python-green" />
+* <img src="https://img.shields.io/badge/Python-green" />
