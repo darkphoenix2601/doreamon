@@ -27,10 +27,10 @@ def covid(bot: Bot, update: Update):
         total_recovered_global = parsed["latest"]["recovered"]
         active_cases_covid19 = total_confirmed_global - total_deaths_global - total_recovered_global
         reply_text = ("*🦠 COVID-19 Stats 🦠:*\n\n"
-        "➥ *Total Confirmed* \nㅤㅤ╚» `" + str(total_confirmed_global) + "`\n"
-        "➥ *Total Deaths* \nㅤㅤ╚» `" + str(total_deaths_global) + "`\n"
-        "➥ *Total Recovered* \nㅤㅤ╚» `" + str(total_recovered_global) +"`\n"
-        "➥ *Active Cases* \nㅤㅤ╚» `"+ str(active_cases_covid19) + "`\n\n"
+        "➥ *Total Confirmed* \nㅤㅤ╚» `" + str(JHU.Total.confirmed) + "`\n"
+        "➥ *Total Deaths* \nㅤㅤ╚» `" + str(JHU.Total.deaths) + "`\n"
+        "➥ *Total Recovered* \nㅤㅤ╚» `" + str(JHU.Total.recovered) +"`\n"
+        "➥ *Active Cases* \nㅤㅤ╚» `"+ str(JHU.India.cases) + "`\n\n"
         "➥ *Tips*\n☞ 😷 Wear A Mask.\n☞ 🧻 Use Tissue When Sneezing Or Blowing Nose.\n☞ 🧼 Wash Your Hands Frequently.\n☞︎︎︎ 👬 Avoid Contact With Others.\n☞︎︎︎ 🍎 Wash Foods After buying it.")
         message.reply_text(reply_text, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
