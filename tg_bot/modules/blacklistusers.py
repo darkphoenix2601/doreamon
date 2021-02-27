@@ -137,14 +137,6 @@ def __user_info__(user_id):
 
     return text
 
-__help__ = """
-
-This Commands In This Module Is Only Available For This Bot Devs.\n If You Find Any Scammer or Spammer Spamming In This Bot Report Us In @Black_Legend_Support
-
-➥ /ignore - Ignore Any User To Use This Bot
-➥ /notice - Allow User To Use This Bot
-➥ /ignoredlist - Get The list Of Users Who Are Ignored To Use This Bot
-
 
 BL_HANDLER = CommandHandler("ignore", bl_user, pass_args=True)
 UNBL_HANDLER = CommandHandler("notice", unbl_user, pass_args=True)
@@ -153,7 +145,8 @@ BLUSERS_HANDLER = CommandHandler("ignoredlist", bl_users)
 
 dispatcher.add_handler(BL_HANDLER)
 dispatcher.add_handler(UNBL_HANDLER)
-dispatcher.add_handler(BLAUSERS_HANDLER)
+dispatcher.add_handler(BLUSERS_HANDLER)
 
-__mod_name__ = "Blacklisting Users"
-__handlers__ = [BL_HANDLER, UNBL_HANDLER, BLAUSERS_HANDLER]
+
+__mod_name__ = "BLACKLISTING USERS"
+__handlers__ = [BL_HANDLER, UNBL_HANDLER, BLUSERS_HANDLER]
