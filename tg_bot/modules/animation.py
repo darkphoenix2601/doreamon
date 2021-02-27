@@ -50,7 +50,7 @@ def lol(bot: Bot, update: Update):
           
 
 __help__ = """
-- /lol  
+➥ /lol  
 """
 
 
