@@ -38,7 +38,7 @@ def covid(bot: Bot, update: Update):
   
 __help__ = """
  
- - /covid - Get World Wide Corona Status
+ ➥ /covid - Get World Wide Corona Status
  
 """
 
