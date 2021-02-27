@@ -28,4 +28,8 @@
 ## Cʀᴇᴅɪᴛs
 
   * <a href="https://t.me/Alain_Champion"> <img src="https://img.shields.io/badge/%40-Alain__Champion-blue" />
-  * <a href="https://t.me/PhantomRedXd"> <img src="https://img.shields.io/badge/@SaitamaRobot Source Code-Helped Us To Make Us Some Plugins🐶-blueviolet" />
+  * <a href="https://t.me/SaitamaRobot"> <img src="https://img.shields.io/badge/@SaitamaRobot Source Code-Helped Us To Make Us Some Plugins🐶-blueviolet" />
+
+## Sᴏᴜʀᴄᴇ
+
+<img src="https://img.shields.io/badge/Python-green" />
