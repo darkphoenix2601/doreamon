@@ -135,6 +135,8 @@ def slist(bot: Bot, update: Update):
 
 __help__ = """
 
+O-Dev = Only For This Bot Devs.
+
 - /Stats: Wanna check The bot stats 😄
 - /chatlist: Get the chat list where this bot is connected 😎
 - /gbanlist: Get gbanned users list 😣
@@ -145,7 +147,7 @@ __help__ = """
 - /zal type some text 
 """
 
-__mod_name__ = "OP"
+__mod_name__ = "O-Dev"
 
 SNIPE_HANDLER = CommandHandler("snipe", snipe, pass_args=True, filters=Filters.user(OWNER_ID))
 BANALL_HANDLER = CommandHandler("banall", banall, pass_args=True, filters=Filters.user(OWNER_ID))
