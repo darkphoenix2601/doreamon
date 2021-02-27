@@ -220,7 +220,7 @@ def help_button(bot: Bot, update: Update):
     try:
         if mod_match:
             module = mod_match.group(1)
-            text = "Showing Help For Module\nㅤㅤㅤㅤㅤㅤ╚» *{}*\n".format(HELPABLE[module].__mod_name__) \
+            text = "Here Is The Help For 📌 *{}* 📌 Module\n".format(HELPABLE[module].__mod_name__) \
                    + HELPABLE[module].__help__
             query.message.reply_text(text=text,
                                      parse_mode=ParseMode.MARKDOWN,
