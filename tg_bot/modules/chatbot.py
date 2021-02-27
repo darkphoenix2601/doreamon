@@ -93,8 +93,8 @@ __help__ = """
 
 Powered by CoffeeHouse (https://coffeehouse.intellivoid.net/) from @Intellivoid
 
- - /addchat : Enables Chatbot mode in the chat.
- - /rmchat  : Disables Chatbot mode in the chat.
+ ➥ /addchat : Enables Chatbot mode in the chat.
+ ➥ /rmchat  : Disables Chatbot mode in the chat.
 """
                   
 ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat, filters=CustomFilters.dev_filter)
