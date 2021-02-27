@@ -25,3 +25,4 @@ wikipedia
 pyowm
 tabulate
 parsel
+covid19-data
