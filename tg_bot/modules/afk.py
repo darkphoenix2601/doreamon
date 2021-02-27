@@ -72,7 +72,7 @@ def reply_afk(bot: Bot, update: Update):
                     if not reason:
                         res = "{} is Currently AFK!\nReason:\nCurrently They Have Not Given Any Reason".format(fst_name)
                     else:
-                        res = "{} Is Currently AFK!\n➥Reason:\nㅤ ╚»{}".format(fst_name, reason)
+                        res = "{} Is Currently AFK!\n\n➥ Reason:\nㅤ ╚» {}".format(fst_name, reason)
                     message.reply_text(res)
 
 
