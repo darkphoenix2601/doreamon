@@ -70,9 +70,9 @@ def reply_afk(bot: Bot, update: Update):
                 valid, reason = sql.check_afk_status(user_id)
                 if valid:
                     if not reason:
-                        res = "⚡️ {} Is Currently AFK! ⚡️`".format(fst_name)
+                        res = "{} is Currently AFK!\nReason:\nCurrently They Have Not Given Any Reason".format(fst_name)
                     else:
-                        res = "⚡️ {} Is Currently AFK! ⚡️\nReason For Being AFK: 💥 {} 💥".format(fst_name, reason)
+                        res = "*{}* Is Currently AFK!\n➥*Reason:*\nㅤ╚»`{}`".format(fst_name, reason), parse_mode=ParseMode.MARKDOWN)
                     message.reply_text(res)
 
 
