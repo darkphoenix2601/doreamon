@@ -10,10 +10,7 @@ from tg_bot.modules.disable import DisableAbleCommandHandler
 import json
 from urllib.request import urlopen
 
-@run_async
-def covidcmds(bot: Bot, update: Update):
-  update.effective_message.reply_text(
-      "*Here Is The List Of States For Which You Can Check Reports* ☟\n\n1️⃣ `India` ➖➖ * /covindia * \n2️⃣ `China` ➖➖ * /covchina * \n3️⃣ `Pakistan` ➖➖ */covpakistan* \n4️⃣ `Australia` ➖➖ */covaustralia*" parse_mode=ParseMode.MARKDWON)
+
 
 @run_async
 def covidi(bot: Bot, update: Update):
@@ -61,7 +58,6 @@ def covida(bot: Bot, update: Update):
   
 __help__ = """
  
- ➥ /covidlist - Get List Of States Which Are Available In This Module\nStates Available
  
  ➥ /covindia - Get Corona Status Of India
  ➥ /covchina - Get Corona Status Of China
