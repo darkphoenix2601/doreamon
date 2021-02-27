@@ -35,15 +35,15 @@ def covidc(bot: Bot, update: Update):
   
 __help__ = """
  
- ➥ /cov india - Get Corona Status Of India
- ➥ /cov china - Get Corona Status Of China
+ ➥ /covindia - Get Corona Status Of India
+ ➥ /covchina - Get Corona Status Of China
  
 """
 
 __mod_name__ = 'Covid Tracker'
 
-COVIDI_HANDLER = CommandHandler("cov india", covidi, admin_ok=True)
-COVIDC_HANDLER = CommandHandler("cov china", covidc, admin_ok=True)
+COVIDI_HANDLER = CommandHandler("covindia", covidi, admin_ok=True)
+COVIDC_HANDLER = CommandHandler("covchina", covidc, admin_ok=True)
 
 
 dispatcher.add_handler(COVIDI_HANDLER)
