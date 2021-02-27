@@ -197,14 +197,14 @@ def bluetext_ignore_list(bot: Bot, update: Update):
 
 
 __help__ = """
- - /cleanblue <on/off/yes/no> - clean commands after sending
- - /ignoreblue <word> - prevent auto cleaning of the command
- - /unignoreblue <word> - remove prevent auto cleaning of the command
- - /listblue - list currently whitelisted commands
+ ➥ /cleanblue <on/off/yes/no> - clean commands after sending
+ ➥ /ignoreblue <word> - prevent auto cleaning of the command
+ ➥ /unignoreblue <word> - remove prevent auto cleaning of the command
+ ➥ /listblue - list currently whitelisted commands
  
  Following are Disasters only commands, admins cannot use these:
-  - /gignoreblue <word> - globally ignore bluetext cleaning.
- - /ungignoreblue <word> - remove said command from global cleaning list
+ ➥ /gignoreblue <word> - globally ignore bluetext cleaning.
+ ➥ /ungignoreblue <word> - remove said command from global cleaning list
 """
 
 SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler("cleanblue", set_blue_text_must_click, pass_args=True)
