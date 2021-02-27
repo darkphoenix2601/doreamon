@@ -32,30 +32,21 @@ def covid(bot: Bot, update: Update):
         "➥ *Total Deaths* \nㅤㅤ╚» `" + str(JHU.Total.deaths) + "`\n"
         "➥ *Total Recovered* \nㅤㅤ╚» `" + str(JHU.Total.recovered) +"`\n"
         "➥ *Active Cases* \nㅤㅤ╚» `"+ str(JHU.India.cases) + "`\n\n"
-        "➥ *Tips*\n☞ 😷 Wear A Mask.\n ☞ 🧻 Use Tissue When Sneezing Or Blowing Nose.\n☞ 🧼 Wash Your Hands Frequently.\n☞︎︎︎ 👬 Avoid Contact With Others.\n☞︎︎︎ 🍎 Wash Foods After buying it.", parse_mode=ParseMode.MARKDOWN)
+        "➥ *Tips*\n☞ 😷 Wear A Mask.\n ☞ 🧻 Use Tissue When Sneezing Or Blowing Nose.\n☞ 🧼 Wash Your Hands Frequently.\n☞︎︎︎ 👬 Avoid Contact With Others.\n☞︎︎︎ 🍎 Wash Foods Before Eating It.\n☞︎︎︎ 🛀 Maintain Good Hygiene", parse_mode=ParseMode.MARKDOWN)
   
-@run_async
-def corona(bot: Bot, update: Update):
-    bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
-    message = update.effective_message
-    if message.reply_to_message:
-      message.reply_to_message.reply_text(random.choice(SFW_STRINGS))
-    else:
-      message.reply_text(random.choice(SFW_STRINGS))
-  
+
   
 __help__ = """
  
  - /covid - Get World Wide Corona Status
- - /corona - Tips For Preventing You From Corona
+ 
 """
 
 __mod_name__ = 'Corona'
 
 COVID_HANDLER = CommandHandler("covid", covid, admin_ok=True)
-CRNA_HANDLER = DisableAbleCommandHandler("corona", corona)
+
 
 dispatcher.add_handler(COVID_HANDLER)
-dispatcher.add_handler(CRNA_HANDLER)
 
 
