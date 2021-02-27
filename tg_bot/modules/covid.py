@@ -3,6 +3,8 @@ from telegram.ext import CommandHandler, MessageHandler, BaseFilter, run_async
 
 from tg_bot import dispatcher
 
+from covid19_data import JHU
+
 from requests import get
 
 import json
