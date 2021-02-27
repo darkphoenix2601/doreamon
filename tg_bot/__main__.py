@@ -60,10 +60,10 @@ You can find the list of available commands with /help.
 HELP_STRINGS = """
 Hello! my name *{}*.
 *Main* commands available:
- - /start: Start the bot
- - /alive: To check bot alive or not
- - /help <module name>: PM's you info about that module.
- - /settings:
+ ➥ /start: Start the bot
+ ➥ /alive: To check bot alive or not
+ ➥ /help <module name>: PM's you info about that module.
+ ➥ /settings:
    - in PM: will send you your settings for all supported modules.
    - in a group: will redirect you to pm, with all that chat's settings.
 {}
