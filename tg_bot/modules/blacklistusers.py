@@ -148,7 +148,8 @@ This Commands In This Module Is Only Available For This Bot Devs.\n If You Find 
 
 BL_HANDLER = CommandHandler("ignore", bl_user, pass_args=True)
 UNBL_HANDLER = CommandHandler("notice", unbl_user, pass_args=True)
-BLAUSERS_HANDLER = CommandHandler("ignoredlist", bl_users)
+BLUSERS_HANDLER = CommandHandler("ignoredlist", bl_users)
+
 
 dispatcher.add_handler(BL_HANDLER)
 dispatcher.add_handler(UNBL_HANDLER)
