@@ -220,12 +220,12 @@ def help_button(bot: Bot, update: Update):
     try:
         if mod_match:
             module = mod_match.group(1)
-            text = "Here Is The Help For 📌 *{}* 📌 Module\n".format(HELPABLE[module].__mod_name__) \
+            text = "Here Is The Help For 📌 *{}* 📌 Module ☟\n".format(HELPABLE[module].__mod_name__) \
                    + HELPABLE[module].__help__
             query.message.reply_text(text=text,
                                      parse_mode=ParseMode.MARKDOWN,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton(text="Back", callback_data="help_back")]]))
+                                         [[InlineKeyboardButton(text="☜ Back", callback_data="help_back")]]))
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
