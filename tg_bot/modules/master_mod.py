@@ -18,6 +18,7 @@ from tg_bot.modules.helper_funcs.chat_status import user_admin, sudo_plus, bot_a
 from tg_bot.modules.helper_funcs.extraction import extract_user
 from tg_bot.modules.sql.safemode_sql import set_safemode, is_safemoded
 import tg_bot.modules.sql.users_sql as sql
+from tg_bot.modules.sql.afk_sql import is_afk, check_afk_status
 
 
 MARKDOWN_HELP = f"""
@@ -162,7 +163,10 @@ def info(bot: Bot, update: Update, args: List[str]):
 
     if disaster_level_present:
         text += ' [<a href="http://t.me/{}?start=disasters">CLick Here</a>]'.format(bot.username)
-    userhp = hpmanager(user)
+
+    afk_st = is_afk(user.id)
+        if afk_st:
+            text += _stext.format("AFK")
 
     text += "\n"
     for mod in USER_INFO:
