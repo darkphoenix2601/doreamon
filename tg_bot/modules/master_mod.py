@@ -113,7 +113,7 @@ def info(bot: Bot, update: Update, args: List[str]):
     else:
         return
 
-    text = (f"<b>User Info ℹ:</b>\n\n"
+    text = (f"<b>➖➖➖➖➖➖➖➖➖➖\nUser Info\n➖➖➖➖➖➖➖➖➖➖ ℹ:</b>\n\n"
             f"🆔️ ID ☞ <code>{user.id}</code>\n"
             f"✔️ <b>First Name</b> ☞ <code>{html.escape(user.first_name)}</code>")
 
@@ -469,6 +469,6 @@ dispatcher.add_handler(GETFW_HANDLER)
 dispatcher.add_handler(CHECKFW_HANDLER)
 
 
-__mod_name__ = "MASTER MOD"
+__mod_name__ = "Info"
 __command_list__ = ["id", "info", "echo"]
 __handlers__ = [ID_HANDLER, GIFID_HANDLER, INFO_HANDLER, ECHO_HANDLER, MD_HELP_HANDLER, STATS_HANDLER, SAFEMODE_HANDLER, MAGISK_HANDLER, TWRP_HANDLER, GETFW_HANDLER, CHECKFW_HANDLER]
