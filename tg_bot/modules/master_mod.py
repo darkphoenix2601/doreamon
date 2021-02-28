@@ -162,6 +162,7 @@ def info(bot: Bot, update: Update, args: List[str]):
 
     if disaster_level_present:
         text += ' [<a href="http://t.me/{}?start=disasters">CLick Here</a>]'.format(bot.username)
+    userhp = hpmanager(user)
 
     text += "\n"
     for mod in USER_INFO:
