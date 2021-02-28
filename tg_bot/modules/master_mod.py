@@ -199,9 +199,9 @@ def echo(bot: Bot, update: Update):
 def markdown_help(bot: Bot, update: Update):
     update.effective_message.reply_text(MARKDOWN_HELP, parse_mode=ParseMode.HTML)
     update.effective_message.reply_text("Try forwarding the following message to me, and you'll see!")
-    update.effective_message.reply_text("/save test This is a markdown test. _italics_, *bold*, `code`, "
-                                        "[URL](example.com) [button](buttonurl:github.com) "
-                                        "[button2](buttonurl://google.com:same)")
+    update.effective_message.reply_text("/save MarkDown Help By Black Legend :- \nItalic Text :- _Black Legend_\nBold Text :- *Black Legend*\nMono Text :- `Black Legend`, "
+                                        "[Black Legend](t.me/black_legend_bot)\n[Support](buttonurl:t.me/black_legend_support)\n"
+                                        "[Repo](buttonurl://github.com/black_legend:same)")
 
 
 @run_async
