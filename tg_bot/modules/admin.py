@@ -324,8 +324,8 @@ def adminlist(bot: Bot, update: Update):
         if user.username:
             name = name = escape_markdown("@" + user.username)
         if status == "creator":
-            text += "\n✪ *𝙲𝚁𝙴𝙰𝚃𝙾𝚁* ✪"
-            text += "\n`✔︎ `{} \n\n✪ *𝙰𝙳𝙼𝙸𝙽𝙸𝚂𝚃𝚁𝙰𝚃𝙾𝚁𝚂* ✪".format(name)
+            text += "\n✪ *CREATOR* ✪"
+            text += "\n`✔︎ `{} \n\n✪ *ADMINISTRATORS* ✪".format(name)
     for admin in administrators:
         user = admin.user
         status = admin.status
@@ -337,7 +337,7 @@ def adminlist(bot: Bot, update: Update):
             
         if status == "administrator":
             text += "\n`🔰 `{}".format(name)
-            members = "\n\n✪ *𝚃𝙾𝚃𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁𝚂* ✪\n`♓‍ `There Are *{}* Ghost In This Group".format(count)
+            members = "\n\n✪ *TOTAL MEMBERS* ✪\n`♓‍ `There Are *{}* Ghost In This Group".format(count)
             
     msg.reply_text(text + members, parse_mode=ParseMode.MARKDOWN)
 
