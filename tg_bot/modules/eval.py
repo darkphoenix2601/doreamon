@@ -55,7 +55,7 @@ def send(msg, bot, update):
 @run_async
 def evaluate(bot, update):
     send(do(eval, bot, update), bot, update)
-bot = context.bot
+
 
 
 @dev_plus
