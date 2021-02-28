@@ -164,19 +164,7 @@ def info(bot: Bot, update: Update, args: List[str]):
     if disaster_level_present:
         text += ' [<a href="http://t.me/{}?start=disasters">CLick Here</a>]'.format(bot.username)
 
-    afk_st = is_afk(user.id)
-        if afk_st:
-            text += _stext.format("AFK")
-        else:
-            status = status = bot.get_chat_member(chat.id, user.id).status
-            if status:
-                if status in {"left", "kicked"}:
-                    text += _stext.format("Not here")
-                elif status == "member":
-                    text += _stext.format("Detected")
-                elif status in {"administrator", "creator"}:
-                    text += _stext.format("Admin")
-    if user_id not in [bot.id, 777000, 1100231654]:
+    
     text += "\n"
     for mod in USER_INFO:
         if mod.__mod_name__ == "Users":
@@ -194,7 +182,7 @@ def info(bot: Bot, update: Update, args: List[str]):
 
 @run_async
 @user_admin
-@sudo_plus
+
 def echo(bot: Bot, update: Update):
     args = update.effective_message.text.split(None, 1)
     message = update.effective_message
