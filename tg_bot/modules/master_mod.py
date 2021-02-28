@@ -114,8 +114,8 @@ def info(bot: Bot, update: Update, args: List[str]):
     else:
         return
 
-    text = (f"<b>➖➖➖➖➖➖➖➖➖➖\n|「 User Info」 ℹ\n➖➖➖➖➖➖➖➖➖➖\n</b>\n"
-            f"🆔️ ID ☞ <code>{user.id}</code>\n"
+    text = (f"<b>➖➖➖➖➖➖➖➖➖➖\n「 User Info」 ℹ\n➖➖➖➖➖➖➖➖➖➖\n</b>\n"
+            f"🆔️ ID ☞ <code>{user.id}</code>\n\n"
             f"✔️ <b>First Name</b> ☞ <code>{html.escape(user.first_name)}</code>")
 
     if user.last_name:
@@ -127,7 +127,7 @@ def info(bot: Bot, update: Update, args: List[str]):
     text += f"\n✔️ <b>User Link</b> ☞ {mention_html(user.id, 'link')}"
 
     num_chats = sql.get_user_num_chats(user.id)
-    text += f"\n✔️ <b>Chat Count</b> ☞ <code>{num_chats}</code>"
+    text += f"\n\n✔️ <b>Chat Count</b> ☞ <code>{num_chats}</code>"
 
     try:
         user_member = chat.get_member(user.id)
