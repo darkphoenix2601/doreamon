@@ -50,9 +50,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-**🅷🅴🅻🅻🅾️ {}, 𝐌𝐲 𝐍𝐚𝐦𝐞 𝐈𝐬 {}! 
-People's sometime find 𝐇𝐚𝐫𝐝 to manage their groups, 𝐒𝐨 𝐈 𝐀𝐦 𝐇𝐞𝐫𝐞 𝐓𝐨 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮.
-I ʜᴀᴠᴇ ʙᴇᴇɴ ᴍᴀᴅᴇ ʙʏ [ᴍʏ Mⱥຮteℝ💥](t.me/alain_champion).
+**🅷🅴🅻🅻🅾️ {}, My Name Is *{}*!\n 
+People's sometime find *Hard* to manage their groups, *So I am here to help you*.\n
+[ᴍʏ Mⱥຮteℝ💥](t.me/alain_champion).
  
 You can find the list of available commands with /help.
 """
@@ -68,7 +68,7 @@ Hello! my name *{}*.
    - in a group: will redirect you to pm, with all that chat's settings.
 {}
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "All commands can either be used with / or !.\n")
-TECHNO_IMG = "https://telegra.ph/file/9d4d94ad686eb825d6581.jpg"
+TECHNO_IMG = "https://telegra.ph/file/30986427ad731596cb810.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -169,7 +169,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text("★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ Is Alive!")
+        update.effective_message.reply_text("★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ Is Alive! PM Me For Any Help\nAdd Me To Your Group [Click Me](t.me/black_legend_bot?startgroup=true", parse_mode=ParseMode.markdown)
 
 
 def send_start(bot, update):
