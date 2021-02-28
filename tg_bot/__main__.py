@@ -169,7 +169,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text("★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ Is Alive! PM Me For Any Help\nAdd Me To Your Group [Click Me](t.me/black_legend_bot?startgroup=true", parse_mode=ParseMode.markdown)
+        update.effective_message.reply_text("★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ Is Alive! PM Me For Any Help")
 
 
 def send_start(bot, update):
