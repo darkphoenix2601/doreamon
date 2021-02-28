@@ -34,11 +34,6 @@ def comic(bot: Bot, update: Update, args: List[str]):
             comicc = comic[normiefont.index(normiecharacter)]
             string = string.replace(normiecharacter, comicc)
 
-    message = update.effective_message
-    if message.reply_to_message:
-        message.reply_to_message.reply_text(string)
-    else:
-        message.reply_text(string)
 
 
 __help__ = """
