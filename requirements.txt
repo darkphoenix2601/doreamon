@@ -26,3 +26,6 @@ pyowm
 tabulate
 parsel
 covid19-data
+telegraph
+pyrogram
+TGcrypto
