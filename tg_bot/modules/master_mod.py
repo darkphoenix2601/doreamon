@@ -167,7 +167,16 @@ def info(bot: Bot, update: Update, args: List[str]):
     afk_st = is_afk(user.id)
         if afk_st:
             text += _stext.format("AFK")
-
+        else:
+            status = status = bot.get_chat_member(chat.id, user.id).status
+            if status:
+                if status in {"left", "kicked"}:
+                    text += _stext.format("Not here")
+                elif status == "member":
+                    text += _stext.format("Detected")
+                elif status in {"administrator", "creator"}:
+                    text += _stext.format("Admin")
+    if user_id not in [bot.id, 777000, 1100231654]:
     text += "\n"
     for mod in USER_INFO:
         if mod.__mod_name__ == "Users":
