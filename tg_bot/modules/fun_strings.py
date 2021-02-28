@@ -429,7 +429,6 @@ TABLE = (
 )
 
 ALIVE = (
-    "★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ ",
-    "★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ ",
-    "★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ ",
-)
+    "★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ ㅤ[ㅤ](https://telegra.ph/file/dd9bbdda773a3cfdd34e0.jpg)",
+    "★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ ㅤ[ㅤ](https://telegra.ph/file/4a93a092c9f954bc4d070.jpg)",
+    )
