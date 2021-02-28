@@ -114,9 +114,7 @@ def info(bot: Bot, update: Update, args: List[str]):
     else:
         return
  
-    rep = message.reply.text(
-        "<code>Appraising Wait...</code>", parse_mode=ParseMode.HTML)
-
+    
     text = (f"<b>➖➖➖➖➖➖➖➖➖➖\n「 User Info」 ℹ\n➖➖➖➖➖➖➖➖➖➖\n</b>\n"
             f"🆔️ ID ☞ <code>{user.id}</code>\n\n"
             f"✔️ <b>First Name</b> ☞ <code>{html.escape(user.first_name)}</code>")
