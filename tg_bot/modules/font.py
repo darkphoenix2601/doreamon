@@ -26,27 +26,18 @@ def weebify(bot: Bot, update: Update, args: List[str]):
     else:
         message.reply_text(string)
         
-@run_async
-def comic(bot: Bot, update: Update, args: List[str]):
-    string = '  '.join(args).lower()
-    for normiecharacter in string:
-        if normiecharacter in normiefont:
-            comicc = comic[normiefont.index(normiecharacter)]
-            string = string.replace(normiecharacter, comicc)
 
 
 
 __help__ = """
  - /weebify <text>: returns a weebified text
- - /comic <text>: returns a comic text
+
  """
 
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify, pass_args=True)
-COMIC_HANDLER = DisableAbleCommandHandler("comic", comic, pass_args=True)
 
 dispatcher.add_handler(WEEBIFY_HANDLER)
-dispatcher.add_handler(COMIC_HANDLER)
 
 __mod_name__ = "Font"
-__command_list__ = ["weebify", "comic"]
-__handlers__ = [WEEBIFY_HANDLER, COMIC_HANDLER]
+__command_list__ = ["weebify"]
+__handlers__ = [WEEBIFY_HANDLER]
