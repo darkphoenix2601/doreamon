@@ -168,7 +168,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="ADD BLACK LEGEND 🤖 IN YOUR GROUP",url="url="t.me/{}?startgroup=true".format(bot.username))
+                            text="ADD BLACK LEGEND 🤖 IN YOUR GROUP",url="t.me/{}?startgroup=true".format(bot.username))
                     ],
                      [
                          InlineKeyboardButton(
