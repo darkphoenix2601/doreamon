@@ -80,6 +80,13 @@ DATA_EXPORT = []
 CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
+
+SOURCE_STRING = """
+🎓 I'm built in python3, using the python-telegram-bot library, and am fully opensource - [Repo](https://github.com/infotechbro/BLACK-LEGEND)
+☄ You Can Clone Me [Heroku](https://heroku.com/deploy?template=https://github.com/infotechbro/BLACK-LEGEND.git)
+"""
+
+
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("tg_bot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
@@ -483,6 +490,23 @@ def migrate_chats(bot: Bot, update: Update):
 
     LOGGER.info("Successfully migrated!")
     raise DispatcherHandlerStop
+    
+@run_async
+def source(bot: Bot, update: Update):
+    user = update.effective_message.from_user
+    chat = update.effective_chat  # type: Optional[Chat]
+
+    if chat.type == "private":
+        update.effective_message.reply_text(SOURCE_STRING, parse_mode=ParseMode.MARKDOWN)
+
+    else:
+        try:
+            bot.send_message(user.id, SOURCE_STRING, parse_mode=ParseMode.MARKDOWN)
+
+            update.effective_message.reply_text("Check Your PM By Me To Get The Souce Code.")
+        except Unauthorized:
+            update.effective_message.reply_text("Contact me in PM first to get source information.")
+
 
 
 def main():
@@ -499,6 +523,7 @@ def main():
     IMDB_SEARCHDATA_HANDLER = CallbackQueryHandler(imdb_searchdata)
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
+    source_handler = CommandHandler("repo", source)
 
    
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
@@ -513,6 +538,7 @@ def main():
     dispatcher.add_handler(start_callback_handler)
     dispatcher.add_handler(IMDB_HANDLER)
     dispatcher.add_handler(IMDB_SEARCHDATA_HANDLER)
+    dispatcher.add_handler(source_handler)
     # dispatcher.add_error_handler(error_callback)
 
     if WEBHOOK:
