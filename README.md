@@ -1,8 +1,7 @@
 ![Black_legend](https://telegra.ph/file/9951d864f142f7e73ae96.jpg)
 
 # What Is Black Legend Bot
-
-<img src="https://img.shields.io/badge/BLACK%20-LEGEND%20Bot%20Is%20A%20Telegram%20Group%20Management%20Which%20is%20Made%20By-red" /> <a href="https://t.me/Alain_champion"><img src="https://img.shields.io/badge/@-Alain_champion-blueviolet" /> </a> <img src="https://img.shields.io/badge/This-Bot%20Helps%20You%20To%20Manage%20Your%20Groups%20Easily.-ff69b4" />
+BLACK LEGEND is telegram group manager bot with many features. This bot helps you to manage your groups easily.
 
 * Originally a simple group management bot with multiple admin features, it has evolved into becoming a basis for modular bots aiming to provide simple plugin expansion via a simple drag and drop.
 <p align="center">
