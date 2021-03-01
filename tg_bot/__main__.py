@@ -174,8 +174,6 @@ def start(bot: Bot, update: Update, args: List[str]):
                          InlineKeyboardButton(
                              text="💖 HELP 💖",
                             callback_data="help_back".format(bot.username)),
-                     ],
-                     [
                          InlineKeyboardButton(
                              text="🎆⚡ MY CREATOR ⚡🎆",
                              url="t.me/alain_champion")
