@@ -11,7 +11,7 @@
 
 ## Dᴇᴘᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
 
-[![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://heroku.com/deploy?template=https://github.com/infotechbro/black_legend)
+[![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://heroku.com/deploy?template=https://github.com/infotechbro/BLACK-LEGEND)
 
 ## Mᴀᴅᴇ Bʏ
 
