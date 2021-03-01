@@ -68,7 +68,7 @@ Hello! my name *{}*.
    - in a group: will redirect you to pm, with all that chat's settings.
 {}
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "All commands can either be used with / or !.\n")
-TECHNO_IMG = "https://telegra.ph/file/30986427ad731596cb810.jpg"
+TECHNO_IMG = "https://telegra.ph/file/ffbb1445362ffe45ab4c9.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -137,7 +137,7 @@ def send_help(chat_id, text, keyboard=None):
 def alain(bot: Bot, update: Update):
     pprint(eval(str(update)))
     update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [𝙲𝙻𝙸𝙲𝙺 𝙼𝙴](GitHub.com/infotechbro/black_legend)", parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- _[𝙲𝙻𝙸𝙲𝙺 𝙼𝙴](GitHub.com/infotechbro/black_legend)_", parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [𝙲𝙻𝙸𝙲𝙺 𝙼𝙴](GitHub.com/infotechbro/black_legend)_", parse_mode=ParseMode.MARKDOWN)
     print(update.effective_message)
 
 @run_async
@@ -175,13 +175,13 @@ def start(bot: Bot, update: Update, args: List[str]):
                              text="💖 HELP 💖",
                             callback_data="help_back".format(bot.username)),
                          InlineKeyboardButton(
-                             text="🎆⚡ MY CREATOR ⚡🎆",
-                             url="t.me/alain_champion")
+                             text="💾 Source Code",
+                             url="https://github.com/infotechbro/BLACK-LEGEND")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="💾 Source Code.",
-                             url="https://github.com/infotechbro/BLACK-LEGEND")
+                             text="⚡ My Creator ⚡",
+                             url="t.me/Alain_Champion")
                      ]]))
 
     else:
