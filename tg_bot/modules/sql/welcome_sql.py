@@ -6,8 +6,8 @@ from sqlalchemy import Column, String, Boolean, UnicodeText, Integer, BigInteger
 from tg_bot.modules.helper_funcs.msg_types import Types
 from tg_bot.modules.sql import SESSION, BASE
 
-DEFAULT_WELCOME = 'Pro Boy Has Joined Chat'
-DEFAULT_GOODBYE = 'A wild pokemon named {first} fled! {first} also stumbled upon 2 master ball'
+DEFAULT_WELCOME = 'Owo, Welcome To This Group.'
+DEFAULT_GOODBYE = '{first} Just left This Chat.'
 
 DEFAULT_WELCOME_MESSAGES = [
     "{first} is here!",
