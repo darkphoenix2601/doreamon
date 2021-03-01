@@ -124,7 +124,7 @@ def whitelist_plus(func):
         if user and is_whitelist_plus(chat, user.id):
             return func(bot, update, *args, **kwargs)
         else:
-            update.effective_message.reply_text("Hey pro boy {first} you cant use it.\nVisit @black_legend_support")
+            update.effective_message.reply_text("You cant use it.\nVisit @black_legend_support")
 
     return is_whitelist_plus_func
 
