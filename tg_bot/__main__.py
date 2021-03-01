@@ -165,15 +165,26 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="💖 HELP 💖",
-                                                                       callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="🎆⚡ MY CREATOR ⚡🎆",
-                                                                       url="t.me/alain_champion")],
-                                                                                   [InlineKeyboardButton(text="ADD BLACK LEGEND 🤖 IN YOUR GROUP",
-                                                                       url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                    InlineKeyboardButton(text="✨ USERBOT ✨",
-                                                                       url="t.me/teamishere")
-                                                                                 ]]))
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
+                    [[
+                        InlineKeyboardButton(
+                            text="ADD BLACK LEGEND 🤖 IN YOUR GROUP",url="url="t.me/{}?startgroup=true".format(bot.username))
+                    ],
+                     [
+                         InlineKeyboardButton(
+                             text="💖 HELP 💖",
+                            callback_data="help_back".format(bot.username)),
+                     ],
+                     [
+                         InlineKeyboardButton(
+                             text="🎆⚡ MY CREATOR ⚡🎆",
+                             url="t.me/alain_champion")
+                     ],
+                     [
+                         InlineKeyboardButton(
+                             text="💾 Source Code.",
+                             url="https://github.com/infotechbro/BLACK-LEGEND")
+                     ]]))
 
     else:
         update.effective_message.reply_text("★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ Is Alive!",reply_markup=InlineKeyboardMarkup(
