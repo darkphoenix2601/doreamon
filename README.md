@@ -1,4 +1,4 @@
-![Black_legend](https://telegra.ph/file/c6c0e74543b8605ddd650.jpg)
+![Black_legend](https://telegra.ph/file/9951d864f142f7e73ae96.jpg)
 
 # What Is Black Legend Bot
 
