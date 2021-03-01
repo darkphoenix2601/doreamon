@@ -169,7 +169,8 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text("★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ Is Alive!")
+        update.effective_message.reply_text("★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ Is Alive!",reply_markup=InlineKeyboardMarkup(
+                                                [[InlineKeyboardButton(text="PM For Help",url="t.me/{}?start=help".format(bot.username))]]))
 
 
 def send_start(bot, update):
