@@ -512,7 +512,8 @@ def source(bot: Bot, update: Update):
         try:
             bot.send_message(user.id, SOURCE_STRING, parse_mode=ParseMode.MARKDOWN)
 
-            update.effective_message.reply_text("Check Your PM By Me To Get The Souce Code.")
+            update.effective_message.reply_text("Check Your PM By Me To Get The Souce Code",reply_markup=InlineKeyboardMarkup(
+                                                [[InlineKeyboardButton(text="PM ",url="t.me/black_legend_bot")]]))
         except Unauthorized:
             update.effective_message.reply_text("Contact me in PM first to get source information.")
 
