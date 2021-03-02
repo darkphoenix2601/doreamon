@@ -19,8 +19,8 @@ import wikipedia
 
 def wiki(bot: Bot, update: Update, args):
     reply = " ".join(args)
-    summary = '{} <a href="{}">more</a>'
-    update.message.reply_text(summary.format(wikipedia.summary(reply, sentences=3), wikipedia.page(reply).url))
+    summary = '{} <a href="{}"> More... </a>'
+    update.message.reply_text(summary.format(wikipedia.summary(reply, sentences=3), wikipedia.page(reply).url), parse_mode=Parsemode=HTML)
 		
 __help__ = """
  - /wiki text: Returns search from wikipedia for the input text
