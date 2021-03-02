@@ -16,7 +16,6 @@ from tg_bot import dispatcher
 from tg_bot.__main__ import STATS, USER_INFO
 from tg_bot.modules.disable import DisableAbleCommandHandler
 import wikipedia
-import ParseMode
 
 def wiki(bot: Bot, update: Update, args):
     reply = " ".join(args)
