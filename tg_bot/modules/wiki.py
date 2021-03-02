@@ -16,11 +16,12 @@ from tg_bot import dispatcher
 from tg_bot.__main__ import STATS, USER_INFO
 from tg_bot.modules.disable import DisableAbleCommandHandler
 import wikipedia
+import ParseMode
 
 def wiki(bot: Bot, update: Update, args):
     reply = " ".join(args)
     summary = '{} <a href="{}"> More... </a>'
-    update.message.reply_text(summary.format(wikipedia.summary(reply, sentences=3), wikipedia.page(reply).url), parse_mode=Parsemode=HTML)
+    update.message.reply_text(summary.format(wikipedia.summary(reply, sentences=3), wikipedia.page(reply).url), parse_mode=Parsemode.HTML)
 		
 __help__ = """
  - /wiki text: Returns search from wikipedia for the input text
