@@ -20,16 +20,16 @@ EDIT_TIMES = 10
 
 lol_ani = [ 
           
-            " ✰ WAAH ✰ㅤㅤ[ㅤ](https://telegra.ph/file/a19b0bf4760fca85bd961.png) ",
-            " ✰ LOL ✰ㅤㅤㅤ[ㅤ](https://telegra.ph/file/ed23819c84bab66e7d92f.png) ",
-            " ✰ ELECTRIC BILL KON BHAREGA ✰ㅤ[ㅤ](https://telegra.ph/file/53c85b5b354212496746f.png) ",
-            " ✰ JHINGA LALA ✰  [ㅤ](https://telegra.ph/file/1379a8c9ea40eaa463fd8.png) ",
-            " ✰ NIMJA TECHNIQUE ✰[ㅤ](https://telegra.ph/file/891a05f03399fb48f40f3.png) ",
-            " ✰ STICKER CHOR ✰[ㅤ](https://telegra.ph/file/542a1f433c263e4f3f984.png)",
-            " ✰ SAAR DARD ✰ㅤ[ㅤ](https://telegra.ph/file/bfa114bbd4b2044cf5933.png)",
-            " ✰ SWAD AAYA ✰ㅤ[ㅤ](https://telegra.ph/file/3830d44f9333e3c21b2cd.png)",
-            " ✰ KAAM TAMMAM ✰ㅤ[ㅤ](https://telegra.ph/file/ececebb55e5f29be0afcf.png)",
-            " ✰ JHALEBI KHAYI ✰ㅤ[ㅤ](https://telegra.ph/file/389a857af3bf833d3ccb2.png)"
+            "  *WAAH* ㅤㅤ[ㅤ](https://telegra.ph/file/a19b0bf4760fca85bd961.png) ",
+            "  *LOL* ㅤㅤㅤ[ㅤ](https://telegra.ph/file/ed23819c84bab66e7d92f.png) ",
+            "  *ELECTRIC BILL KON BHAREGA* ㅤ[ㅤ](https://telegra.ph/file/53c85b5b354212496746f.png) ",
+            "  *JHINGA LALA*   [ㅤ](https://telegra.ph/file/1379a8c9ea40eaa463fd8.png) ",
+            "  *NINJA TECHNIQUE* [ㅤ](https://telegra.ph/file/891a05f03399fb48f40f3.png) ",
+            "  *STICKER CHOR* [ㅤ](https://telegra.ph/file/542a1f433c263e4f3f984.png)",
+            "  *SAAR DARD* ㅤ[ㅤ](https://telegra.ph/file/bfa114bbd4b2044cf5933.png)",
+            "  *SWAD AAYA* ㅤ[ㅤ](https://telegra.ph/file/3830d44f9333e3c21b2cd.png)",
+            "  *KAAM TAMMAM* ㅤ[ㅤ](https://telegra.ph/file/ececebb55e5f29be0afcf.png)",
+            "  *JHALEBI KHAYI* ㅤ[ㅤ](https://telegra.ph/file/389a857af3bf833d3ccb2.png)"
 ]
 
 
