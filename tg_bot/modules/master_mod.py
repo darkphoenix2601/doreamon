@@ -446,7 +446,7 @@ __help__ = """
  - /imdb <movie or TV series name>: View IMDb results for selected movie or TV series 
 """
 
-ID_HANDLER = DisableAbleCommandHandler("id", get_id, pass_args=True)
+ID_HANDLER = DisableAbleCommandHandler(("id","chatid" get_id, pass_args=True))
 GIFID_HANDLER = DisableAbleCommandHandler("gifid", gifid)
 INFO_HANDLER = DisableAbleCommandHandler("info", info, pass_args=True)
 ECHO_HANDLER = DisableAbleCommandHandler("echo", echo, filters=Filters.group)
