@@ -18,18 +18,18 @@ BLACK LEGEND is telegram group manager bot with many features. This bot helps yo
 
 ## Fɪɴᴅ Mᴇ
 
-<a href="https://t.me/black_legend_bot"> <img src="https://img.shields.io/badge/You%20Can%20Find%20Me-On%20Telegram-blueviolet" /> <img src="https://img.shields.io/badge/:----------green" />  <img src="https://img.shields.io/badge/Black-Legend%20Bot-blue" /> </a>
+<a href="https://telegram.me/black_legend_bot"> <img src="https://img.shields.io/badge/You%20Can%20Find%20Me-On%20Telegram-blueviolet" /> <img src="https://img.shields.io/badge/:----------green" />  <img src="https://img.shields.io/badge/Black-Legend%20Bot-blue" /> </a>
 
 ## Sᴜᴘᴘᴏʀᴛ
 
-<a href="https://t.me/black_legend_support"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
+<a href="https://telegram.me/black_legend_support"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
 
 ## Cʀᴇᴅɪᴛs
 
-  * <a href="https://t.me/Alain_Champion"> <img src="https://img.shields.io/badge/%40-Alain__Champion-blue" />
-  * <a href="https://t.me/xhalfosain"> <img src="https://img.shields.io/badge/@xhalfosain-pink" />
-  * <a href="https://t.me/armtimdev"> <img src="https://img.shields.io/badge/@ArmTimDev-yellow" />
-  * <a href="https://t.me/SaitamaRobot"> <img src="https://img.shields.io/badge/@SaitamaRobot Source Code-Helped Us To Make Us Some Plugins🐶-blueviolet" />
+  * <a href="https://telegram.me/Alain_Champion"> <img src="https://img.shields.io/badge/%40-Alain__Champion-blue" />
+  * <a href="https://telegram.me/xhalfosain"> <img src="https://img.shields.io/badge/@xhalfosain-pink" />
+  * <a href="https://telegram.me/armtimdev"> <img src="https://img.shields.io/badge/@ArmTimDev-yellow" />
+  * <a href="https://telegram.me/SaitamaRobot"> <img src="https://img.shields.io/badge/@SaitamaRobot Source Code-Helped Us To Make Us Some Plugins🐶-blueviolet" />
 
 ## Sᴏᴜʀᴄᴇ
 
