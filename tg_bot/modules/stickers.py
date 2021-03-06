@@ -104,8 +104,8 @@ def steal(bot: Bot, update: Update, args: List[str]):
                 im.save(stolensticker, "PNG")
             bot.add_sticker_to_set(user_id=user.id, name=packname,
                                     png_sticker=open('stolensticker.png', 'rb'), emojis=sticker_emoji)
-            msg.reply_text(f"This Sticker Is Successfully Kanged\nPackName :- {packname}\n[Find It Here](t.me/addstickers/{packname})" +
-                            f"\nEmoji is: {sticker_emoji}", parse_mode=ParseMode.MARKDOWN)
+            msg.reply_text(f"*This Sticker Is Successfully Kanged*\n[Find It Here](t.me/addstickers/{packname})" +
+                            f"\n*Emoji is*: {sticker_emoji}", parse_mode=ParseMode.MARKDOWN)
         except OSError as e:
             msg.reply_text("I can only steal images, dude.")
             print(e)
