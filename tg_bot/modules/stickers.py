@@ -48,7 +48,7 @@ def steal(bot: Bot, update: Update, args: List[str]):
     msg = update.effective_message
     user = update.effective_user
     packnum = 0
-    packname = str(user.id) + " _by_ "+bot.username
+    packname = "a" + str(user.id) + "_by_"+bot.username
     packname_found = 0
     max_stickers = 120
     while packname_found == 0:
@@ -56,7 +56,7 @@ def steal(bot: Bot, update: Update, args: List[str]):
             stickerset = bot.get_sticker_set(packname)
             if len(stickerset.stickers) >= max_stickers:
                     packnum += 1
-                    packname = str(packnum) + " _ " + str(user.id) + " _by_ "+bot.username
+                    packname = "a" + str(packnum) + "_" + str(user.id) + "_by_"+bot.username
             else:
                 packname_found = 1
         except TelegramError as e:
