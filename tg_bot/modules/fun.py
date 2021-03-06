@@ -19,7 +19,7 @@ def runs(bot: Bot, update: Update):
     
 @run_async
 def alive(bot: Bot, update: Update):
-    bot.sendMessage(chat.id, random.choice(fun_strings.ALIVE), parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text(random.choice(fun_strings.ALIVE)
 
 
 @run_async
