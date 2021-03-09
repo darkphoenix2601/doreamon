@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 **🅷🅴🅻🅻🅾️ {}, My Name Is *{}*!\n 
 People's sometime find *Hard* to manage their groups, *So I am here to help you*.\n
-[ᴍʏ Mⱥຮteℝ💥](t.me/master_shadow_op).
+[ᴍʏ Mⱥຮteℝ💥](t.me/alain_champion).
  
 You can find the list of available commands with /help.
 """
@@ -68,7 +68,7 @@ Hello! my name *{}*.
    - in a group: will redirect you to pm, with all that chat's settings.
 {}
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "All commands can either be used with / or !.\n")
-TECHNO_IMG = "https://telegra.ph/file/e4adde2e6c3714e5289d1.jpg"
+TECHNO_IMG = "https://telegra.ph/file/ffbb1445362ffe45ab4c9.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -181,7 +181,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                      [
                          InlineKeyboardButton(
                              text="⚡ My Creator ⚡",
-                             url="t.me/master_shadow_op")
+                             url="t.me/Alain_Champion")
                      ]]))
 
     else:
