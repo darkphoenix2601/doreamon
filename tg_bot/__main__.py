@@ -180,7 +180,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                      ],
                      [
                          InlineKeyboardButton(
-                             text="⚡ My Creator ",
+                             text="⚡ My Creator ⚡",
                              url="t.me/Alain_Champion")
                      ]]))
 
