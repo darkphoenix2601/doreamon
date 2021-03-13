@@ -26,7 +26,7 @@ BLACK LEGEND is telegram group manager bot with many features. This bot helps yo
 
 ## Cʀᴇᴅɪᴛs
   
-  * <a href="https://telegram.me/LEGENDX22"> <img sec=https://IMG.shields.io/badge/%60-LEGENDX-yellow" />
+  * <a href="https://telegram.me/LEGENDX22"> <img src=https://IMG.shields.io/badge/%60-LEGENDX-yellow" />
   * <a href="https://telegram.me/Alain_Champion"> <img src="https://img.shields.io/badge/%40-Alain__Champion-blue" />
   * <a href="https://telegram.me/xhalfosain"> <img src="https://img.shields.io/badge/@xhalfosain-pink" />
   * <a href="https://telegram.me/armtimdev"> <img src="https://img.shields.io/badge/@ArmTimDev-yellow" />
