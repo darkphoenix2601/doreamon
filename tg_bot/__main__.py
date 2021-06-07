@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 **🅷🅴🅻🅻🅾️ {}, ᴍʏ ɴᴀᴍᴇ ɪs *{}*!\n 
 ᴘᴇᴏᴘʟᴇ's sᴏᴍᴇᴛɪᴍᴇ ғɪɴᴅ *ʜᴀʀᴅ* ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs, *sᴏ ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ*.\n
-[ᴍʏ Mⱥຮteℝ🔥](t.me/PEROBOYY).
+[ᴍʏ Mⱥຮteℝ🔥](t.me/PEROBOYYY).
  
 ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜ /help.
 """
@@ -78,7 +78,7 @@ USER_SETTINGS = {}
 
 
 SOURCE_STRING = """
-𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝘿𝙀 𝙄𝙎 𝙋𝙍𝙄𝙑𝘼𝙏𝙀 😅 𝙐 𝘾𝘼𝙉'𝙏 𝘾𝙇𝙊𝙉𝙀 𝙈𝙀 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙈𝙔 𝙊𝙒𝙉𝙀𝙍 @PEROBOYY
+𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝘿𝙀 𝙄𝙎 𝙋𝙍𝙄𝙑𝘼𝙏𝙀 😅 𝙐 𝘾𝘼𝙉'𝙏 𝘾𝙇𝙊𝙉𝙀 𝙈𝙀 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙈𝙔 𝙊𝙒𝙉𝙀𝙍 @PEROBOYYY
 """
 
 
@@ -167,20 +167,20 @@ def start(bot: Bot, update: Update, args: List[str]):
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🎧 HELP 🎧",
+                             text="👻 HELP 👻",
                             callback_data="help_back".format(bot.username)),
                          InlineKeyboardButton(
-                             text="UPDATE 🔀",
+                             text="UPDATES 🔀",
                              url="https://t.me/JARVIS_BOT_UPDATES")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🔥 MY CREATOR 🔥",
-                             url="t.me/Alain_Champion")
+                             text="💻 MY CREATOR 💻",
+                             url="t.me/PEROBOYYY")
                      ]]))
 
     else:
-        update.effective_message.reply_text("╔═════════════════╗\n 「 🔥 𝙅𝘼𝙍𝙑𝙄𝙎 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
+        update.effective_message.reply_text("╔═════════════════╗\n   「 🔥 𝙅𝘼𝙍𝙑𝙄𝙎 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="t.me/JARVIS_SECURITY_BOT?start=help".format(bot.username))]]))
 
 
@@ -280,12 +280,12 @@ def get_help(bot: Bot, update: Update):
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
 
-        update.effective_message.reply_text("Heya, Contact Me in PM to get the list of the available commands.",
+        update.effective_message.reply_text("ʜᴇʏᴀ, ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴛʜᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="t.me/JARVIS_SECURITY_BOT?start=help".format(bot.username))],
                                                 [InlineKeyboardButton(text="🔀 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🔀",url="https://t.me/JARVIS_BOT_SUPPORT")]]))
                                                 
-        return
+        
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
         module = args[1].lower()
