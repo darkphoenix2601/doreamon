@@ -7,7 +7,7 @@
 
 ## Dᴇᴘᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
 
-[![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://heroku.com/deploy?template=https://github.com/infotechbro/BLACK-LEGEND)
+[![Deploy](https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https%3A%2F%2Fgithub.com%2FLEGEND-Xxxxx%2FJARVIS_BOT)"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 ## Mᴀᴅᴇ Bʏ
 
