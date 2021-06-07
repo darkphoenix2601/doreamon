@@ -72,9 +72,9 @@ def ping(bot: Bot, update: Update):
     telegram_ping = ping_func(["Telegram"])[0].split(": ", 1)[1]
     uptime = get_readable_time((time.time() - StartTime))
 
-    reply_msg = ("PONG!!\n"
-                 "<b>Time Taken:</b> <code>{}</code>\n"
-                 "<b>Service uptime:</b> <code>{}</code>".format(telegram_ping, uptime))
+    reply_msg = ("🏓ᴘᴏɴɢ🏓!!\n"
+                 "<b>ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:</b> <code>{}</code>\n"
+                 "<b>sᴇʀᴠɪᴄᴇ ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>".format(telegram_ping, uptime))
 
     update.effective_message.reply_text(reply_msg, parse_mode=ParseMode.HTML)
 
@@ -86,9 +86,9 @@ def pingall(bot: Bot, update: Update):
     pinged_list.insert(2, '')
     uptime = get_readable_time((time.time() - StartTime))
 
-    reply_msg = "⏱Ping results are:\n"
+    reply_msg = "⏱ᴘɪɴɢ ʀᴇsᴜʟᴛs ᴀʀᴇ:\n"
     reply_msg += "\n".join(pinged_list)
-    reply_msg += '\n<b>Service uptime:</b> <code>{}</code>'.format(uptime)
+    reply_msg += '\n<b>sᴇʀᴠɪᴄᴇ ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>'.format(uptime)
 
     update.effective_message.reply_text(reply_msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
 
