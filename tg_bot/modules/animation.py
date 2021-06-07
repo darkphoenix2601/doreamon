@@ -41,7 +41,7 @@ def lol(bot: Bot, update: Update):
     for x in range(EDIT_TIMES):
         msg.edit_text(lol_ani[x%10],parse_mode='markdown')
         time.sleep(2)
-    msg.edit_text('*MAJA AAYA KYA 😄*[ㅤ](https://telegra.ph/file/381dd2ea242e0bd292434.png)*AGAR HA THEN MAKE* [LEGEND USERBOT](t.me/teamishere)',parse_mode='markdown')
+    msg.edit_text('*MAJA AAYA KYA 😄*[ㅤ](https://telegra.ph/file/381dd2ea242e0bd292434.png)*AGAR HA THEN ADD ME TO YOUR GROUP*👻',parse_mode='markdown')
           
           
 
