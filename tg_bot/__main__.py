@@ -50,24 +50,20 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-**🅷🅴🅻🅻🅾️ {}, My Name Is *{}*!\n 
-People's sometime find *Hard* to manage their groups, *So I am here to help you*.\n
-[ᴍʏ Mⱥຮteℝ💥](t.me/alain_champion).
+**🅷🅴🅻🅻🅾️ {}, ᴍʏ ɴᴀᴍᴇ ɪs *{}*!\n 
+ᴘᴇᴏᴘʟᴇ's sᴏᴍᴇᴛɪᴍᴇ ғɪɴᴅ *ʜᴀʀᴅ* ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs, *sᴏ ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ*.\n
+[ᴍʏ Mⱥຮteℝ🔥](t.me/PEROBOYY).
  
-You can find the list of available commands with /help.
+ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜ /help.
 """
 
 HELP_STRINGS = """
-Hello! my name *{}*.
-*Main* commands available:
- ➥ /start: Start the bot
- ➥ /alive: To check bot alive or not
- ➥ /help <module name>: PM's you info about that module.
- ➥ /settings:
-   - in PM: will send you your settings for all supported modules.
-   - in a group: will redirect you to pm, with all that chat's settings.
+ʜᴇʟʟᴏ! ᴍʏ ɴᴀᴍᴇ *{}*.
+*ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ*:
+ ➥ /start: sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
+ ➥ /help <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>: ᴘᴍ's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
 {}
-""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "All commands can either be used with / or !.\n")
+""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ᴇɪᴛʜᴇʀ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !.\n")
 TECHNO_IMG = "https://telegra.ph/file/ffbb1445362ffe45ab4c9.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
@@ -82,8 +78,7 @@ USER_SETTINGS = {}
 
 
 SOURCE_STRING = """
-🎓 I'm built in python3, using the python-telegram-bot library, and am fully opensource - [Repo](https://github.com/infotechbro/BLACK-LEGEND)
-☄ You Can Clone Me [Heroku](https://heroku.com/deploy?template=https://github.com/infotechbro/BLACK-LEGEND.git)
+𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝘿𝙀 𝙄𝙎 𝙋𝙍𝙄𝙑𝘼𝙏𝙀 😅 𝙐 𝘾𝘼𝙉'𝙏 𝘾𝙇𝙊𝙉𝙀 𝙈𝙀 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙈𝙔 𝙊𝙒𝙉𝙀𝙍 @PEROBOYY
 """
 
 
@@ -136,8 +131,8 @@ def send_help(chat_id, text, keyboard=None):
 @run_async
 def alain(bot: Bot, update: Update):
     pprint(eval(str(update)))
-    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [𝙲𝙻𝙸𝙲𝙺 𝙼𝙴](GitHub.com/infotechbro/black_legend)", parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [𝙲𝙻𝙸𝙲𝙺 𝙼𝙴](GitHub.com/infotechbro/black_legend)_", parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [ᴄʟɪᴄᴋ ʜᴇʀᴇ](t.me/JARVIS_SOURCE_CODE)", parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [ᴄʟɪᴄᴋ ʜᴇʀᴇ](t.me/JARVIS_SOURCE_CODE)_", parse_mode=ParseMode.MARKDOWN)
     print(update.effective_message)
 
 @run_async
@@ -168,25 +163,25 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="ADD BLACK LEGEND 🤖 IN YOUR GROUP",url="t.me/{}?startgroup=true".format(bot.username))
+                            text="ADD JARVIS BOT 🤖 IN YOUR GROUP",url="t.me/JARVIS_SECURITY_BOT?startgroup=true".format(bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="💖 HELP 💖",
+                             text="🎧 HELP 🎧",
                             callback_data="help_back".format(bot.username)),
                          InlineKeyboardButton(
-                             text="💾 Source Code",
-                             url="https://github.com/infotechbro/BLACK-LEGEND")
+                             text="UPDATE 🔀",
+                             url="https://t.me/JARVIS_BOT_UPDATES")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="⚡ My Creator ⚡",
+                             text="🔥 MY CREATOR 🔥",
                              url="t.me/Alain_Champion")
                      ]]))
 
     else:
-        update.effective_message.reply_text("╔═════════════════╗\n 「 ★᯾ вℓΛ¢к ℓєgєη∂ ᯾★ 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="PM For Help",url="t.me/{}?start=help".format(bot.username))]]))
+        update.effective_message.reply_text("╔═════════════════╗\n 「 🔥 𝙅𝘼𝙍𝙑𝙄𝙎 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
+                                                [[InlineKeyboardButton(text="⚔️ 𝙋𝙈 𝙁𝙊𝙍 𝙃𝙀𝙇𝙋 ⚔️",url="t.me/JARVIS_SECURITY_BOT?start=help".format(bot.username))]]))
 
 
 def send_start(bot, update):
@@ -237,12 +232,12 @@ def help_button(bot: Bot, update: Update):
     try:
         if mod_match:
             module = mod_match.group(1)
-            text = "Here Is The Help For 📌 *{}* 📌 Module ☟\n".format(HELPABLE[module].__mod_name__) \
+            text = "ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ 🔥 *{}* 🔥 Module ☟\n".format(HELPABLE[module].__mod_name__) \
                    + HELPABLE[module].__help__
             query.message.reply_text(text=text,
                                      parse_mode=ParseMode.MARKDOWN,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton(text="📍 Back", callback_data="help_back")]]))
+                                         [[InlineKeyboardButton(text="⚔️ 𝘽𝘼𝘾𝙆 ⚔️", callback_data="help_back")]]))
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
@@ -287,7 +282,7 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("Heya, Contact Me in PM to get the list of the available commands.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="📍 Click Me For Help 📍 ",url="t.me/{}?start=help".format(bot.username))],
+                                                [[InlineKeyboardButton(text="𝘾𝙇𝙄𝘾𝙆 𝙁𝙊𝙍 ",url="t.me/{}?start=help".format(bot.username))],
                                                 [InlineKeyboardButton(text="Contact Creator",url="https://t.me/Alain_Champion")]]))
                                                 
         return
