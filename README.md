@@ -1,12 +1,9 @@
-![Black_legend](https://telegra.ph/file/9951d864f142f7e73ae96.jpg)
+![ᴊᴀʀᴠɪs ʙᴏᴛ](https://telegra.ph/file/ad2934de00779c4a59db3.jpg)
 
-# What Is Black Legend Bot
-BLACK LEGEND is telegram group manager bot with many features. This bot helps you to manage your groups easily.
+# ᴡʜᴀᴛ ɪs ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ
+ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ɪs ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴍᴀɴʏ ғᴇᴀᴛᴜʀᴇs. ᴛʜɪs ʙᴏᴛ ʜᴇʟᴘs ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴇᴀsɪʟʏ.
 
-* Originally a simple group management bot with multiple admin features, it has evolved into becoming a basis for modular bots aiming to provide simple plugin expansion via a simple drag and drop.
-<p align="center">
- “	<b>ᴊᴜsᴛ sᴏᴍᴇ ᴄᴏᴅᴇ ᴡʜᴏ ɪs ᴀ ʙᴏᴛ ғᴏʀ ғᴜɴ</b> ” 
-</p>
+* ᴏʀɪɢɪɴᴀʟʟʏ ᴀ sɪᴍᴘʟᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴍᴜʟᴛɪᴘʟᴇ ᴀᴅᴍɪɴ ғᴇᴀᴛᴜʀᴇs, ɪᴛ ʜᴀs ᴇᴠᴏʟᴠᴇᴅ ɪɴᴛᴏ ʙᴇᴄᴏᴍɪɴɢ ᴀ ʙᴀsɪs ғᴏʀ ᴍᴏᴅᴜʟᴀʀ ʙᴏᴛs ᴀɪᴍɪɴɢ ᴛᴏ ᴘʀᴏᴠɪᴅᴇ sɪᴍᴘʟᴇ ᴘʟᴜɢɪɴ ᴇxᴘᴀɴsɪᴏɴ ᴠɪᴀ ᴀ sɪᴍᴘʟᴇ ᴅʀᴀɢ ᴀɴᴅ ᴅʀᴏᴘ.
 
 ## Dᴇᴘᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
 
@@ -14,22 +11,15 @@ BLACK LEGEND is telegram group manager bot with many features. This bot helps yo
 
 ## Mᴀᴅᴇ Bʏ
 
-<a href="https://telegram.me/Alain_Champion"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
+<a href="https://telegram.me/Peroboyy"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
 
 ## Fɪɴᴅ Mᴇ
 
-<a href="https://telegram.me/black_legend_bot"> <img src="https://img.shields.io/badge/You%20Can%20Find%20Me-On%20Telegram-blueviolet" /> <img src="https://img.shields.io/badge/:----------green" />  <img src="https://img.shields.io/badge/Black-Legend%20Bot-blue" /> </a>
+<a href="https://telegram.me/JARVIS_SECURITY_BOT"> <img src="https://img.shields.io/badge/You%20Can%20Find%20Me-On%20Telegram-blueviolet" /> <img src="https://img.shields.io/badge/:----------green" />  <img src="https://img.shields.io/badge/JARVIS_SECURITY_BOT%20Bot-blue" /> </a>
 
 ## Sᴜᴘᴘᴏʀᴛ
 
-<a href="https://telegram.me/black_legend_support"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
-
-## Cʀᴇᴅɪᴛs
-  
-  * <a href="https://telegram.me/LEGENDX22"> <img src="https://img.shields.io/badge/%40-LEGENDX-blueviolet" />
-  * <a href="https://telegram.me/Alain_Champion"> <img src="https://img.shields.io/badge/%40-Alain__Champion-blue" />
-  * <a href="https://telegram.me/xhalfosain"> <img src="https://img.shields.io/badge/@xhalfosain-pink" />
-  * <a href="https://telegram.me/SaitamaRobot"> <img src="https://img.shields.io/badge/@SaitamaRobot Source Code-Helped Us To Make Us Some Plugins🐶-yellow" />
+<a href="https://telegram.me/Jarvis_bot_support"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
 
 ## Sᴏᴜʀᴄᴇ
 
