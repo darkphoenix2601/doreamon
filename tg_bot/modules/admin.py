@@ -247,7 +247,7 @@ def set_title(bot: Bot, update: Update, args: List[str]):
     status = result.json()["ok"]
 
     if status is True:
-        bot.sendMessage(chat.id, f"Black Legend has sucessfully set title for <code>{user_member.user.first_name or user_id}</code> "
+        bot.sendMessage(chat.id, f"Jarvis Bot has sucessfully set title for <code>{user_member.user.first_name or user_id}</code> "
                                  f"to <code>{title[:16]}</code>!", parse_mode=ParseMode.HTML)
     else:
         description = result.json()["description"]
