@@ -10,96 +10,96 @@
    "description": "sᴜᴘᴇʀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ғᴏʀ ᴍᴀɴᴀɢɪɴɢ ʏᴏᴜʀ ᴘʀᴏ ɢʀᴏᴜᴘs",
    "env": {
       "ALLOW_EXCL": {
-         "description": "Set this to True if you want ! to be a command prefix along with /",
+         "description": "sᴇᴛ ᴛʜɪs ᴛᴏ ᴛʀᴜᴇ ɪғ ʏᴏᴜ ᴡᴀɴᴛ ! ᴛᴏ ʙᴇ ᴀ ᴄᴏᴍᴍᴀɴᴅ ᴘʀᴇғɪx ᴀʟᴏɴɢ ᴡɪᴛʜ /",
          "value": "True"
       },
       "BAN_STICKER": {
-         "description": "ID of the sticker you want to use when banning people.",
+         "description": "ɪᴅ ᴏғ ᴛʜᴇ sᴛɪᴄᴋᴇʀ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴡʜᴇɴ ʙᴀɴɴɪɴɢ ᴘᴇᴏᴘʟᴇ.",
          "required": false,
          "value": ""
       },
       "DEL_CMDS": {
-         "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
+         "description": "sᴇᴛ ᴛʜɪs ᴛᴏ ᴛʀᴜᴇ ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴄᴏᴍᴍᴀɴᴅ ᴍᴇssᴀɢᴇs ғʀᴏᴍ ᴜsᴇʀs ᴡʜᴏ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴛʜᴇ ᴘᴇʀᴍs ᴛᴏ ʀᴜɴ ᴛʜᴀᴛ ᴄᴏᴍᴍᴀɴᴅ.",
          "value": "True" 
       },
       "ENV": {
-         "description": "Setting this to ANYTHING will enable environment variables.",
+         "description": "sᴇᴛᴛɪɴɢ ᴛʜɪs ᴛᴏ ᴀɴʏᴛʜɪɴɢ ᴡɪʟʟ ᴇɴᴀʙʟᴇ ᴇɴᴠɪʀᴏɴᴍᴇɴᴛ ᴠᴀʀɪᴀʙʟᴇs.",
          "value": "ANYTHING"
       },
       "SQLALCHEMY_DATABASE_URI": {
-         "description": "Your postgres sql db, empty this field if you dont have one.",
+         "description": "ʏᴏᴜʀ ᴘᴏsᴛɢʀᴇs sǫʟ ᴅʙ, ᴇᴍᴘᴛʏ ᴛʜɪs ғɪᴇʟᴅ ɪғ ʏᴏᴜ ᴅᴏɴᴛ ʜᴀᴠᴇ ᴏɴᴇ.",
          "required": false,
          "value": "sqldbtype://username:pw@hostname:port/db_name"
       },      
       "OWNER_ID": {
-         "description": "Your user ID as an integer.",
+         "description": "ʏᴏᴜʀ ᴜsᴇʀ ɪᴅ ᴀs ᴀɴ ɪɴᴛᴇɢᴇʀ.",
          "value": "1882937735"
       },
       "OWNER_USERNAME": {
-         "description": "Your username like @PeRcY_JaCkSoN_xD",
+         "description": "ʏᴏᴜʀ ᴜsᴇʀɴᴀᴍᴇ ʟɪᴋᴇ @PeRcY_JaCkSoN_xD",
          "value": "@PeRcY_JaCkSoN_xD"
       },
       "DEV_USERS": {
-         "description": "ID of users who are Dev (can use /py etc.) (if you dont want then keep this value 1377620841)",
+         "description": "ɪᴅ ᴏғ ᴜsᴇʀs ᴡʜᴏ ᴀʀᴇ ᴅᴇᴠ (ᴄᴀɴ ᴜsᴇ /ᴘʏ ᴇᴛᴄ.) (ɪғ ʏᴏᴜ ᴅᴏɴᴛ ᴡᴀɴᴛ ᴛʜᴇɴ ᴋᴇᴇᴘ ᴛʜɪs ᴠᴀʟᴜᴇ 1882937735)",
          "required": true,
          "value": "1882937735"
       },
       "GBAN_LOGS": {
-         "description": "Gban log channel, include the hyphen too: ex: -123456",
+         "description": "ɢʙᴀɴ ʟᴏɢ ᴄʜᴀɴɴᴇʟ, ɪɴᴄʟᴜᴅᴇ ᴛʜᴇ ʜʏᴘʜᴇɴ ᴛᴏᴏ: ᴇx: -123456",
          "value": "-123"
       },
       "CASH_API_KEY": {
-         "description": "Required for currency converter",
+         "description": "ʀᴇǫᴜɪʀᴇᴅ ғᴏʀ ᴄᴜʀʀᴇɴᴄʏ ᴄᴏɴᴠᴇʀᴛᴇʀ",
          "value": "-xyz"
       },
       "TIME_API_KEY": {
-         "description": "Required for timezone information",
+         "description": "ʀᴇǫᴜɪʀᴇᴅ ғᴏʀ ᴛɪᴍᴇᴢᴏɴᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ",
          "value": "HW6LQCYX43HS"
       },
       "AI_API_KEY": {
-         "description": "for activate chatbot",
+         "description": "ғᴏʀ ᴀᴄᴛɪᴠᴀᴛᴇ ᴄʜᴀᴛʙᴏᴛ",
          "value": "x_y_z"
       },
       "API_OPENWEATHER": {
-         "description": "Required for weather information",
+         "description": "ʀᴇǫᴜɪʀᴇᴅ ғᴏʀ ᴡᴇᴀᴛʜᴇʀ ɪɴғᴏʀᴍᴀᴛɪᴏɴ",
          "value": "5c5adc2bc1832de6943e3f4467e84c39"
       },
       "PORT": {
-         "description": "Port to use for your webhooks.",
+         "description": "ᴘᴏʀᴛ ᴛᴏ ᴜsᴇ ғᴏʀ ʏᴏᴜʀ ᴡᴇʙʜᴏᴏᴋs.",
          "required": false,
          "value": ""
       },
       "STRICT_GBAN": {
-         "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+         "description": "ᴇɴғᴏʀᴄᴇ ɢʙᴀɴs ᴀᴄʀᴏss ɴᴇᴡ ɢʀᴏᴜᴘs ᴀs ᴡᴇʟʟ ᴀs ᴏʟᴅ ɢʀᴏᴜᴘs. ᴡʜᴇɴ ᴀ ɢʙᴀɴɴᴇᴅ ᴜsᴇʀ ᴛᴀʟᴋs, ʜᴇ ᴡɪʟʟ ʙᴇ ʙᴀɴɴᴇᴅ.",
          "value": "True"
       },
       "SUDO_USERS": {
-         "description": "A space separated list of user IDs who you want to assign as sudo users (if you dont want then keep this value 1377620841).",
+         "description": "ᴀ sᴘᴀᴄᴇ sᴇᴘᴀʀᴀᴛᴇᴅ ʟɪsᴛ ᴏғ ᴜsᴇʀ ɪᴅs ᴡʜᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀssɪɢɴ ᴀs sᴜᴅᴏ ᴜsᴇʀs (ɪғ ʏᴏᴜ ᴅᴏɴᴛ ᴡᴀɴᴛ ᴛʜᴇɴ ᴋᴇᴇᴘ ᴛʜɪs ᴠᴀʟᴜᴇ 1882937735).",
          "required": true,
          "value": "1882937735"
       },
       "TIGER_USERS": {
-         "description": "A space separated list of user IDs who you wanna assign as tiger users (if you dont want then keep this value 1377620841).",
+         "description": "ᴀ sᴘᴀᴄᴇ sᴇᴘᴀʀᴀᴛᴇᴅ ʟɪsᴛ ᴏғ ᴜsᴇʀ ɪᴅs ᴡʜᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴀssɪɢɴ ᴀs ᴛɪɢᴇʀ ᴜsᴇʀs (ɪғ ʏᴏᴜ ᴅᴏɴᴛ ᴡᴀɴᴛ ᴛʜᴇɴ ᴋᴇᴇᴘ ᴛʜɪs ᴠᴀʟᴜᴇ 1882937735).",
          "required": true,
          "value": "1882937735"
       },
       "TOKEN": {
-         "description": "Your Telegram bot token (required for bot to work).",
+         "description": "ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏᴋᴇɴ (ʀᴇǫᴜɪʀᴇᴅ ғᴏʀ ʙᴏᴛ ᴛᴏ ᴡᴏʀᴋ).",
          "required": true,
          "value": ""
       },
       "URL": {
-         "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
+         "description": "ᴛʜᴇ ʜᴇʀᴏᴋᴜ ᴀᴘᴘ ᴜʀʟ :-  https://<appname>.herokuapp.com/",
          "required": false,
          "value": ""
       },
       "WEBHOOK": {
-         "description": "Setting this to ANYTHING will enable webhooks.",
+         "description": "sᴇᴛᴛɪɴɢ ᴛʜɪs ᴛᴏ ᴀɴʏᴛʜɪɴɢ ᴡɪʟʟ ᴇɴᴀʙʟᴇ ᴡᴇʙʜᴏᴏᴋs.",
          "required": false,
          "value": ""
       },
       "WHITELIST_USERS": {
-         "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
+         "description": "ᴀ sᴘᴀᴄᴇ sᴇᴘᴀʀᴀᴛᴇᴅ ʟɪsᴛ ᴏғ ᴜsᴇʀ ɪᴅs ᴡʜᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀssɪɢɴ ᴀs ᴡʜɪᴛᴇʟɪsᴛᴇᴅ - ᴄᴀɴ'ᴛ ʙᴇ ʙᴀɴɴᴇᴅ ᴡɪᴛʜ ʏᴏᴜʀ ʙᴏᴛ.",
          "required": false,
          "value": "1882937735"
       }
