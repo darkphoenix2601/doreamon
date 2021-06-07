@@ -7,7 +7,7 @@
          "plan": "heroku-postgresql"
       }
    ],
-   "description": "Super Group management bot to help you for managing your pro groups",
+   "description": "sᴜᴘᴇʀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ғᴏʀ ᴍᴀɴᴀɢɪɴɢ ʏᴏᴜʀ ᴘʀᴏ ɢʀᴏᴜᴘs",
    "env": {
       "ALLOW_EXCL": {
          "description": "Set this to True if you want ! to be a command prefix along with /",
@@ -110,7 +110,7 @@
       "manager",
       "bot"
    ],
-   "logo": "https://telegra.ph/file/f01ea768845d3697c9ab0.jpg",
-   "name": "BLACK LEGEND",
-   "repository": "https B://github.com/infotechbro/BLACK-LEGEND"
+   "logo": "https://telegra.ph/file/ad2934de00779c4a59db3.jpg",
+   "name": "ᴊᴀʀᴠɪs ʙᴏᴛ",
+   "repository": "https B://github.com/LEGEND_Xxxxx/JARVIS_BOT"
 }
