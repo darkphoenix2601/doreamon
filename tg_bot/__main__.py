@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 **🅷🅴🅻🅻🅾️ {}, ᴍʏ ɴᴀᴍᴇ ɪs *{}*!\n 
 ᴘᴇᴏᴘʟᴇ's sᴏᴍᴇᴛɪᴍᴇ ғɪɴᴅ *ʜᴀʀᴅ* ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs, *sᴏ ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ*.\n
-[ᴍʏ Mⱥຮteℝ🔥](t.me/PEROBOYYY).
+[ᴍʏ Mⱥຮteℝ🔥](t.me/ITZ_DEVIL_OP).
  
 ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜ /help.
 """
@@ -64,7 +64,7 @@ HELP_STRINGS = """
  ➥ /help <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>: ᴘᴍ's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
 {}
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ᴇɪᴛʜᴇʀ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !.\n")
-TECHNO_IMG = "https://telegra.ph/file/ad2934de00779c4a59db3.jpg"
+TECHNO_IMG = "https://telegra.ph/file/3e0c640a72fb11280aab0.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -163,7 +163,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="ADD JARVIS BOT 🤖 IN YOUR GROUP",url="t.me/JARVIS_SECURITY_BOT?startgroup=true".format(bot.username))
+                            text="ADD ME 🤖TO YOUR GROUP",url="t.me/Timepass_Assistant_bot?startgroup=true".format(bot.username))
                     ],
                      [
                          InlineKeyboardButton(
@@ -171,16 +171,16 @@ def start(bot: Bot, update: Update, args: List[str]):
                             callback_data="help_back".format(bot.username)),
                          InlineKeyboardButton(
                              text="UPDATES 🔀",
-                             url="https://t.me/JARVIS_BOT_UPDATES")
+                             url="https://t.me/DEVILBOTUPDATES")
                      ],
                      [
                          InlineKeyboardButton(
                              text="💻 MY CREATOR 💻",
-                             url="t.me/PEROBOYYY")
+                             url="t.me/ITZ_DEVIL_OP")
                      ]]))
 
     else:
-        update.effective_message.reply_text("╔═════════════════╗\n       「 🔥 𝙅𝘼𝙍𝙑𝙄𝙎 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
+        update.effective_message.reply_text("╔═════════════════╗\n       「 🔥 𝗢𝗣 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="t.me/JARVIS_SECURITY_BOT?start=help".format(bot.username))]]))
 
 
@@ -282,8 +282,8 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("ʜᴇʏᴀ, ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴛʜᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="t.me/JARVIS_SECURITY_BOT?start=help".format(bot.username))],
-                                                [InlineKeyboardButton(text="🔀 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🔀",url="https://t.me/JARVIS_BOT_SUPPORT")]]))
+                                                [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="t.me/Timepass_Assistant_bot?start=help".format(bot.username))],
+                                                [InlineKeyboardButton(text="🔀 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🔀",url="https://t.me/devilbotSUPPORT")]]))
                                                 
         
 
@@ -468,7 +468,7 @@ def get_settings(bot: Bot, update: Update):
             msg.reply_text(text,
                            reply_markup=InlineKeyboardMarkup(
                                [[InlineKeyboardButton(text="🎛 ᴄʟɪᴄᴋ ᴛᴏ ɢᴇᴛ sᴇᴛᴛɪɴɢs 🎛",
-                                                      url="t.me/JARVIS_SECURITY_BOT?start=stngs_{}".format(
+                                                      url="t.me/timepass_assistant_bot?start=stngs_{}".format(
                                                           bot.username, chat.id))]]))
         else:
             text = "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴇᴛᴛɪɴɢs 🔥."
@@ -509,7 +509,7 @@ def source(bot: Bot, update: Update):
             bot.send_message(user.id, SOURCE_STRING, parse_mode=ParseMode.MARKDOWN)
 
             update.effective_message.reply_text("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🔥",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ᴘᴍ",url="t.me/JARVIS_SECURITY_BOT")]]))
+                                                [[InlineKeyboardButton(text="ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ᴘᴍ",url="t.me/timepass_Assistant_bot")]]))
         except Unauthorized:
             update.effective_message.reply_text("ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ғɪʀsᴛ ᴛᴏ ɢᴇᴛ sᴏᴜʀᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.")
 
