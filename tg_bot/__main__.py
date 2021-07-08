@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 **🅷🅴🅻🅻🅾️ {}, ᴍʏ ɴᴀᴍᴇ ɪs *{}*!\n 
 ᴘᴇᴏᴘʟᴇ's sᴏᴍᴇᴛɪᴍᴇ ғɪɴᴅ *ʜᴀʀᴅ* ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs, *sᴏ ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ*.\n
-[ᴍʏ Mⱥຮteℝ🔥](t.me/ITZ_DEVIL_OP).
+[ᴍʏ Mⱥຮteℝ🔥](t.me/shrvan42).
  
 ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜ /help.
 """
@@ -64,7 +64,7 @@ HELP_STRINGS = """
  ➥ /help <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>: ᴘᴍ's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
 {}
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ᴇɪᴛʜᴇʀ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !.\n")
-TECHNO_IMG = "https://telegra.ph/file/3e0c640a72fb11280aab0.jpg"
+TECHNO_IMG = "https://telegra.ph/file/ad2934de00779c4a59db3.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -78,7 +78,7 @@ USER_SETTINGS = {}
 
 
 SOURCE_STRING = """
-𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝘿𝙀 𝙄𝙎 𝙋𝙍𝙄𝙑𝘼𝙏𝙀 😅 𝙐 𝘾𝘼𝙉'𝙏 𝘾𝙇𝙊𝙉𝙀 𝙈𝙀 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙈𝙔 𝙊𝙒𝙉𝙀𝙍 @PEROBOYYY
+[here](https://github.com/shrvan42/JARVIS_BOT)
 """
 
 
@@ -163,7 +163,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="ADD ME 🤖TO YOUR GROUP",url="t.me/Timepass_Assistant_bot?startgroup=true".format(bot.username))
+                            text="ADD ME 🤖TO YOUR GROUP",url="t.me/{}?startgroup=true".format(bot.username))
                     ],
                      [
                          InlineKeyboardButton(
@@ -171,12 +171,12 @@ def start(bot: Bot, update: Update, args: List[str]):
                             callback_data="help_back".format(bot.username)),
                          InlineKeyboardButton(
                              text="UPDATES 🔀",
-                             url="https://t.me/DEVILBOTUPDATES")
+                             url="https://t.me/tg_coders_updates")
                      ],
                      [
                          InlineKeyboardButton(
                              text="💻 MY CREATOR 💻",
-                             url="t.me/ITZ_DEVIL_OP")
+                             url="t.me/tg_x_coders")
                      ]]))
 
     else:
