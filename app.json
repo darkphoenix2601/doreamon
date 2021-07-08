@@ -37,12 +37,12 @@
       },
       "OWNER_USERNAME": {
          "description": "ʏᴏᴜʀ ᴜsᴇʀɴᴀᴍᴇ ʟɪᴋᴇ @PeRcY_JaCkSoN_xD",
-         "value": "@PeRcY_JaCkSoN_xD"
+         "value": "@shrvan42"
       },
       "DEV_USERS": {
          "description": "ɪᴅ ᴏғ ᴜsᴇʀs ᴡʜᴏ ᴀʀᴇ ᴅᴇᴠ (ᴄᴀɴ ᴜsᴇ /ᴘʏ ᴇᴛᴄ.) (ɪғ ʏᴏᴜ ᴅᴏɴᴛ ᴡᴀɴᴛ ᴛʜᴇɴ ᴋᴇᴇᴘ ᴛʜɪs ᴠᴀʟᴜᴇ 1882937735)",
          "required": true,
-         "value": "1882937735"
+         "value": "1742353529"
       },
       "GBAN_LOGS": {
          "description": "ɢʙᴀɴ ʟᴏɢ ᴄʜᴀɴɴᴇʟ, ɪɴᴄʟᴜᴅᴇ ᴛʜᴇ ʜʏᴘʜᴇɴ ᴛᴏᴏ: ᴇx: -123456",
@@ -76,12 +76,12 @@
       "SUDO_USERS": {
          "description": "ᴀ sᴘᴀᴄᴇ sᴇᴘᴀʀᴀᴛᴇᴅ ʟɪsᴛ ᴏғ ᴜsᴇʀ ɪᴅs ᴡʜᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀssɪɢɴ ᴀs sᴜᴅᴏ ᴜsᴇʀs (ɪғ ʏᴏᴜ ᴅᴏɴᴛ ᴡᴀɴᴛ ᴛʜᴇɴ ᴋᴇᴇᴘ ᴛʜɪs ᴠᴀʟᴜᴇ 1882937735).",
          "required": true,
-         "value": "1882937735"
+         "value": "1742353529"
       },
       "TIGER_USERS": {
          "description": "ᴀ sᴘᴀᴄᴇ sᴇᴘᴀʀᴀᴛᴇᴅ ʟɪsᴛ ᴏғ ᴜsᴇʀ ɪᴅs ᴡʜᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴀssɪɢɴ ᴀs ᴛɪɢᴇʀ ᴜsᴇʀs (ɪғ ʏᴏᴜ ᴅᴏɴᴛ ᴡᴀɴᴛ ᴛʜᴇɴ ᴋᴇᴇᴘ ᴛʜɪs ᴠᴀʟᴜᴇ 1882937735).",
          "required": true,
-         "value": "1882937735"
+         "value": "1742353529"
       },
       "TOKEN": {
          "description": "ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏᴋᴇɴ (ʀᴇǫᴜɪʀᴇᴅ ғᴏʀ ʙᴏᴛ ᴛᴏ ᴡᴏʀᴋ).",
@@ -101,7 +101,7 @@
       "WHITELIST_USERS": {
          "description": "ᴀ sᴘᴀᴄᴇ sᴇᴘᴀʀᴀᴛᴇᴅ ʟɪsᴛ ᴏғ ᴜsᴇʀ ɪᴅs ᴡʜᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀssɪɢɴ ᴀs ᴡʜɪᴛᴇʟɪsᴛᴇᴅ - ᴄᴀɴ'ᴛ ʙᴇ ʙᴀɴɴᴇᴅ ᴡɪᴛʜ ʏᴏᴜʀ ʙᴏᴛ.",
          "required": false,
-         "value": "1882937735"
+         "value": "1742353529"
       }
    },
    "keywords": [
@@ -112,5 +112,5 @@
    ],
    "logo": "https://telegra.ph/file/ad2934de00779c4a59db3.jpg",
    "name": "ᴊᴀʀᴠɪs ʙᴏᴛ",
-   "repository": "https B://github.com/LEGEND_Xxxxx/JARVIS_BOT"
+   "repository": "https B://github.com/shrvan42/JARVIS_BOT"
 }
