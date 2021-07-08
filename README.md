@@ -7,15 +7,12 @@
 
 ## Dᴇᴘᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
 
-[![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https%3A%2F%2Fgithub.com%2FLEGEND-Xxxxx%2FJARVIS_BOT)
+[![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https%3A%2F%2Fgithub.com%2Fshrvan42%2FJARVIS_BOT)
 
 ## Mᴀᴅᴇ Bʏ
 
-<a href="https://telegram.me/Peroboyy"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
+<a href="https://t.me/tg_x_coders"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
 
-## Fɪɴᴅ Mᴇ
-
-<a href="https://telegram.me/JARVIS_SECURITY_BOT"> <img src="https://img.shields.io/badge/You%20Can%20Find%20Me-On%20Telegram-blueviolet" /> <img src="https://img.shields.io/badge/:----------green" />  <img src="https://img.shields.io/badge/JARVIS_SECURITY%20BOT-blue" /> </a>
 
 ## Sᴜᴘᴘᴏʀᴛ
 
