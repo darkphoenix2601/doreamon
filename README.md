@@ -16,7 +16,7 @@
 
 ## Sᴜᴘᴘᴏʀᴛ
 
-<a href="https://telegram.me/Jarvis_bot_support"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
+<a href="https://t.me/tg_coders_updates"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
 
 ## Sᴏᴜʀᴄᴇ
 
