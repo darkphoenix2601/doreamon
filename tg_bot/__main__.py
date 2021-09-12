@@ -161,25 +161,32 @@ def start(bot: Bot, update: Update, args: List[str]):
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [
-        InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥", url="t.me/ZAID2_ROBOT?startgroup=true"),
-    ],
-     [
-        InlineKeyboardButton(text="ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀᴛ", url="https://t.me/Zaid_Team1"),
-        InlineKeyboardButton(
-            text="ᴠᴄ ᴘʟᴀʏᴇʀ", url="https://telegra.ph/file/3b68fe2e77dc802e27f4d.jpg"
-        ),
-     ],
-     [  
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ🔥", url="https://t.me/Zaid_Support"),
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ", url="https://t.me/Zaid_Updates"),
-    ], 
-
-    [
-        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴍᴅꜱ🔥", callback_data="help_back"),
-    ],
-]
+                   [
+                        InlineKeyboardButton(
+                            text="ADD ME 🤖TO YOUR GROUP",url="t.me/{}?startgroup=true".format(bot.username))
+                    ],
+                      [
+                         InlineKeyboardButton(
+                             text="👻 HELP 🤩",
+                            callback_data="help_back".format(bot.username)),
+                     ],
+                     [
+                        InlineKeyboardButton(
+                             text="SUPPORT😝",
+                             url="https://t.me/phoenix_music_suport")
+                        InlineKeyboardButton(
+                             text="UPDATES 😎",
+                             url="https://t.me/phoenix_music_new")
+                     ],
+                     [
+                         InlineKeyboardButton(
+                             text="OWNER👑",
+                             url="t.me/akshi_s_ashu")
+                          
+                          InlineKeyboardButton(
+                             text="ABOUT THE OWNER 🔥",
+                             url="https://telegra.ph/DOREAMON-BOT-09-12")
+                     ]]))
 
     else:
         update.effective_message.reply_text("╔═════════════════╗\n       「 🔥 𝗢𝗣 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
