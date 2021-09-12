@@ -186,7 +186,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                           InlineKeyboardButton(
                              text="ABOUT THE OWNER 🔥",
                              url="https://telegra.ph/DOREAMON-BOT-09-12")
-                     ]]))
+                     ]])))
 
     else:
         update.effective_message.reply_text("╔═════════════════╗\n       「 🔥 𝗢𝗣 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
