@@ -174,9 +174,6 @@ def start(bot: Bot, update: Update, args: List[str]):
                          InlineKeyboardButton(
                              text="SUPPORT😝",
                              url="https://t.me/phoenix_music_suport")
-                          InlineKeyboardButton(
-                             text="UPDATES 😎",
-                             url="https://t.me/phoenix_music_new")
                     ],
                       [
                          InlineKeyboardButton(
