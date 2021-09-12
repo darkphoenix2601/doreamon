@@ -52,19 +52,19 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 **🅷🅴🅻🅻🅾️ {}, ᴍʏ ɴᴀᴍᴇ ɪs *{}*!\n 
 ᴘᴇᴏᴘʟᴇ's sᴏᴍᴇᴛɪᴍᴇ ғɪɴᴅ *ʜᴀʀᴅ* ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs, *sᴏ ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ*.\n
-[ᴍʏ Mⱥຮteℝ🔥](t.me/shrvan42).
+[ᴍʏ Mⱥຮteℝ🔥](t.me/akshi_s_ashu).
  
 ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜ /help.
 """
 
 HELP_STRINGS = """
-ʜᴇʟʟᴏ! ᴍʏ ɴᴀᴍᴇ *{}*.
+ʜᴇʟʟᴏ! ᴍʏ ɴᴀᴍᴇ DOREAMON*{}*.
 *ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ*:
  ➥ /start: sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
  ➥ /help <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>: ᴘᴍ's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
 {}
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ᴇɪᴛʜᴇʀ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !.\n")
-TECHNO_IMG = "https://telegra.ph/file/ad2934de00779c4a59db3.jpg"
+TECHNO_IMG = "https://telegra.ph/file/6a7cc3432a1eea3b559d6.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -78,7 +78,7 @@ USER_SETTINGS = {}
 
 
 SOURCE_STRING = """
-[here](https://github.com/shrvan42/JARVIS_BOT)
+[here](https://github.com/darkphoenix2601/doreamon)
 """
 
 
@@ -165,23 +165,31 @@ def start(bot: Bot, update: Update, args: List[str]):
                         InlineKeyboardButton(
                             text="ADD ME 🤖TO YOUR GROUP",url="t.me/{}?startgroup=true".format(bot.username))
                     ],
+                      [
+                         InlineKeyboardButton(
+                             text="👻 HELP 👻",
+                            callback_data="help_back".format(bot.username)),
+                         InlineKeyboardButton(
+                             text="SUPPORT 🔀",
+                             url="https://t.me/phoenix_music_suport")
+                     ],
                      [
                          InlineKeyboardButton(
                              text="👻 HELP 👻",
                             callback_data="help_back".format(bot.username)),
                          InlineKeyboardButton(
                              text="UPDATES 🔀",
-                             url="https://t.me/tg_coders_updates")
+                             url="https://t.me/phoenix_music_new")
                      ],
                      [
                          InlineKeyboardButton(
                              text="💻 MY CREATOR 💻",
-                             url="t.me/tg_x_coders")
+                             url="t.me/akshi_s_ashu")
                      ]]))
 
     else:
         update.effective_message.reply_text("╔═════════════════╗\n       「 🔥 𝗢𝗣 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="t.me/JARVIS_SECURITY_BOT?start=help".format(bot.username))]]))
+                                                [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="https://t.me/phoenix_music_suport?start=help".format(bot.username))]]))
 
 
 def send_start(bot, update):
