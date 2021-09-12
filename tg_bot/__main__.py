@@ -166,22 +166,26 @@ def start(bot: Bot, update: Update, args: List[str]):
                             text="ADD ME 🤖TO YOUR GROUP",url="t.me/{}?startgroup=true".format(bot.username))
                     ],
                       [
-                        InlineKeyboardButton(
-                             text="SUPPORT 🔀",
-                             url="https://t.me/phoenix_music_suport")
+                         InlineKeyboardButton(
+                             text="👻 HELP 🤩",
+                            callback_data="help_back".format(bot.username)),
                      ],
                      [
+                        InlineKeyboardButton(
+                             text="SUPPORT😝",
+                             url="https://t.me/phoenix_music_suport")
                          InlineKeyboardButton(
-                             text="👻 HELP 👻",
-                            callback_data="help_back".format(bot.username)),
-                         InlineKeyboardButton(
-                             text="UPDATES 🔀",
+                             text="UPDATES 😎",
                              url="https://t.me/phoenix_music_new")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="💻 MY CREATOR 💻",
+                             text="OWNER👑",
                              url="t.me/akshi_s_ashu")
+                          
+                          InlineKeyboardButton(
+                             text="ABOUT THE OWNER 🔥",
+                             url="https://telegra.ph/DOREAMON-BOT-09-12")
                      ]]))
 
     else:
