@@ -166,10 +166,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                             text="ADD ME 🤖TO YOUR GROUP",url="t.me/{}?startgroup=true".format(bot.username))
                     ],
                       [
-                         InlineKeyboardButton(
-                             text="👻 HELP 👻",
-                            callback_data="help_back".format(bot.username)),
-                         InlineKeyboardButton(
+                        InlineKeyboardButton(
                              text="SUPPORT 🔀",
                              url="https://t.me/phoenix_music_suport")
                      ],
