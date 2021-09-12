@@ -64,7 +64,7 @@ HELP_STRINGS = """
  ➥ /help <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>: ᴘᴍ's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
 {}
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ᴇɪᴛʜᴇʀ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !.\n")
-TECHNO_IMG = "https://telegra.ph/file/ad2934de00779c4a59db3.jpg"
+TECHNO_IMG = "https://telegra.ph/file/3270395b4fc12aae9d7bf.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -78,7 +78,7 @@ USER_SETTINGS = {}
 
 
 SOURCE_STRING = """
-[here](https://github.com/shrvan42/JARVIS_BOT)
+[here](https://github.com/darkphoenix2601/doreamon)
 """
 
 
