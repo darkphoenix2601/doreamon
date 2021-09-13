@@ -183,7 +183,7 @@ def start(bot: Bot, update: Update, args: List[str]):
     )
     else:
         update.effective_message.reply_text("╔═════════════════╗\n       「 🔥 𝗢𝗣 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="t.me/JARVIS_SECURITY_BOT?start=help".format(bot.username))]]))
+                                                [[InlineKeyboardButton(text="🥰ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ🥰",url="https://t.me/phoenix_music_suport?start=help".format(bot.username))]]))
 
 
 def send_start(bot, update):
