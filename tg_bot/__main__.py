@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 **🅷🅴🅻🅻🅾️ {}, ᴍʏ ɴᴀᴍᴇ ɪs *{}*!\n 
 ᴘᴇᴏᴘʟᴇ's sᴏᴍᴇᴛɪᴍᴇ ғɪɴᴅ *ʜᴀʀᴅ* ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs, *sᴏ ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ*.\n
-[ᴍʏ Mⱥຮteℝ🔥](t.me/shrvan42).
+[ᴍʏ Mⱥຮteℝ🔥](https://t.me/akshi_s_ashu).
  
 ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜ /help.
 """
