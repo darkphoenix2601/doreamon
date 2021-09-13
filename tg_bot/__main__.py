@@ -181,12 +181,12 @@ def start(bot: Bot, update: Update, args: List[str]):
                      [
                          InlineKeyboardButton(
                              text="OWNER👑",
-                             url="t.me/akshi_s_ashu")
-                     ]    
-                     [   InlineKeyboardButton(
+                             url="t.me/akshi_s_ashu"), 
+                          
+                          InlineKeyboardButton(
                              text="ABOUT THE OWNER 🔥",
                              url="https://telegra.ph/DOREAMON-BOT-09-12")
-                     ]]))
+                     ]])))
     else:
         update.effective_message.reply_text("╔═════════════════╗\n       「 🔥 𝗢𝗣 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="🥰ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ🥰",url="https://t.me/phoenix_music_suport?start=help".format(bot.username))]]))
