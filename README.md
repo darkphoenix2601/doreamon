@@ -16,7 +16,10 @@ Doreamon ʙᴏᴛ ɪs ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙ�
 
 ## Sᴜᴘᴘᴏʀᴛ
 
-<a href="https://t.me/phoenix_music_suport"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
+<a href="https://https://t.me/phoenix_music_new"> <img src="https://img.shields.io/badge/Join-Our-green" /> 
+  
+## Update 
+<a href="https://t.me/phoenix_music_suport"> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
 
 ## Sᴏᴜʀᴄᴇ
 
