@@ -183,7 +183,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                              text="OWNER👑",
                              url="t.me/akshi_s_ashu")
                           
-                          InlineKeyboardButton(
+                         InlineKeyboardButton(
                              text="ABOUT THE OWNER 🔥",
                              url="https://telegra.ph/DOREAMON-BOT-09-12")
                      ]])))
