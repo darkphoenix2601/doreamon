@@ -11,7 +11,7 @@ Doreamon ʙᴏᴛ ɪs ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙ�
 
 ## Mᴀᴅᴇ Bʏ
 
-<a href="https://t.me/phoenix_music_new"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
+<a href="https://t.me/akshi_s_ashu"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
 
 
 ## Sᴜᴘᴘᴏʀᴛ
