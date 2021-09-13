@@ -1,4 +1,4 @@
-![ᴊᴀʀᴠɪs ʙᴏᴛ](https://telegra.ph/file/ad2934de00779c4a59db3.jpg)
+![ᴊᴀʀᴠɪs ʙᴏᴛ](https://telegra.ph/file/85aaafb92adb7af39a3b7.jpg)
 
 # ᴡʜᴀᴛ ɪs ᴊᴀʀᴠɪs sᴇᴄᴜʀɪᴛʏ ʙᴏᴛ
 ᴊᴀʀᴠɪs ʙᴏᴛ ɪs ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴍᴀɴʏ ғᴇᴀᴛᴜʀᴇs. ᴛʜɪs ʙᴏᴛ ʜᴇʟᴘs ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴇᴀsɪʟʏ.
@@ -7,16 +7,16 @@
 
 ## Dᴇᴘᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
 
-[![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https%3A%2F%2Fgithub.com%2Fshrvan42%2FJARVIS_BOT)
+[![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https://github.com/darkphoenix2601/doreamon)
 
 ## Mᴀᴅᴇ Bʏ
 
-<a href="https://t.me/tg_x_coders"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
+<a href="https://t.me/phoenix_music_new"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
 
 
 ## Sᴜᴘᴘᴏʀᴛ
 
-<a href="https://t.me/tg_coders_updates"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
+<a href="https://t.me/phoenix_music_suport"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
 
 ## Sᴏᴜʀᴄᴇ
 
