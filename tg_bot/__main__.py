@@ -161,28 +161,27 @@ def start(bot: Bot, update: Update, args: List[str]):
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[
-                        InlineKeyboardButton(
-                            text="ADD ME 🤖TO YOUR GROUP",url="t.me/{}?startgroup=true".format(bot.username))
-                    ],
-                     [
-                         InlineKeyboardButton(
-                             text="HELP😀",
-                            callback_data="help_back".format(bot.username)),
-                         InlineKeyboardButton(
-                             text="👻 SUPPORT🤩",
-                             url="https://t.me/phoenix_music_suport")
-                     [   InlineKeyboardButton(
-                             text="UPDATES😝",
-                             url="https://t.me/phoenix_music_new")
-                     ]
-                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="MY OWNER 👑",
-                             url="https://t.me/akshi_s_ashu")
-                     ]]))
-
+                    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "Group 💬", url="https://t.me/phoenix_music_suport"
+                    ),
+                    InlineKeyboardButton(
+                        "Channel 📣", url="https://t.me/phoenix_music_new"
+                    ),
+                    InlineKeyboardButton(
+                        "Owner 👑", url="https://t.me/akshi_s_ashu"
+                    ),
+                ], 
+                [
+                    InlineKeyboardButton(
+                        "About 🔥", url="https://telegra.ph/Doreamon-Bot-09-10"   
+                    )
+                ]
+            ]
+        )
+    )
     else:
         update.effective_message.reply_text("╔═════════════════╗\n       「 🔥 𝗢𝗣 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="t.me/JARVIS_SECURITY_BOT?start=help".format(bot.username))]]))
