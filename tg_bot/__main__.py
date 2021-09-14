@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 **🅷🅴🅻🅻🅾️ {}, ᴍʏ ɴᴀᴍᴇ ɪs *{}*!\n 
 ᴘᴇᴏᴘʟᴇ's sᴏᴍᴇᴛɪᴍᴇ ғɪɴᴅ *ʜᴀʀᴅ* ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs, *sᴏ ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ*.\n
-[ᴍʏ Mⱥຮteℝ🔥](t.me/shrvan42).
+[ᴍʏ Mⱥຮteℝ🔥](t.me/akshi_s_ashu).
  
 ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜ /help.
 """
@@ -64,7 +64,7 @@ HELP_STRINGS = """
  ➥ /help <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>: ᴘᴍ's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
 {}
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ᴇɪᴛʜᴇʀ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !.\n")
-TECHNO_IMG = "https://telegra.ph/file/ad2934de00779c4a59db3.jpg"
+TECHNO_IMG = "https://telegra.ph/file/6a7cc3432a1eea3b559d6.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -78,7 +78,7 @@ USER_SETTINGS = {}
 
 
 SOURCE_STRING = """
-[here](https://github.com/shrvan42/JARVIS_BOT)
+[here](https://github.com/darkphoenix2601/doreamon)
 """
 
 
@@ -161,22 +161,31 @@ def start(bot: Bot, update: Update, args: List[str]):
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[
+                   [[
                         InlineKeyboardButton(
                             text="ADD ME 🤖TO YOUR GROUP",url="t.me/{}?startgroup=true".format(bot.username))
                     ],
-                     [
+                      [
                          InlineKeyboardButton(
-                             text="👻 HELP 👻",
+                             text=" HELP 🤩",
                             callback_data="help_back".format(bot.username)),
+                     ],
+                     [
+                        InlineKeyboardButton(
+                             text="SUPPORT😝",
+                             url="https://t.me/phoenix_music_suport"), 
                          InlineKeyboardButton(
-                             text="UPDATES 🔀",
-                             url="https://t.me/tg_coders_updates")
+                             text="UPDATES 😎",
+                             url="https://t.me/phoenix_music_new")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="💻 MY CREATOR 💻",
-                             url="t.me/tg_x_coders")
+                             text="OWNER👑",
+                             url="t.me/akshi_s_ashu"), 
+                          
+                          InlineKeyboardButton(
+                             text="ABOUT THE OWNER 🔥",
+                             url="https://telegra.ph/DOREAMON-BOT-09-12")
                      ]]))
 
     else:
