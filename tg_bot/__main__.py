@@ -3,7 +3,7 @@ import re
 import json
 import requests
 from typing import Optional, List
-
+from parsel import Selector
 from urllib.request import urlopen
 
 from telegram import Message, Chat, Update, Bot, User
@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 **🅷🅴🅻🅻🅾️ {}, ᴍʏ ɴᴀᴍᴇ ɪs *{}*!\n 
 ᴘᴇᴏᴘʟᴇ's sᴏᴍᴇᴛɪᴍᴇ ғɪɴᴅ *ʜᴀʀᴅ* ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs, *sᴏ ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ*.\n
-[ᴍʏ Mⱥຮteℝ🔥](https://t.me/akshi_s_ashu).
+[ᴍʏ Mⱥຮteℝ🔥](t.me/shrvan42).
  
 ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜ /help.
 """
@@ -64,7 +64,7 @@ HELP_STRINGS = """
  ➥ /help <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>: ᴘᴍ's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
 {}
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ᴇɪᴛʜᴇʀ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !.\n")
-TECHNO_IMG = "https://telegra.ph/file/3270395b4fc12aae9d7bf.jpg"
+TECHNO_IMG = "https://telegra.ph/file/ad2934de00779c4a59db3.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -78,7 +78,7 @@ USER_SETTINGS = {}
 
 
 SOURCE_STRING = """
-[here](https://github.com/darkphoenix2601/doreamon)
+[here](https://github.com/shrvan42/JARVIS_BOT)
 """
 
 
@@ -131,8 +131,8 @@ def send_help(chat_id, text, keyboard=None):
 @run_async
 def alain(bot: Bot, update: Update):
     pprint(eval(str(update)))
-    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/phoenix_music_suport)", parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/phoenix_music_suport)_", parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [ᴄʟɪᴄᴋ ʜᴇʀᴇ](t.me/JARVIS_SOURCE_CODE)", parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [ᴄʟɪᴄᴋ ʜᴇʀᴇ](t.me/JARVIS_SOURCE_CODE)_", parse_mode=ParseMode.MARKDOWN)
     print(update.effective_message)
 
 @run_async
@@ -161,35 +161,27 @@ def start(bot: Bot, update: Update, args: List[str]):
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-            [[
+                    [[
                         InlineKeyboardButton(
                             text="ADD ME 🤖TO YOUR GROUP",url="t.me/{}?startgroup=true".format(bot.username))
                     ],
-                      [
+                     [
                          InlineKeyboardButton(
-                             text=" HELP 🤩",
+                             text="👻 HELP 👻",
                             callback_data="help_back".format(bot.username)),
-                     ],
-                     [
-                        InlineKeyboardButton(
-                             text="SUPPORT😝",
-                             url="https://t.me/phoenix_music_suport"), 
                          InlineKeyboardButton(
-                             text="UPDATES 😎",
-                             url="https://t.me/phoenix_music_new")
+                             text="UPDATES 🔀",
+                             url="https://t.me/tg_coders_updates")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="OWNER👑",
-                             url="t.me/akshi_s_ashu"), 
-                          
-                          InlineKeyboardButton(
-                             text="ABOUT THE OWNER 🔥",
-                             url="https://telegra.ph/DOREAMON-BOT-09-12")
+                             text="💻 MY CREATOR 💻",
+                             url="t.me/tg_x_coders")
                      ]]))
+
     else:
         update.effective_message.reply_text("╔═════════════════╗\n       「 🔥 𝗢𝗣 𝘽𝙊𝙏 🔥 」\n╚═════════════════╝",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="🥰ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ🥰",url="https://t.me/phoenix_music_suport?start=help".format(bot.username))]]))
+                                                [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="t.me/JARVIS_SECURITY_BOT?start=help".format(bot.username))]]))
 
 
 def send_start(bot, update):
