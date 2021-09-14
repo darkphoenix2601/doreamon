@@ -8,8 +8,8 @@ from pathlib import Path
 from telethon import events
 
 from pymongo import MongoClient
-from MashaRoBot import MONGO_DB_URI
-from MashaRoBot import telethn
+from tg_botRoBot import MONGO_DB_URI
+from tg_botRoBot import telethn
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
@@ -146,7 +146,7 @@ def bot(**args):
     return decorator
 
 
-def Masharobot(**args):
+def tg_botrobot(**args):
     pattern = args.get("pattern", None)
     disable_edited = args.get("disable_edited", False)
     ignore_unsafe = args.get("ignore_unsafe", False)
@@ -182,32 +182,32 @@ def load_module(shortname):
         pass
     elif shortname.endswith("_"):
         import importlib
-        import MashaRoBot.events
+        import tg_botRoBot.events
 
-        path = Path(f"MashaRoBot/modules/{shortname}.py")
-        name = "MashaRoBot.modules.{}".format(shortname)
+        path = Path(f"tg_botRoBot/modules/{shortname}.py")
+        name = "tg_botRoBot.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("Successfully imported " + shortname)
     else:
         import importlib
-        import MashaRoBot.events
+        import tg_botRoBot.events
 
-        path = Path(f"MashaRoBot/modules/{shortname}.py")
-        name = "MashaRoBot.modules.{}".format(shortname)
+        path = Path(f"tg_botRoBot/modules/{shortname}.py")
+        name = "tg_botRoBot.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.register = register
-        mod.Masharobot = Masharobot
+        mod.tg_botrobot = tg_botrobot
         mod.tbot = telethn
         mod.logger = logging.getLogger(shortname)
         spec.loader.exec_module(mod)
-        sys.modules["MashaRoBot.modules." + shortname] = mod
+        sys.modules["tg_botRoBot.modules." + shortname] = mod
         print("Successfully imported " + shortname)
 
 
-path = "MashaRoBot/modules/*.py"
+path = "tg_botRoBot/modules/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
