@@ -28,3 +28,7 @@ parsel
 telegraph
 pyrogram
 TGcrypto
+telethon
+requests_html
+requests
+bs4
