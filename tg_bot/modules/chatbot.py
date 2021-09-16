@@ -1,109 +1,114 @@
-# AI module using Intellivoid's Coffeehouse API by @TheRealPhoenix
-from time import time, sleep
+print("[INFO]: Importing Your API_ID, API_HASH, BOT_TOKEN")
+import re
+from asyncio import (gather, get_event_loop, sleep)
 
-from coffeehouse.lydia import LydiaAI
-from coffeehouse.api import API
-from coffeehouse.exception import CoffeeHouseError as CFError
+from aiohttp import ClientSession
+from pyrogram import (Client, filters, idle)
+from Python_ARQ import ARQ
 
-from telegram import Message, Chat, User, Update, Bot
-from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
-from telegram.error import BadRequest, Unauthorized, RetryAfter
+from config import bot, BOT_TOKEN, ARQ_API_KEY, ARQ_API_BASE_URL, LANGUAGE
+bot_token= BOT_TOKEN
 
-from tg_bot import dispatcher, AI_API_KEY, OWNER_ID
-import tg_bot.modules.sql.chatbot_sql as sql
-from tg_bot.modules.helper_funcs.filters import CustomFilters
+print("[INFO]: Checking... Your Details")
 
-
-CoffeeHouseAPI = API(AI_API_KEY)
-api_client = LydiaAI(CoffeeHouseAPI)
+bot_id = int(bot_token.split(":")[0])
+print("[INFO]: Code running by master Blaze")
+arq = None
 
 
-@run_async
-def add_chat(bot: Bot, update: Update):
-    global api_client
-    chat_id = update.effective_chat.id
-    msg = update.effective_message
-    is_chat = sql.is_chat(chat_id)
-    if not is_chat:
-        ses = api_client.create_session()
-        ses_id = str(ses.id)
-        expires = str(ses.expires)
-        sql.set_ses(chat_id, ses_id, expires)
-        msg.reply_text("AI successfully enabled for this chat!")
+async def lunaQuery(query: str, user_id: int):
+    query = (
+        query
+        if LANGUAGE == "hi"
+        else (await arq.translate(query, "en")).result.translatedText
+    )
+    resp = (await arq.luna(query, user_id)).result
+    return (
+        resp
+        if LANGUAGE == "hi"
+        else (
+            await arq.translate(resp, LANGUAGE)
+        ).result.translatedText
+    )
+
+
+async def type_and_send(message):
+    chat_id = message.chat.id
+    user_id = message.from_user.id if message.from_user else 0
+    query = message.text.strip()
+    await message._client.send_chat_action(chat_id, "typing")
+    response, _ = await gather(lunaQuery(query, user_id), sleep(2))
+    if "Luna" in response:
+        responsee = response.replace("Luna", "Patricia")
     else:
-        msg.reply_text("AI is already enabled for this chat!")
-        
-        
-@run_async
-def remove_chat(bot: Bot, update: Update):
-    msg = update.effective_message
-    chat_id = update.effective_chat.id
-    is_chat = sql.is_chat(chat_id)
-    if not is_chat:
-        msg.reply_text("AI isn't enabled here in the first place!")
+        responsee = response
+    if "Aco" in responsee:
+        responsess = responsee.replace("Aco", "Patricia")
     else:
-        sql.rem_chat(chat_id)
-        msg.reply_text("AI disabled successfully!")
-        
-        
-def check_message(bot: Bot, message):
-    reply_msg = message.reply_to_message
-    if message.text.lower() == "saitama":
-        return True
-    if reply_msg:
-        if reply_msg.from_user.id == bot.get_me().id:
-            return True
+        responsess = responsee
+    if "Who is Tiana?" in responsess:
+        responsess2 = responsess.replace("Who is Patricia?", "Heroine Of Telegram")
     else:
-        return False
-                
-        
-@run_async
-def chatbot(bot: Bot, update: Update):
-    global api_client
-    msg = update.effective_message
-    chat_id = update.effective_chat.id
-    is_chat = sql.is_chat(chat_id)
-    if not is_chat:
-        return
-    if msg.text and not msg.document:
-        if not check_message(bot, msg):
+        responsess2 = responsess
+    await message.reply_text(responsess2)
+    await message._client.send_chat_action(chat_id, "cancel")
+
+
+@bot.on_message(
+    ~filters.private
+    & filters.text
+    & ~filters.command("start")
+    & ~filters.edited,
+    group=69,
+)
+async def chat(_, message):
+    if message.reply_to_message:
+        if not message.reply_to_message.from_user:
             return
-        sesh, exp = sql.get_ses(chat_id)
-        query = msg.text
-        try:
-            if int(exp) < time():
-                ses = api_client.create_session()
-                ses_id = str(ses.id)
-                expires = str(ses.expires)
-                sql.set_ses(chat_id, ses_id, expires)
-                sesh, exp = sql.get_ses(chat_id)
-        except ValueError:
-            pass
-        try:
-            bot.send_chat_action(chat_id, action='typing')
-            rep = api_client.think_thought(sesh, query)
-            sleep(0.3)
-            msg.reply_text(rep, timeout=60)
-        except CFError as e:
-            bot.send_message(OWNER_ID, f"Chatbot error: {e} occurred in {chat_id}!")
-                    
+        from_user_id = message.reply_to_message.from_user.id
+        if from_user_id != bot_id:
+            return
+    else:
+        match = re.search(
+            "[.|\n]{0,}iris[.|\n]{0,}",
+            message.text.strip(),
+            flags=re.IGNORECASE,
+        )
+        if not match:
+            return
+    await type_and_send(message)
 
-__mod_name__ = "Chat Bot"
 
-__help__ = """
+@bot.on_message(
+    filters.private
+    & ~filters.command("start")
+    & ~filters.edited
+)
+async def chatpm(_, message):
+    if not message.text:
+        await message.reply_text("Ufff... Ignoring .... ¯\_(ツ)_/¯")
+        return
+    await type_and_send(message)
 
-Powered by CoffeeHouse (https://coffeehouse.intellivoid.net/) from @Intellivoid
 
- ➥ /addchat : Enables Chatbot mode in the chat.
- ➥ /rmchat  : Disables Chatbot mode in the chat.
+@bot.on_message(filters.command("start") & ~filters.edited)
+async def startt(_, message):
+    await message.reply_text("Hi, I'm Alive ╮(. ❛ ᴗ ❛.)╭")
+
+
+async def main():
+    global arq
+    session = ClientSession()
+    arq = ARQ(ARQ_API_BASE_URL, ARQ_API_KEY, session)
+
+    await bot.start()
+    print(
+        """
+Your PatriciaChatbot Is Deployed Successfully.
 """
-                  
-ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat, filters=CustomFilters.dev_filter)
-REMOVE_CHAT_HANDLER = CommandHandler("rmchat", remove_chat, filters=CustomFilters.dev_filter)
-CHATBOT_HANDLER = MessageHandler(Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
-                                  & ~Filters.regex(r"^s\/")), chatbot)
-# Filters for ignoring #note messages, !commands and sed.
+    )
+    await idle()
 
-dispatcher.add_handler(ADD_CHAT_HANDLER)
-dispatcher.add_handler(REMOVE_CHAT_HANDLER)
-dispatcher.add_handler(CHATBOT_HANDLER)
+
+loop = get_event_loop()
+loop.run_until_complete(main())
