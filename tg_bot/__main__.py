@@ -131,8 +131,8 @@ def send_help(chat_id, text, keyboard=None):
 @run_async
 def alain(bot: Bot, update: Update):
     pprint(eval(str(update)))
-    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [ᴄʟɪᴄᴋ ʜᴇʀᴇ](t.me/JARVIS_SOURCE_CODE)", parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ ʙʟᴀᴄᴋ ʟᴇɢᴇɴᴅ ʙᴏᴛ ɪs* :- [ᴄʟɪᴄᴋ ʜᴇʀᴇ](t.me/JARVIS_SOURCE_CODE)_", parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ doreamon ʙᴏᴛ ɪs* :- [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/phoenix_music_new/30)", parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text("📬*ʀᴇᴘᴏ ғᴏʀ doreamon ʙᴏᴛ ɪs* :- [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/phoenix_music_new/30)_", parse_mode=ParseMode.MARKDOWN)
     print(update.effective_message)
 
 @run_async
