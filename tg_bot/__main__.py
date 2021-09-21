@@ -291,8 +291,8 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("ʜᴇʏᴀ, ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴛʜᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="t.me/Timepass_Assistant_bot?start=help".format(bot.username))],
-                                                [InlineKeyboardButton(text="🔀 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🔀",url="https://t.me/devilbotSUPPORT")]]))
+                                                [[InlineKeyboardButton(text="🖤 ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍᴇ ʜᴇʟᴘ 🖤",url="https://t.me/dore_amon_bot?start=help".format(bot.username))],
+                                                [InlineKeyboardButton(text="🔀 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🔀",url="https://t.me/phoenix_music_new")]]))
                                                 
         
 
@@ -477,7 +477,7 @@ def get_settings(bot: Bot, update: Update):
             msg.reply_text(text,
                            reply_markup=InlineKeyboardMarkup(
                                [[InlineKeyboardButton(text="🎛 ᴄʟɪᴄᴋ ᴛᴏ ɢᴇᴛ sᴇᴛᴛɪɴɢs 🎛",
-                                                      url="t.me/timepass_assistant_bot?start=stngs_{}".format(
+                                                      url="t.me/dore_amon_bot?start=stngs_{}".format(
                                                           bot.username, chat.id))]]))
         else:
             text = "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴇᴛᴛɪɴɢs 🔥."
@@ -518,7 +518,7 @@ def source(bot: Bot, update: Update):
             bot.send_message(user.id, SOURCE_STRING, parse_mode=ParseMode.MARKDOWN)
 
             update.effective_message.reply_text("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🔥",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ᴘᴍ",url="t.me/timepass_Assistant_bot")]]))
+                                                [[InlineKeyboardButton(text="ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ᴘᴍ",url="t.me/dore_amon_bot")]]))
         except Unauthorized:
             update.effective_message.reply_text("ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ғɪʀsᴛ ᴛᴏ ɢᴇᴛ sᴏᴜʀᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.")
 
