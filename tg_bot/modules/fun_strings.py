@@ -428,7 +428,7 @@ TABLE = (
     "Go do some work instead of flippin tables."
 )
 
-ALIVE = (
+ALIVE = 
     from os import path
 
 from pyrogram import Client, filters
@@ -489,4 +489,4 @@ async def alive(client: Client, message: Message):
             ]
         )
     )
-    )
+    
