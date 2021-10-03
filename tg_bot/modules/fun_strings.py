@@ -429,5 +429,6 @@ TABLE = (
 )
 
 ALIVE = (
-    "★᯾ doreamon ᯾★ㅤ[ㅤ](https://telegra.ph/file/3f7eac83be1051a8bf90a.png)"
-)
+    "★᯾ doreamon ᯾★ㅤ[ㅤ](https://telegra.ph/file/848c5a2f056e00ab74a88.png)",
+    "★᯾ doreamon ᯾★ㅤ[ㅤ](https://telegra.ph/file/a2524e793e86191e66cbb.png)",
+    )
