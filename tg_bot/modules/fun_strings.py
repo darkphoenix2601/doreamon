@@ -428,4 +428,6 @@ TABLE = (
     "Go do some work instead of flippin tables."
 )
 
-ALIVE = ("https://telegra.ph/file/3f7eac83be1051a8bf90a.png")
+ALIVE = (
+    "★᯾ doreamon ᯾★ㅤ[ㅤ](https://telegra.ph/file/3f7eac83be1051a8bf90a.png)"
+)
