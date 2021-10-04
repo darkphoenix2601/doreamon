@@ -1,4 +1,4 @@
-![ᴊᴀʀᴠɪs ʙᴏᴛ](https://telegra.ph/file/85aaafb92adb7af39a3b7.jpg)
+![doreamon](https://telegra.ph/file/85aaafb92adb7af39a3b7.jpg)
 
 # ᴡʜᴀᴛ ɪs doreamon sᴇᴄᴜʀɪᴛʏ ʙᴏᴛ
 Doreamon ʙᴏᴛ ɪs ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴍᴀɴʏ ғᴇᴀᴛᴜʀᴇs. ᴛʜɪs ʙᴏᴛ ʜᴇʟᴘs ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴇᴀsɪʟʏ.
@@ -8,11 +8,13 @@ Doreamon ʙᴏᴛ ɪs ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙ�
 ## Dᴇᴘᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
 
 [![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https://github.com/darkphoenix2601/doreamon)
-## stars
+## Stars
+<a href="https://github.com/darkphoenix2601/doreamon"><img src="https://img.shields.io/github/stars/darkphoenix/doreamon?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
+# Forks
 <a href="https://github.com/darkphoenix2601/doreamon"><img src="https://img.shields.io/github/stars/darkphoenix/doreamon?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 ## Mᴀᴅᴇ Bʏ
 
-<a href="https://t.me/akshi_s_ashu"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
+<a href="https://t.me/akshi_s_ashu1"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
 
 
 ## Sᴜᴘᴘᴏʀᴛ
