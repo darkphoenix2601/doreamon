@@ -11,7 +11,7 @@ Doreamon ʙᴏᴛ ɪs ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙ�
 ## Stars
 <a href="https://github.com/darkphoenix2601/doreamon"><img src="https://img.shields.io/github/stars/darkphoenix/doreamon?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 # Forks
-<a href="https://github.com/darkphoenix2601/doreamon"><img src="https://img.shields.io/github/stars/darkphoenix/doreamon?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
+<a href="https://github.com/darkphoenix2601/doreamon/network/members"><img src="https://img.shields.io/github/forks/darkphoenix/doreamon?label=Fork&style=flat-square&logo=github&color=F10070" alt="Fork" /></a> </p>
 ## Mᴀᴅᴇ Bʏ
 
 <a href="https://t.me/akshi_s_ashu1"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
