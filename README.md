@@ -8,7 +8,8 @@ Doreamon ʙᴏᴛ ɪs ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙ�
 ## Dᴇᴘᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
 
 [![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https://github.com/darkphoenix2601/doreamon)
-
+## stars
+<a href="https://github.com/darkphoenix2601/doreamon"><img src="https://img.shields.io/github/stars/darkphoenix/doreamon?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 ## Mᴀᴅᴇ Bʏ
 
 <a href="https://t.me/akshi_s_ashu"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
