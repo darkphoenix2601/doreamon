@@ -31,12 +31,8 @@ from time import sleep
 from telegram import ParseMode
 from tg_bot import dispatcher, updater 
 from tg_bot.modules.log_channel import gloggable
-from telegram import (CallbackQuery, Chat, MessageEntity, InlineKeyboardButton,
-                      InlineKeyboardMarkup, Message, ParseMode, Update, Bot, User)
-
-from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
-                          DispatcherHandlerStop, Filters, MessageHandler,
-                          run_async)
+from tg_bot.__init__.py import tg
+from tg_bot.__init__.py  import tg
 
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 
