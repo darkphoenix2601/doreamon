@@ -29,7 +29,7 @@ import tg_bot.modules.sql.kuki_sql as sql
 
 from time import sleep
 from telegram import ParseMode
-from tg_bot import dispatcher, updater, 
+from tg_bot import dispatcher, updater 
 from tg_bot.modules.log_channel import gloggable
 from telegram import (CallbackQuery, Chat, MessageEntity, InlineKeyboardButton,
                       InlineKeyboardMarkup, Message, ParseMode, Update, Bot, User)
