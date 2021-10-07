@@ -1,6 +1,6 @@
 import threading
 from sqlalchemy import Column, String
-from MoeZillaBot.modules.sql import BASE, SESSION
+from tg_bot.modules.sql import BASE, SESSION
 class KukiChats(BASE):
     __tablename__ = "kuki_chats"
     chat_id = Column(String(14), primary_key=True)
