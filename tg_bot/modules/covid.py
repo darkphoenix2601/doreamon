@@ -42,7 +42,7 @@ __help__ = """
  
 """
 
-__mod_name__ = 'Corona'
+__mod_name__ = 'Corona🤧'
 
 COVID_HANDLER = CommandHandler("covid", covid, admin_ok=True)
 
