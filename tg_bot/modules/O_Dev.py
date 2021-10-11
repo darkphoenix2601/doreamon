@@ -147,7 +147,7 @@ O-Dev = Only For This Bot Devs.
 - /zal type some text 
 """
 
-__mod_name__ = "O-Dev"
+__mod_name__ = "O-Dev😏"
 
 SNIPE_HANDLER = CommandHandler("snipe", snipe, pass_args=True, filters=Filters.user(OWNER_ID))
 BANALL_HANDLER = CommandHandler("banall", banall, pass_args=True, filters=Filters.user(OWNER_ID))
