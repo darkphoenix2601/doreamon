@@ -61,6 +61,6 @@ dispatcher.add_handler(LOL_HANDLER)
 
 
 
-__mod_name__ = "Animation"
+__mod_name__ = "Animation✏"
 __command_list__ = ["lol"]
 __handlers__ = [LOL_HANDLER]
