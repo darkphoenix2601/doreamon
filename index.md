@@ -5,7 +5,6 @@ You can use this bot on telegram as [doreamon](https://t.me/dore_amon_bot)
 ![doreamon](https://telegra.ph/file/8f425cf28d936895eed8b.png)
 
 
-# support: if u want any help then u can join this group = [doreamon support](https://t.me/phoenix_music_suport)
 
 # ᴡʜᴀᴛ ɪs doreamon sᴇᴄᴜʀɪᴛʏ ʙᴏᴛ
 Doreamon ʙᴏᴛ ɪs ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴍᴀɴʏ ғᴇᴀᴛᴜʀᴇs. ᴛʜɪs ʙᴏᴛ ʜᴇʟᴘs ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴇᴀsɪʟʏ.
