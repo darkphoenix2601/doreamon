@@ -20,6 +20,6 @@ Doreamon ʙᴏᴛ ɪs ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙ�
 ## Deploy
 <a href="https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https://github.com/darkphoenix2601/doreamon" /> <img src="https://img.shields.io/badge/Deploy-critical" />
 ## Github
-<a href="https://github.com/darkphoenix2601/darkphoenix2601"> <img src="https://img.shields.io/badge/github-profile-critical" /> </a>
+<a href="https://github.com/darkphoenix2601/darkphoenix2601"> <img src="https://img.shields.io/badge/github-profile-critical" /> 
 
 
