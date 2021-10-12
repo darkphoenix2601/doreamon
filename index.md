@@ -18,6 +18,8 @@ Doreamon ʙᴏᴛ ɪs ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙ�
 ## Support 
 <a href="https://t.me/phoenix_music_suport"> <img src="https://img.shields.io/badge/Support-Group-critical" /> </a>
 ## Deploy
-<a href="https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https://github.com/darkphoenix2601/doreamon" /> <img src="https://img.shields.io/badge/Deploy-critical" /> </a>
+<a href="https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https://github.com/darkphoenix2601/doreamon" /> <img src="https://img.shields.io/badge/Deploy-critical" />
+## Github
+<a href="https://t.me/phoenix_music_new"> <img src="https://img.shields.io/badge/github-profile-critical" /> </a>
 
 
