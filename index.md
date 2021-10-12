@@ -2,12 +2,7 @@
 
 You can use this bot on telegram as [doreamon](https://t.me/dore_amon_bot)
 
-henever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+[doreamon](https://github.com/darkphoenix2601/doreamon) and ![doreamon](https://telegra.ph/file/8f425cf28d936895eed8b.png)
 
 
 # support: if u want any help then u can join this group = [doreamon support](https://t.me/phoenix_music_suport)
