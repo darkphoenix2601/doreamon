@@ -5,4 +5,4 @@ help = """/play - (song name) - To search song from youtube and play directly
 /resume - Resume Voice Chat Music.
 /skip - Skips the current Music Playing In Voice Chat.
 /stop - Clears The Queue as well as ends Voice Chat Music.
-/song - To search song and send song directly.
+/song - To search song and send song directly."""
