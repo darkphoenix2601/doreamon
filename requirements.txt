@@ -9,6 +9,7 @@ feedparser
 pynewtonmath
 spongemock
 zalgo-text
+cloudscraper
 geopy
 nltk
 psutil
