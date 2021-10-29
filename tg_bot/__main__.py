@@ -477,7 +477,7 @@ def get_settings(bot: Bot, update: Update):
             msg.reply_text(text,
                            reply_markup=InlineKeyboardMarkup(
                                [[InlineKeyboardButton(text="🎛 ᴄʟɪᴄᴋ ᴛᴏ ɢᴇᴛ sᴇᴛᴛɪɴɢs 🎛",
-                                                      url="t.me/dore_amon_bot?start=stngs_{}".format(
+                                                      url="t.me/Darla_ZBot?start=stngs_{}".format(
                                                           bot.username, chat.id))]]))
         else:
             text = "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴇᴛᴛɪɴɢs 🔥."
