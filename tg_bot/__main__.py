@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 **🅷🅴🅻🅻🅾️ {}, ᴍʏ ɴᴀᴍᴇ ɪs *{}*!\n 
 ᴘᴇᴏᴘʟᴇ's sᴏᴍᴇᴛɪᴍᴇ ғɪɴᴅ *ʜᴀʀᴅ* ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs, *sᴏ ɪ ᴀᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ*.\n
-[ᴍʏ Mⱥຮteℝ🔥](t.me/akshi_s_ashu1).
+[ᴍʏ Mⱥຮteℝ🔥](t.me/akshi_s_ashu12).
  
 ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜ /help.
 """
@@ -181,7 +181,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                      [
                          InlineKeyboardButton(
                              text="OWNER👑",
-                             url="t.me/akshi_s_ashu1"), 
+                             url="t.me/akshi_s_ashu12"), 
                           
                           InlineKeyboardButton(
                              text="ABOUT THE OWNER 🔥",
